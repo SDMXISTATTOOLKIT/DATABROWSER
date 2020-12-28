@@ -1,0 +1,14 @@
+# Installation
+
+In this section we will show the steps needed in order to install the application.
+
+```eval_rst
+ .. toctree::
+    :maxdepth: 3
+
+    requisites.md
+    softwarepkg.md
+    appdeploy.md
+    quicksteps.md
+    personalization.md
+```

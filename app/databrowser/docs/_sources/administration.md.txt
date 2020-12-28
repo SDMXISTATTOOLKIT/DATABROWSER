@@ -1,0 +1,15 @@
+# Administration
+
+The “Administration” functional component allows super administrator type user to manage the whole application.
+In particular the following sections will properly explain all types of interventions that can be done.
+
+```eval_rst
+ .. toctree::
+    :maxdepth: 3
+
+    configapp.md
+    hubmanagement.md
+    User Management <usermanagement.md>
+    Template management <template.md>
+    Dashboard management <dashboard.md>
+```

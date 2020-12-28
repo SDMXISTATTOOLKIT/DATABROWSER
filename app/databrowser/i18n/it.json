@@ -1,0 +1,1522 @@
+{
+  "ariaLabels": {
+    "header": {
+      "a11y": "Cambia versione sito",
+      "appLanguage": "Cambia lingua app",
+      "dashboard": "Visualizza dashboard",
+      "otherSettings": "Apri altre impostazioni",
+      "search": "Ricerca dataset",
+      "settings": "Apri impostazioni",
+      "user": "Apri menù utente"
+    }
+  },
+  "commons": {
+    "catalog": {
+      "uncategorized": "Non categorizzato"
+    },
+    "confirm": {
+      "apply": "Applica",
+      "cancel": "Cancella",
+      "close": "Chiudi",
+      "confirm": "Conferma",
+      "copy": "Copia",
+      "download": "Scarica",
+      "preview": "Anteprima",
+      "save": "Salva",
+      "submit": "Applica"
+    },
+    "downloadFormat": {
+      "compactdata": "SDMX compatto v. 2.0",
+      "csv": "CSV",
+      "genericdata": "SDMX generico v. 2.1",
+      "genericdata20": "SDMX generico v. 2.0",
+      "jsondata": "JSON",
+      "structurespecificdata": "SDMX struttura specifica v. 2.1"
+    },
+    "validation": {
+      "positiveInteger": "Deve essere un intero maggiore di zero",
+      "required": "Questo campo è obbligatorio",
+      "requiredAnyLanguage": "Questo campo è obbligatorio. Specificare un valore per almeno una lingua."
+    }
+  },
+  "components": {
+    "a11ySelect": {
+      "disable": "Versione classica",
+      "enable": "Versione accessibile"
+    },
+    "attributeList": {
+      "datasetInformation": {
+        "title": "Informazione sul dataset"
+      },
+      "seriesInformation": {
+        "title": "Informazione sulle serie"
+      }
+    },
+    "autoSearchInput": {
+      "placeholder": "Cerca"
+    },
+    "categoriesTree": {
+      "goToData": "Dati ({{datasetsCount}}) "
+    },
+    "chart": {
+      "pyramid": {
+        "invalidSecondaryDimension": "Per visualizzare il grafico a piramide è necessario selezionare una dimensione secodnaria con esattamente due valori selezionati"
+      }
+    },
+    "chartLayout": {
+      "filters": {
+        "title": "Filtri"
+      },
+      "primaryDim": {
+        "title": "Dimensione primaria"
+      },
+      "secondaryDim": {
+        "title": "Dimensione secondaria"
+      }
+    },
+    "criteria": {
+      "dialogs": {
+        "warning": {
+          "losingFilters": {
+            "title": "Spostandosi su questa dimensione verranno rimosssi i filtri sulle dimensioni successive, continuare comunque?"
+          }
+        }
+      },
+      "noCodelistAssociated": {
+        "info": "Questa dimensione non ha alcuna codelist associata, inserire un valore manualmente.",
+        "noFilter": "Nessun filtro per questa dimensione"
+      },
+      "table": {
+        "actions": {
+          "deselectAll": {
+            "tooltip": "Seleziona tutto"
+          },
+          "selectAll": {
+            "tooltip": "Deseleziona tutto"
+          }
+        }
+      },
+      "timePeriod": {
+        "alert": {
+          "notValidRange": "Intervallo non valido"
+        },
+        "end": "Fine",
+        "from": "DA",
+        "period": "Periodo",
+        "selectLastPeriods": {
+          "noPeriodsSelected": "Nessun periodo seleizonato",
+          "periods": "periodi",
+          "selectLast": "Seleziona gli ultimi"
+        },
+        "start": "Inizio",
+        "to": "A",
+        "typeSelector": {
+          "selectLastPeriods": "Seleziona ultimi periodi",
+          "selectRange": "Seleziona range"
+        },
+        "year": "Anno"
+      },
+      "tree": {
+        "nodeActions": {
+          "selectAll": {
+            "title": "Seleziona/Deseleziona tutti i figli"
+          }
+        }
+      }
+    },
+    "customEmpty": {
+      "placeholder": "Nessun dato da visualizzare"
+    },
+    "customMaterialTable": {
+      "empty": "Nessun dato da visualizzare",
+      "search": {
+        "placeholder": "Cerca",
+        "tooltip": "Cerca"
+      }
+    },
+    "dashboard": {
+      "actions": {
+        "download": "Scarica",
+        "fullscreen": {
+          "enter": "Schermo intero",
+          "exit": "Esci"
+        }
+      },
+      "applyFilters": "Si prega di applicare dei filtri",
+      "emptyView": "Con i filtri applicati questa vista risulta vuota",
+      "fetching": "Recupero dataset",
+      "fetchingDatasetError": "Errore nel recupero del dataset",
+      "fetchingGeometriesError": "Errore nel recupero delle geometrie",
+      "missingView": "La vista non è più disponibile"
+    },
+    "dashboardBuilder": {
+      "actions": {
+        "addColumn": "Aggiungi colonna",
+        "addRow": "Aggiungi riga",
+        "addText": "Aggiungi testo",
+        "addView": "Aggiungi vista",
+        "deselectView": "Deseleziona vista",
+        "editText": "Modifica testo",
+        "enableFilters": "Abilita filtri",
+        "removeColumn": "Rimuovi colonna",
+        "removeRow": "Rimuovi riga",
+        "resetColumn": "Ripristina",
+        "selectView": "Seleziona vista",
+        "showTitle": "Mostra titolo"
+      },
+      "filterDimension": {
+        "label": "Dimensione per filtri territoriali",
+        "noOne": "Nessuna"
+      },
+      "filterLevels": "Livelli di dettaglio territoriali filtrabili",
+      "modals": {
+        "preview": {
+          "title": "Anteprima dashboard"
+        },
+        "text": {
+          "title": "Aggiungi testo"
+        },
+        "views": {
+          "columns": {
+            "datasetId": "ID del dataset",
+            "name": "Titolo",
+            "node": "Nodo"
+          },
+          "title": "Seleziona vista"
+        }
+      },
+      "title": "Titolo"
+    },
+    "dashboardsManager": {
+      "addDashboard": "Aggiungi dashboard",
+      "fields": {
+        "showHubDashboards": {
+          "label": "Mostra dashboards dell'hub"
+        }
+      },
+      "modals": {
+        "addDashboard": {
+          "table": {
+            "actions": {
+              "addDashboard": {
+                "tooltip": {
+                  "assigned": "Già aggiunto",
+                  "notAssigned": "Aggiungi"
+                }
+              }
+            },
+            "columns": {
+              "dashboardTitle": "Titolo"
+            }
+          },
+          "title": "Aggiungi dashboard"
+        }
+      },
+      "table": {
+        "actions": {
+          "dashboardOrderMoveDown": "Sposta giù",
+          "dashboardOrderMoveUp": "Sposta sù",
+          "removeDashboard": "Rimuovi dashboard"
+        },
+        "columns": {
+          "dashboardTitle": "Titolo"
+        }
+      }
+    },
+    "datasetFilters": {
+      "primaryDim": "Dimesione primaria",
+      "secondaryDim": "Dimesione secondaria",
+      "selectedCount": "{{selected}} valore selezionato",
+      "selectedCount_plural": "{{selected}} valori selezionati",
+      "table": {
+        "columns": {
+          "label": {
+            "title": "Seleziona tutti gli elementi"
+          }
+        }
+      }
+    },
+    "deleteConflictModal": {
+      "contentTitle": "Eliminare prima questi oggetti:",
+      "contentTitleWithForce": "Eliminare prima questi oggetti oppure forzare l'eliminazione:",
+      "force": "Forza eliminazione",
+      "objectType": {
+        "dashboard": "Cruscotto",
+        "node": "Nodo",
+        "view": "Vista"
+      },
+      "title": "Non è possibile eliminare l'oggetto"
+    },
+    "enhancedTree": {
+      "collapseAll": {
+        "tooltip": "Comprimi tutto"
+      },
+      "deselectAll": {
+        "tooltip": "Deseleziona tutto"
+      },
+      "expandAll": {
+        "tooltip": "Espandi tutto"
+      },
+      "levelSelector": "Seleziona tutti gli elementi al livello {{level}}",
+      "selectAll": {
+        "tooltip": "Seleziona tutto"
+      },
+      "showMore": "Mostra più {{more}} di {{remaining}}..."
+    },
+    "fileInput": {
+      "messages": {
+        "upload": {
+          "error": "Si è verificato un errore durante il caricamento dell'immagine sul server",
+          "start": "Caricamento dell'immagine sul server"
+        }
+      },
+      "reset": "Rimuovi file caricato",
+      "upload": "Carica"
+    },
+    "fontSizeSelector": {
+      "big": {
+        "tooltip": "Grande"
+      },
+      "normal": {
+        "tooltip": "Normale"
+      },
+      "small": {
+        "tooltip": "Piccolo"
+      }
+    },
+    "header": {
+      "drawer": {
+        "backToNodeHome": "Torna alla homepage del Nodo",
+        "categoriesTitle": "Categorie"
+      },
+      "otherSettings": {
+        "dashboards": "Dashboards",
+        "views": "Viste"
+      },
+      "settings": {
+        "app": "Applicazione",
+        "clearServerCacheAction": {
+          "messages": {
+            "clear": {
+              "start": "Cancellazione cache"
+            }
+          }
+        },
+        "nodes": "Nodi",
+        "queriesLog": "Scarica il log delle richieste",
+        "queriesLogModal": {
+          "content": "Inserire il numero delle ultime richieste-SDMX da scaricare"
+        },
+        "users": "Utenti"
+      }
+    },
+    "infiniteScrollTable": {
+      "footer": {
+        "rowCount": "Righe da {{rowNumStart}} a {{rowNumEnd}} di {{rowCount}}"
+      },
+      "preHeader": {
+        "selectedCount": "{{selectedRowCount}} riga selezionata",
+        "selectedCount_plural": "{{selectedRowCount}} righe selezionate"
+      },
+      "resizing": "Ridimensione tabella",
+      "updating": "Aggiornamento righe tabella"
+    },
+    "labelFormatSelector": {
+      "labelFormat": {
+        "title": "Etichetta",
+        "values": {
+          "both": "Entrambi",
+          "id": "ID",
+          "name": "Nome"
+        }
+      }
+    },
+    "map": {
+      "detailLevel": "Livello di dettaglio",
+      "noDataToDisplay": "Nessun dato da visualizzare",
+      "noDataToDisplayFor": "Nessun dato da visualizzare per",
+      "noTerritorialDim": "Non è stata trovata alcuna dimensione territoriale.",
+      "spinners": {
+        "loading": "Caricamento",
+        "rendering": "Rendering"
+      },
+      "translation": {
+        "apply": "Applica",
+        "cancel": "Cancella",
+        "classification": "Classificazione",
+        "collapse": "Nascondi",
+        "configure": "Configura",
+        "endColor": "Colore finale",
+        "equalInterval": "Intervallo uguale",
+        "from": "Da",
+        "legend": "Legenda",
+        "naturalBreaks": "Interruzioni naturali",
+        "numberOfClasses": "Numero di classi",
+        "opacity": "Opacità",
+        "preview": "Anteprima",
+        "quantile": "Quantile",
+        "startColor": "Colore iniziale",
+        "to": "a",
+        "uncollapse": "Mostra"
+      }
+    },
+    "notImplementedSnackbar": {
+      "label": "Non implementato"
+    },
+    "searchInput": {
+      "label": "Cerca",
+      "placeholder": "Cerca..."
+    },
+    "table": {
+      "alerts": {
+        "attributeCopied": "Attributi copiati negli appunti"
+      },
+      "dialogs": {
+        "observationAttributes": {
+          "title": "Attributi di osservazione"
+        }
+      },
+      "error": {
+        "observationAttribute": "Si è verificato un errore recuperando gli attributi a livello di osservazione"
+      },
+      "initializing": "Inizializzazione tabella",
+      "scrollbars": {
+        "loading": "Caricamento"
+      },
+      "spinners": {
+        "rendering": "Rendering"
+      }
+    },
+    "tableLayout": {
+      "colCount": "Numero di colonne: {{colCount}}",
+      "rowCount": "Numero di righe: {{rowCount}}",
+      "sections": {
+        "columns": "Colonne",
+        "filters": "Filtri",
+        "rows": "Righe",
+        "sections": "Sezioni"
+      }
+    },
+    "userChangePasswordForm": {
+      "messages": {
+        "submit": {
+          "start": "Aggiornamento delle informazioni dell'utente"
+        }
+      }
+    },
+    "userLoginDialog": {
+      "fields": {
+        "email": "Email",
+        "password": "Password"
+      },
+      "login": "Accedi",
+      "recoverPassword": "Recupera password",
+      "recoverPasswordModal": {
+        "fields": {
+          "email": "Email"
+        },
+        "title": "Recupera password"
+      },
+      "register": "Registrati",
+      "title": "Accedi"
+    },
+    "userRecoverPassword": {
+      "messages": {
+        "submit": {
+          "start": "Aggiornamento delle informazioni dell'utente"
+        }
+      }
+    },
+    "userSelect": {
+      "changePassword": "Cambia password",
+      "changePasswordModal": {
+        "fields": {
+          "newPassword": "Nuova password",
+          "newPasswordConfirm": "Conferma nuova password",
+          "oldPassword": "Vecchia password"
+        },
+        "title": "Cambia password",
+        "validation": {
+          "newPasswordMustBeEqual": "Le nuove password devono coincidere"
+        }
+      },
+      "login": "Accedi",
+      "logout": "Esci",
+      "messages": {
+        "fetchUser": {
+          "start": "Recupero delle informazioni dell'utente"
+        }
+      },
+      "registerModal": {
+        "submit": {
+          "label": "Registrati"
+        },
+        "title": "Registrati"
+      }
+    },
+    "userSetPasswordDialog": {
+      "fields": {
+        "email": "Email",
+        "password": "Password",
+        "passwordConfirm": "Conferma password"
+      },
+      "title": "Crea nuova password",
+      "validation": {
+        "passwordMustBeEqual": "Le nuove password devono coincidere"
+      }
+    },
+    "userSetPasswordForm": {
+      "messages": {
+        "submit": {
+          "start": "Aggiornamento delle informazioni dell'utente"
+        }
+      }
+    }
+  },
+  "dashboards": {
+    "dynamicFilterLabels": {
+      "municipality": "Comune",
+      "province": "Provincia",
+      "region": "Regione"
+    }
+  },
+  "domains": {
+    "catalog": {
+      "messages": {
+        "fetch": {
+          "start": "Recupero catalogo del nodo"
+        }
+      }
+    },
+    "hub": {
+      "messages": {
+        "fetch": {
+          "start": "Recupero delle informazioni dell'hub"
+        }
+      }
+    },
+    "node": {
+      "messages": {
+        "datasetCsvFetch": {
+          "start": "Recupero dataset {{title}}"
+        },
+        "fetch": {
+          "start": "Recupero delle informazioni del nodo"
+        }
+      }
+    }
+  },
+  "errors": {
+    "generic": "Si è verificato un errore imprevisto contattando il server.",
+    "user": {
+      "concurrencyFailure": "Errore di concorrenza",
+      "defaultError": "Errore generico",
+      "duplicateEmail": "Email già in uso",
+      "duplicateRoleName": "Ruolo duplicato",
+      "duplicateUsername": "Username già in uso",
+      "generic": "Nel form è presente un errore",
+      "invalidEmail": "Email non valida.",
+      "invalidLogin": "Credenziali errate.",
+      "invalidRoleName": "Ruolo non valido",
+      "invalidToken": "Token non valido",
+      "invalidUserName": "Username non valido",
+      "loginAlreadyAssociated": "Login già associato",
+      "passwordMismatch": "Le password non corrispondono",
+      "passwordRequiresDigit": "La password deve contenere almeno un numero",
+      "passwordRequiresLower": "La password deve contenere almeno un carattere minuscolo",
+      "passwordRequiresNonAlphanumeric": "La password deve contenere almeno un carattere speciale",
+      "passwordRequiresUpper": "La password deve contenere almeno un carattere maiuscolo",
+      "passwordTooShort": "La password è troppo corta.",
+      "userAlreadyHasPassword": "L'utente ha già la password",
+      "userAlreadyInRole": "L'utente ha già il ruolo",
+      "userLockoutNotEnabled": "Lockout dell'utente non abilitato",
+      "userNotInRole": "L'utente non ha il ruolo"
+    }
+  },
+  "middlewares": {
+    "feedback": {
+      "emptyCatalog": "Il catalogo di questo nodo è vuoto"
+    },
+    "fetchDatasetAsyncHandlerMiddlewareFactory": {
+      "feedback": {
+        "layoutHandlingError": "Si è verificato un errore imprevisto durante la gestione del layout"
+      },
+      "spinners": {
+        "layoutHandling": "Gestione layout"
+      }
+    },
+    "user": {
+      "messages": {
+        "refreshUser": {
+          "start": "Aggiornamento delle informazioni dell'utente"
+        }
+      },
+      "passwordChangedLoginNecessary": "La password è cambiata. È necessario un nuovo accesso.",
+      "resetPasswordEmailSent": "È stata inviata una mail per reimpostare la password.",
+      "sessionExpired": "La sessione dell'utente è scaduta. È necessario un nuovo accesso.",
+      "userRegisterSuccess": "Utente registrato correttamente."
+    }
+  },
+  "nutsLevel0": "Paesi",
+  "nutsLevel1": "Ripartizioni",
+  "nutsLevel2": "Regioni",
+  "nutsLevel3": "Province",
+  "nutsLevel4": "Comuni",
+  "nutsLevel5": "",
+  "nutsLevel6": "",
+  "nutsLevel7": "",
+  "nutsLevel8": "",
+  "nutsLevel9": "",
+  "scenes": {
+    "appSettings": {
+      "fields": {
+        "backgroundMediaURL": {
+          "label": "Immagine/video di sfondo"
+        },
+        "disclaimer": {
+          "label": "Informativa"
+        },
+        "logoURL": {
+          "label": "Logo"
+        },
+        "maxCells": {
+          "label": "Numero massimo di celle in tabella"
+        },
+        "maxObservationsAfterCriteria": {
+          "label": "Numero massimo di osservazioni visualizzabili dopo l'impostazione dei criteri"
+        },
+        "slogan": {
+          "label": "Slogan"
+        },
+        "supportedLanguages": {
+          "helper": {
+            "linkText": "Mostra di più",
+            "text": "Inserire codice seguendo lo standard ISO 639-1"
+          },
+          "label": "Lingue supportate",
+          "placeholder": "Inserire codice"
+        },
+        "title": {
+          "label": "Titolo"
+        }
+      },
+      "messages": {
+        "addDashboard": {
+          "start": "Aggiunta della dashboard all'hub"
+        },
+        "fetchAllDashboards": {
+          "start": "Recupero delle dashboards"
+        },
+        "fetchConfig": {
+          "start": "Recupero delle impostazioni dell'hub"
+        },
+        "fetchDashboards": {
+          "start": "Recupero delle dashboards dell'hub"
+        },
+        "removeDashboard": {
+          "start": "Rimozione dashboard dall'hub"
+        },
+        "sendConfig": {
+          "start": "Salvataggio delle impostazioni dell'hub"
+        },
+        "sendDashboardsOrders": {
+          "start": "Ordinamento delle dashboards dell'hub"
+        }
+      },
+      "tabs": {
+        "dashboards": "Dashboards",
+        "general": "Generale",
+        "information": "Informazioni",
+        "users": "Utenti"
+      },
+      "title": "Configurazione dell'applicazione"
+    },
+    "dashboard": {
+      "actions": {
+        "fetchingDashboard": "Recupero dashboard",
+        "fetchingDataset": "Recupero dataset",
+        "fetchingDatasetStructure": "Recupero struttura del dataset",
+        "fetchingGeometries": "Recupero geometrie"
+      },
+      "noDashboard": {
+        "hub": "Nessun dashboard selezionato per l'hub",
+        "node": "Nessun dashboard selezionato per il nodo"
+      }
+    },
+    "dashboardsSettings": {
+      "createDashboard": "Crea dashboard",
+      "messages": {
+        "deleteDashboard": {
+          "start": "Eliminazione dashboard"
+        },
+        "fetchDashboard": {
+          "start": "Recupero dashboard"
+        },
+        "fetchDashboardViews": {
+          "start": "Recupero delle viste del dashboard"
+        },
+        "fetchDashboards": {
+          "start": "Recupero dashboards"
+        },
+        "submitDashboardCreate": {
+          "start": "Creazione dashboard"
+        },
+        "submitDashboardUpdate": {
+          "start": "Aggiornamento dashboard"
+        }
+      },
+      "modals": {
+        "createDashboard": {
+          "title": "Crea dashboard"
+        },
+        "deleteDashboard": {
+          "content": "Il dashboard verrà eliminato. L'azione è irreversibile.",
+          "title": "Elinare il dashboard?"
+        },
+        "updateDashboard": {
+          "title": "Aggiornamento dashboard"
+        }
+      },
+      "table": {
+        "actions": {
+          "deleteDashboard": "Elimina",
+          "editDashboard": "Modifica",
+          "viewDashboard": "Visualizza"
+        },
+        "columns": {
+          "dashboardTitle": "Titolo"
+        }
+      },
+      "title": "Dashboards"
+    },
+    "dataViewer": {
+      "actions": {
+        "chartSettings": "Impostazioni grafico",
+        "fullscreen": {
+          "enter": "Schermo intero",
+          "exit": "Esci"
+        }
+      },
+      "chartSettings": {
+        "colors": {
+          "actions": {
+            "addColor": "Aggiungi colore"
+          },
+          "addColor": {
+            "resetDimension": "Ripristina dimensione",
+            "resetDimensionValue": "Ripristina valore dimensione",
+            "selectDimension": "Seleziona dimensione",
+            "selectDimensionValue": "Seleziona valore dimensione"
+          },
+          "allDimValues": "TUTTI I VALORI",
+          "color": "Colore",
+          "dimension": "Dimensione",
+          "dimensionValue": "Valore dimensione",
+          "row": {
+            "actions": {
+              "delete": "Rimuovi colore",
+              "edit": "Modifica colore"
+            }
+          }
+        },
+        "isStacked": "Impila la dimensione secondaria",
+        "legendPosition": {
+          "label": "Posizione legenda",
+          "values": {
+            "bottom": "Sotto",
+            "left": "Sinistra",
+            "right": "Destra",
+            "top": "Sopra"
+          }
+        },
+        "tabs": {
+          "colors": "Colori",
+          "general": "Generale"
+        }
+      },
+      "dialogs": {
+        "chartLayout": {
+          "title": "Layout grafico"
+        },
+        "chartSettings": {
+          "title": "Impostazioni grafico"
+        },
+        "criteria": {
+          "title": "Criteri"
+        },
+        "downloadFormat": {
+          "content": "Questo nodo non supporta tale formato di download, si prega di selezionarne un altro"
+        },
+        "obsCountWarning": {
+          "content": "Con i filtri applicati il dataset supera il numero massimo di osservazioni consentito e verrà tagliato, continuare comunque?"
+        },
+        "tableLayout": {
+          "title": "Layout tabellare"
+        },
+        "tooBigData": {
+          "content": {
+            "applyCriteria": "Si prega di applicare dei criteri più restrittivi.",
+            "maxCells": "Massimo numero di celle",
+            "requestCells": "Celle richieste"
+          },
+          "title": "La tabella supera il numero di celle consentite"
+        },
+        "tooLongQuery": {
+          "content": "Con i criteri applicati la stringa di interrogazione è troppo lunga e potrebbe presentarsi un errore, continuare comunque?"
+        },
+        "unavailableView": {
+          "content": "La vista desiderata non è più disponibile, verranno mostrati i dati predefiniti."
+        }
+      },
+      "errors": {
+        "applyCriteria": "Nessun dato da visualizzare: si prega di applicare dei criteri.",
+        "emptyData": "Con i criteri impostati il dataset è vuoto.",
+        "genericError": "Si è verificato un errore, si prega di applicare nuovamente dei criteri.",
+        "tooBigData": "La tabella supera il numero di celle consentite, si prega di applicare dei criteri più restrittivi."
+      },
+      "footer": {
+        "dialogs": {
+          "worksheetDelete": {
+            "title": "Sei sicuro di voler eliminare questo foglio di lavoro?"
+          }
+        },
+        "worksheetDelete": "Elimina foglio di lavoro"
+      },
+      "header": {
+        "action": {
+          "attachments": {
+            "tooltip": "Allegati"
+          },
+          "attributes": {
+            "tooltip": "Attributi"
+          },
+          "export": {
+            "tooltip": "Esporta"
+          },
+          "goHome": {
+            "tooltip": "Ritorna alla homepage del nodo"
+          },
+          "hasAnnotationLayout": {
+            "tooltip": "Questo dataset ha un layout definito nelle annotazioni"
+          },
+          "hasTemplateLayout": {
+            "tooltip": "Questo dataset ha un Template applicato"
+          },
+          "hasViewLayout": {
+            "tooltip": "Questo dataset ha una View applicata"
+          },
+          "information": {
+            "tooltip": "Informazioni"
+          },
+          "save": {
+            "tooltip": "Salva",
+            "values": {
+              "createTemplate": "Crea nuovo template",
+              "createView": "Crea nuova vista",
+              "updateTemplate": "Aggiorna template",
+              "updateView": "Aggiorna vista"
+            }
+          },
+          "share": {
+            "tooltip": "Condividi"
+          },
+          "timesLog": {
+            "tooltip": "Log delle tempistiche"
+          }
+        },
+        "dialogs": {
+          "attributes": {
+            "title": "Attributi"
+          },
+          "duplicateViewError": {
+            "content": "Il titolo risulta duplicato nelle seguenti lingue",
+            "title": "Errore in creazione della Vista"
+          },
+          "notes": {
+            "title": "Note"
+          },
+          "template": {
+            "title": {
+              "create": "Crea nuovo template",
+              "update": "Aggiorna template"
+            }
+          },
+          "view": {
+            "title": {
+              "create": "Crea nuova vista",
+              "update": "Aggiorna vista"
+            }
+          }
+        }
+      },
+      "sidebar": {
+        "chart": "Grafico",
+        "criteria": "Criteri",
+        "dialogs": {
+          "referenceMetadata": {
+            "title": "Metadati di riferimento"
+          }
+        },
+        "layout": "Pivoting",
+        "referenceMetadata": "Metadati di riferimento"
+      },
+      "templateBuilder": {
+        "tabs": {
+          "chart": {
+            "cards": {
+              "form": {
+                "chartType": {
+                  "label": "Tipo grafico"
+                }
+              }
+            },
+            "label": "Anteprima grafico"
+          },
+          "map": {
+            "label": "Anteprima mappa"
+          },
+          "options": {
+            "cards": {
+              "general": {
+                "form": {
+                  "decimalPlaces": "Numero di decimali",
+                  "decimalSeparator": {
+                    "label": "Separatore di decimali",
+                    "values": {
+                      "comma": "Virgola",
+                      "dot": "Punto"
+                    }
+                  },
+                  "defaultView": "Visualizzazione predefinita",
+                  "enableCriteria": "Abilita i criteri",
+                  "enableLayout": "Abilita il layout",
+                  "enableVariation": "Abilita la variazione",
+                  "title": "Titolo"
+                },
+                "title": "Generale"
+              },
+              "table": {
+                "form": {
+                  "emptyCellPlaceholder": "Valore alternativo per celle vuote"
+                },
+                "title": "Tabella"
+              }
+            },
+            "label": "Opzioni",
+            "notImplemented": "Non ancora implementato"
+          },
+          "table": {
+            "form": {
+              "defaultLayout": {
+                "defaultPlaceholder": "Per l'attuale vista verrà applicato il layout predefinito.",
+                "label": "Layout predefinito",
+                "values": {
+                  "custom": "Personalizzato",
+                  "default": "Predefinito"
+                }
+              }
+            },
+            "label": "Anteprima tabella"
+          }
+        }
+      },
+      "viewBuilder": {
+        "form": {
+          "title": {
+            "label": "Titolo"
+          }
+        }
+      },
+      "warnings": {
+        "maxObservation": {
+          "label": "Il dataset è parziale, si prega di applicare criteri più restrittivi."
+        }
+      }
+    },
+    "dataViewers": {
+      "viewers": {
+        "area": "Area",
+        "doughnut": "Anello",
+        "horizontalBar": "Barre Orizzontali",
+        "line": "Linee",
+        "map": "Mappa",
+        "pie": "Torta",
+        "polarArea": "Polare",
+        "pyramid": "Piramide",
+        "radar": "Radar",
+        "table": "Tabella",
+        "verticalBar": "Barre verticali"
+      }
+    },
+    "dataset": {
+      "actions": {
+        "downloadingDataset": "Download del dataset",
+        "fetchingCodelist": "Recupero della codelist",
+        "fetchingCodelists": "Recupero delle codelists",
+        "fetchingDataset": "Recupero dataset {{title}}",
+        "fetchingGeometries": "Recupero geometrie",
+        "savingTemplate": "Salvataggio template",
+        "savingView": "Salvataggio vista"
+      }
+    },
+    "hub": {
+      "dashboards": "Dashboards",
+      "informations": "Informazioni",
+      "nodes": "Nodi"
+    },
+    "node": {
+      "dashboards": "Dashboards",
+      "explore": "Esplora",
+      "informations": "Informazioni",
+      "otherNodes": "Altri nodi"
+    },
+    "nodeSettings": {
+      "cacheSettings": {
+        "deleteAllDataflowCache": "Cancella la cache di tutti i dataflows",
+        "deleteCatalogCache": "Cancella la cache del catalogo",
+        "hideEmptyEntries": "Nascondi voci vuote",
+        "table": {
+          "actions": {
+            "deleteRow": "Elimina",
+            "editRow": "Modifica"
+          },
+          "dataflowAccess": "Accessi",
+          "dataflowFiles": "Files",
+          "dataflowSize": "Dimensione",
+          "dataflowTitle": "Titolo",
+          "dataflowValidity": "Validità"
+        }
+      },
+      "fields": {
+        "active": {
+          "label": "Attivo",
+          "tooltip": "Un nodo attivo può essere raggiunto dagli utenti ed è mostrato nel menù a tendina."
+        },
+        "agency": {
+          "label": "Agenzia"
+        },
+        "annotations": {
+          "ATTACHED_DATA_FILES": {
+            "label": "Allegati di documenti sui dati"
+          },
+          "CRITERIA_SELECTION": {
+            "label": "Selezione criteri"
+          },
+          "DATAFLOW_CATALOG_TYPE": {
+            "label": "Tipologia di dataflow nel catalogo"
+          },
+          "DATAFLOW_NOTES": {
+            "label": "Note sul dataflow"
+          },
+          "DATAFLOW_SOURCE": {
+            "label": "Fonte del dataflow"
+          },
+          "DEFAULT": {
+            "label": "Predefinito"
+          },
+          "DEFAULT_VIEW": {
+            "label": "Visualizzazione predefinita"
+          },
+          "GEO_ID": {
+            "label": "Geo ID"
+          },
+          "KEYWORDS": {
+            "label": "Parole chiave"
+          },
+          "LAST_UPDATE": {
+            "label": "Ultimo aggiornamento"
+          },
+          "LAYOUT_CHART_FILTER": {
+            "label": "Dimensioni nei filtri per il grafico"
+          },
+          "LAYOUT_CHART_PRIMARY_DIM": {
+            "label": "Dimensione primaria per il grafico"
+          },
+          "LAYOUT_CHART_SECONDARY_DIM": {
+            "label": "Dimensione secondaria per il grafico"
+          },
+          "LAYOUT_COLUMN": {
+            "label": "Dimensioni in colonna per la tabella"
+          },
+          "LAYOUT_DECIMAL_SEPARATOR": {
+            "label": "Separatore di decimali"
+          },
+          "LAYOUT_EMPTY_CELL_PLACEHOLDER": {
+            "label": "Valore alternativo per celle vuote"
+          },
+          "LAYOUT_FILTER": {
+            "label": "Dimensioni nei filtri per la tabella"
+          },
+          "LAYOUT_NUMBER_OF_DECIMALS": {
+            "label": "Numero di decimali"
+          },
+          "LAYOUT_ROW": {
+            "label": "Dimensioni in riga per la tabella"
+          },
+          "LAYOUT_ROW_SECTION": {
+            "label": "Dimensioni in sezione per la tabella"
+          },
+          "METADATA_URL": {
+            "label": "URL dei metadati"
+          },
+          "NOT_DISPLAYED": {
+            "label": "Non mostrato"
+          },
+          "ORDER": {
+            "label": "Ordinamento"
+          },
+          "ORDER_CATEGORY": {
+            "label": "Ordinamento delle categorie"
+          },
+          "ORDER_CODELIST": {
+            "label": "Ordinamento delle codelists"
+          },
+          "VIRTUAL_DATAFLOW_NODE": {
+            "label": "Nodo del dataflow virtuale"
+          }
+        },
+        "authHttpDomain": {
+          "label": "Dominio"
+        },
+        "authHttpPassword": {
+          "label": "Password"
+        },
+        "authHttpUsername": {
+          "label": "Username"
+        },
+        "backgroundMediaURL": {
+          "label": "Immagine/video di sfondo"
+        },
+        "catalogCacheValidity": {
+          "label": "Validità della cache del catalogo (in secondi)",
+          "tooltip": "Tempo di durata della cache degli elementi del catalogo (in secondi)."
+        },
+        "catalogNavigationMode": {
+          "label": "Modalità di navigazione del catalogo",
+          "values": {
+            "card": "Griglia",
+            "list": "Lista"
+          }
+        },
+        "categorySchemaExcludes": {
+          "label": "Schemi di categoria esclusi",
+          "placeholder": "Inserire schema di categoria"
+        },
+        "code": {
+          "label": "ID",
+          "tooltip": "Viene mostrato come alternativa al titolo, quando lo spazio nell'interfaccia è limitato."
+        },
+        "criteriaSelectionMode": {
+          "label": "Modalità di selezione dei criteri",
+          "tooltip": "Definisce un metodo di accesso ai codici delle dimensioni quando vengono specificati i criteri nelle richieste."
+        },
+        "dataflowCacheValidity": {
+          "label": "Validità della cache nei dataflow (in secondi)",
+          "tooltip": "Tempo di durata della cache dei dataflow (in secondi)"
+        },
+        "decimalNumber": {
+          "label": "Numero di decimali"
+        },
+        "decimalSeparator": {
+          "helper": "Può essere sovrascritto dalle annotazioni a livello di dataflow.",
+          "label": "Separatore di decimali"
+        },
+        "default": {
+          "label": "Default"
+        },
+        "defaultLanguage": {
+          "helper": "Deve essere uno dei codici lingua supportati",
+          "label": "Lingua predefinita"
+        },
+        "downloadFormats": {
+          "label": "Formato di download dei dati",
+          "placeholder": "Scegliere il formato per scaricare i dati"
+        },
+        "enableEndpointV20": {
+          "label": "Abilita Endpoint SOAP 2.0",
+          "tooltip": "Configurazione temporanea in attesa di implementazione del passaggio dei filtri in POST per endpoint REST"
+        },
+        "enableHttpAuth": {
+          "label": "Autenticazione HTTP"
+        },
+        "enableProxy": {
+          "label": "Proxy"
+        },
+        "endPoint": {
+          "label": "URL dell'Endpoint"
+        },
+        "endpointV20": {
+          "label": "Endpoint SOAP 2.0"
+        },
+        "hiddenAttributes": {
+          "label": "Attributi nascosti",
+          "placeholder": "Inserire attributo"
+        },
+        "labelDimensionTemporals": {
+          "label": "ID delle dimensioni temporali",
+          "placeholder": "Inserire ID"
+        },
+        "labelDimensionTerritorials": {
+          "label": "ID delle dimensioni territoriali",
+          "placeholder": "Inserire ID"
+        },
+        "logo": {
+          "label": "Logo"
+        },
+        "proxyAddress": {
+          "label": "Indirizzo"
+        },
+        "proxyPassword": {
+          "label": "Password"
+        },
+        "proxyPort": {
+          "label": "Porta",
+          "validation": "Deve essere un numero di porta valido"
+        },
+        "proxyUsername": {
+          "label": "Username"
+        },
+        "responseFormat": {
+          "label": "Formato risposta"
+        },
+        "showCategoryLevels": {
+          "label": "Livelli di categoria visibili nella pagina iniziale"
+        },
+        "showDataflowNotInProduction": {
+          "label": "Mostra dataflow non in produzione"
+        },
+        "showDataflowUncategorized": {
+          "label": "Mostra dataflow non categorizzato"
+        },
+        "slogan": {
+          "label": "Slogan"
+        },
+        "supportPostFilters": {
+          "label": "Supporta filtri in POST"
+        },
+        "title": {
+          "label": "Titolo"
+        },
+        "type": {
+          "label": "Tipo di nodo"
+        }
+      },
+      "permissions": {
+        "table": {
+          "columns": {
+            "manageCache": "Configura cache",
+            "manageConfig": "Configura nodi",
+            "manageTemplate": "Configura templates",
+            "userEmail": "Email",
+            "userFirstName": "Nome",
+            "userLastName": "Cognome",
+            "userOrganization": "Organizzazione"
+          }
+        }
+      },
+      "tabs": {
+        "annotations": {
+          "label": "Annotazioni"
+        },
+        "cache": {
+          "label": "Cache"
+        },
+        "endpoint": {
+          "label": "Endpoint"
+        },
+        "general": {
+          "label": "Generale"
+        },
+        "information": {
+          "label": "Informationi"
+        },
+        "view": {
+          "label": "Visualizzazione"
+        }
+      },
+      "templatesSettings": {
+        "modals": {
+          "deleteTemplate": {
+            "content": "Il template verrà eliminato. Questa azione è irreversibile.",
+            "title": "Eliminare il template?"
+          }
+        },
+        "table": {
+          "actions": {
+            "deleteTemplate": "Elimina",
+            "viewData": "Vai ai dati"
+          },
+          "columns": {
+            "datasetId": "ID del dataset",
+            "templateName": "Titolo"
+          }
+        }
+      }
+    },
+    "nodesSettings": {
+      "cacheSettings": {
+        "messages": {
+          "createDataflowCache": {
+            "start": "Creazione info cache dataflow"
+          },
+          "deleteAllDataflowCache": {
+            "start": "Eliminazione della cache di tutti i dataflows"
+          },
+          "deleteCatalogCache": {
+            "start": "Eliminazione cache del catalogo"
+          },
+          "deleteDataflowCache": {
+            "start": "Eliminazione cache del dataflow"
+          },
+          "fetchDataflowCache": {
+            "start": "Recupero cache del dataflow"
+          },
+          "updateDataflowCache": {
+            "start": "Aggiornamento cache del dataflow"
+          }
+        },
+        "modals": {
+          "deleteDataflowCache": {
+            "title": "Questa azione azzererà la cache del dataflow. Confermare?"
+          }
+        }
+      },
+      "createNode": "Crea nodo",
+      "messages": {
+        "addNodeDashboard": {
+          "start": "Aggiunta del dashboard al nodo"
+        },
+        "deleteNode": {
+          "start": "Rimozione nodo"
+        },
+        "fetchAllDashboards": {
+          "start": "Recupero dashboard"
+        },
+        "fetchNode": {
+          "start": "Recupero impostazioni del nodo"
+        },
+        "fetchNodeDashboards": {
+          "start": "Recupero delle dashboards del nodo"
+        },
+        "fetchNodes": {
+          "start": "Recupero impostazioni dei nodi"
+        },
+        "removeNodeDashboard": {
+          "start": "Rimozione dashboard dal nodo"
+        },
+        "sendNodeCreate": {
+          "start": "Creazione nodo"
+        },
+        "sendNodeDashboardsOrders": {
+          "start": "Ordinamento dashboards del nodo"
+        },
+        "sendNodeEdit": {
+          "start": "Aggiornamento impostazioni del nodo"
+        },
+        "sendNodesOrder": {
+          "start": "Salvataggio ordine dei nodi"
+        }
+      },
+      "modals": {
+        "editNode": "Modifica nodo",
+        "nodeCache": "Configurazione cache {{nodeCode}}",
+        "nodeDashboards": "Configurazione dashboards {{nodeCode}}",
+        "nodeDelete": {
+          "content": "Il nodo verrà eliminato. L'azione è irreversibile.",
+          "title": "Eliminare il nodo?"
+        },
+        "nodePermissions": "Configurazione permessi {{nodeCode}}",
+        "nodeTemplates": "Templates {{node}}"
+      },
+      "permissionsSettings": {
+        "fetchConfig": {
+          "start": "Recupero permessi del nodo"
+        },
+        "sendConfig": {
+          "start": "Aggiornamento permessi del nodo"
+        }
+      },
+      "table": {
+        "actions": {
+          "deleteNode": "Elimina nodo",
+          "editNode": "Modifica nodo",
+          "nodeDashboards": "Dashboards",
+          "nodeDataflowsCache": {
+            "label": "CACHE",
+            "tooltip": "Cache dei dataflow"
+          },
+          "nodeOrderMoveDown": "Sposta giù",
+          "nodeOrderMoveUp": "Sposta sù",
+          "nodePermissions": "Permessi",
+          "nodeTemplates": {
+            "label": "TEMPL.",
+            "tooltip": "Templates"
+          }
+        },
+        "columns": {
+          "isNodeActive": {
+            "title": "Attivo",
+            "values": {
+              "false": "No",
+              "true": "Sì"
+            }
+          },
+          "isNodeDefault": {
+            "title": "Default",
+            "values": {
+              "false": "No",
+              "true": "Sì"
+            }
+          },
+          "nodeCode": "Identificativo",
+          "nodeName": "Titolo"
+        }
+      },
+      "templatesSettings": {
+        "deleteTemplate": {
+          "start": "Eliminazione template"
+        },
+        "fetchConfig": {
+          "start": "Recupero dei templates del nodo"
+        }
+      },
+      "title": "Nodi"
+    },
+    "results": {
+      "datasetCard": {
+        "downloadAria": "Scarica {{title}} in formato {{extension}}"
+      },
+      "datasetsCount": {
+        "none": "Nessun dataset",
+        "plural": "{{datasetsCount}} dataset",
+        "singular": "{{datasetsCount}} dataset"
+      },
+      "searchTitle": "Risultati di ricerca per \"{{query}}\"  "
+    },
+    "usersConfig": {
+      "deleteUser": {
+        "start": "Eliminazione utente"
+      },
+      "fetchUser": {
+        "start": "Recupero informazioni utente"
+      },
+      "fetchUsers": {
+        "start": "Recupero informazioni utenti"
+      },
+      "sendUserCreate": {
+        "start": "Creazione utente"
+      },
+      "sendUserEdit": {
+        "start": "Aggiornamento informazioni utente"
+      }
+    },
+    "usersSettings": {
+      "createUser": "Crea utente",
+      "modals": {
+        "createUser": "Crea nuovo utente",
+        "deleteUser": {
+          "content": "L'utente verrà eliminato e le viste da lui create, se presenti, verranno anch'esse eliminate. L'azione è irreversibile.",
+          "title": "Eliminare l'utente?"
+        },
+        "editUser": "Modifica informazioni utente"
+      },
+      "table": {
+        "actions": {
+          "deleteUser": "Elimina utente",
+          "editUser": "Modifica utente"
+        },
+        "columns": {
+          "isActive": {
+            "title": "Attivo",
+            "values": {
+              "false": "No",
+              "true": "Sì"
+            }
+          },
+          "type": "Tipologia",
+          "userEmail": "Email",
+          "userFirstName": "Nome",
+          "userLastName": "Cognome",
+          "userOrganization": "Organizzazione"
+        }
+      },
+      "title": "Utenti",
+      "userSettings": {
+        "disclaimerModal": {
+          "title": "Informativa"
+        },
+        "fields": {
+          "disclaimerAccepted": {
+            "label": "Ho letto e accettato l'informativa.",
+            "link": "Leggi l'informativa"
+          },
+          "email": "Email",
+          "emailConfirm": "Conferma email",
+          "firstName": "Nome",
+          "isActive": {
+            "label": "Attivo"
+          },
+          "lastName": "Cognome",
+          "organization": "Organizzazione",
+          "password": "Password",
+          "passwordConfirm": "Conferma password",
+          "type": {
+            "label": "Tipologia",
+            "values": {
+              "empty": "Non specificato"
+            }
+          }
+        },
+        "validation": {
+          "emailsMustBeEqual": "Le emails devono essere uguali",
+          "mustAcceptDisclaimer": "Per registrarti devi leggere e accettare l'informativa",
+          "passwordsMustBeEqual": "Le passwords devono essere uguali"
+        }
+      }
+    },
+    "viewsConfig": {
+      "messages": {
+        "deleteView": {
+          "start": "Eliminazione vista"
+        },
+        "fetchViews": {
+          "start": "Recupero viste"
+        }
+      }
+    },
+    "viewsSettings": {
+      "modals": {
+        "deleteView": {
+          "content": "La vista verrà eliminata. L'azione è irreversibile",
+          "title": "Eliminare la vista?"
+        }
+      },
+      "table": {
+        "actions": {
+          "deleteView": "Elimina",
+          "viewView": "Visualizza"
+        },
+        "columns": {
+          "viewDatasetId": "ID del dataset",
+          "viewNodeId": "Nodo",
+          "viewTitle": "Titolo"
+        }
+      },
+      "title": "Viste"
+    }
+  },
+  "timings": {
+    "cacheRead": "Lettura cache",
+    "clientTimings": "Tempi client",
+    "generatingHtml": "Generazione HTML tabella",
+    "jsonToJsonStat": "Conversione da JSON a JSONSTAT",
+    "nsiResponse": "Risposta NSI",
+    "nsiResponseDownload": "Scaricamente risposta NSI",
+    "nsiResponseDownloadSize": "Dimensione risposta NSI",
+    "observationCount": "Numero di osservazioni",
+    "others": "Altro",
+    "serverTimings": "Tempi del server",
+    "total": "Totale",
+    "xmlToJsonStat": "Conversione da XML a JSONSTAT"
+  }
+}

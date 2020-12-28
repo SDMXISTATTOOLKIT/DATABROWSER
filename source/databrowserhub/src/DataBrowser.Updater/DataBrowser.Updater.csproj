@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataBrowser.DB.EFCore\DataBrowser.DB.EFCore.csproj" />
+    <ProjectReference Include="..\DataBrowser.Interfaces\DataBrowser.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

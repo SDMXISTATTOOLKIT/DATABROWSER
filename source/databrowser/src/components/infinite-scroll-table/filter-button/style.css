@@ -1,0 +1,14 @@
+.infinite-scroll-table__header__filter-button__icon-container {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.infinite-scroll-table__header__filter-button__options-container {
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+.infinite-scroll-table__header__filter-button__option,
+.infinite-scroll-table__header__filter-button__option:hover {
+    color: rgba(0, 0, 0, 0.65)
+}

@@ -1,0 +1,50 @@
+## How to configure the application
+
+### General settings
+
+The super administrator user has the authority to configure the application settings (consisting in managing nodes, users and so on). It is possible to configure specific settings by clicking the setting icon:
+
+![head icons](_images/Menu_principale_admin.JPG)
+
+and choosing the option related to the operation the user wants to perform from the list that appears:
+
+![item list](_images/settingsMenu.JPG)
+
+In the “Application" configuration window it is possible to choose the maximum number of observations that can be viewed after setting the criteria.
+
+In the "Users" configuration window it is possibile to create, edit or delete users.
+
+By clicking the "Node" link, it is possibile to create new nodes, manage node's cache and templates, delete nodes and, most importantly, set user's permissions on nodes.
+
+The "Get queries log" link allows the administration user to download the last *n* SDMX-queries requested in the page.
+
+### Landing page settings
+
+Generally, the Landing page must have at least a title, a slogan, a section on information and nodes, and also a possible section dedicated to dashboards. It could have a welcome image or a short video.
+These settings appear in the  “application configuration”  window:
+
+![landing page settings](_images/Application_config.JPG)
+
+In this window, the super administrator user, can choose to insert dashboards that will be publicly available to all users once the landig page is visited (see section [Dashboard management](dashboard) for detailed infomations). It is also possible to set a title for each language supported by the application allowing the user to benefit of the multilingual functionality (indicated by the presence of the flag in certain fields). \
+In the configuration panel user can find the "USERS" tab where he can set the disclaimer text that will appear in the "Sign Up" window when a new user decides to sign up to the application (see section [How to add a registered user](registered_user) for detailed infomations).
+
+If only a node is configured, then landing page and node home page will be the same; otherwise if more than one node is configured (beside the default one), then the landing page will show a section, named “Nodes”, containing all nodes contained in the Hub which can be browsed.
+
+### Accessible version
+
+The Data Browser application also contemplates web accessibility allowing all kind of people to benefit of the application's functionalities. \
+Activation of this option is very simple. \
+On the main page of the hub, click on the little man icon and choose "Accessible version" from the list that appears.
+
+![accessibility](_images/Accessibilita.JPG) => ![accessibility_2](_images/Accessibilita_2.JPG)
+
+```eval_rst
+ .. |I| image:: _images/accessibilita_true.JPG
+    :width: 25
+
+Once the functionality is enables, a green check will appear near the icon |I| meaning that the application now is in accessible mode (this means that
+the system will apply special CSS styles that can be defined in the "custom.CSS" file using the special CSS class "a11y", that will allow to treat in a dedicated way any element of the interface in 
+order to increase the contrast or other properties useful for the purpose. \
+At the moment, the most important operation that this functionality provides, is that when clicking on a data the system will not show the viewing/navigation page of the data because this functionality 
+requires an advanced and interactive human-machine interaction, but it will guarantee the fruition of the information contained in the data through the CSV download of that data itself.
+```

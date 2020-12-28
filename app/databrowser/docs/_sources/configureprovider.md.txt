@@ -1,0 +1,79 @@
+### How to configure a data provider
+
+Editing an existing node or  adding a new one,  will bring to another window where it is possible to configure the fields  that will afterwards be the settings for that node.
+In general these fields relate to:
+
+```eval_rst
+    +--------------------+---------------------------------------------------------------------------------------------------------------------------+ 
+    | FIELD              | DESCRIPTION                                                                                                               | 
+    +====================+===========================================================================================================================+
+    | Max Num Observation| Maximum number of observations that it is possible to visualize.                                                          |
+    +--------------------+---------------------------------------------------------------------------------------------------------------------------+ 
+    |Decimal separator   | Possible values . or , . This configuration can be overwritten by the Data Annotation.                                    | 
+    +--------------------+---------------------------------------------------------------------------------------------------------------------------+
+    |Number of decimals  | Indicates the number of decimal after the decimal separator. This configuration can be overwritten by the Data Annotation.| 
+    +--------------------+---------------------------------------------------------------------------------------------------------------------------+
+    |Empty cell character| This configuration can be overwritten by the Data Annotation.                                                             | 
+    +--------------------+---------------------------------------------------------------------------------------------------------------------------+
+    |Default views       | This configuration can be overwritten by the Data Annotation.                                                             | 
+    +--------------------+---------------------------------------------------------------------------------------------------------------------------+ 
+```
+In some tabs the multilingual funcionality is enabled (indicated by the presence of the flag in certain fields). This allows the user to set a title for each language supported by the application. 
+More specifically, the configuration window appears like this:
+
+![nodes config - general](_images/node_conf_general.JPG)
+
+It contains different tabs, each one configuring specific settings related to the node itself.
+Getting a closer look to each tab, it is possible to notice that:
+
+- in the ***“General”*** tab, the mandatory fields are the ID of the node, the TITLE and the AGENCY. The user can decide to check the ACTIVE box if the node is ready to be browsed otherwise it must be left unchecked (it might happen that a node is part of the hub but still under construction). The "Default" checkbox allows to set the node as default node of the application. “Slogan”, “Background image/video” and “Logo” are all components of the node.
+
+- In the ***“Information”*** tab, the user can give a brief description of the node which will appear once it will be selected.
+
+![nodes config - info](_images/node_conf_information.JPG)
+
+- The ***“Endpoint”*** tab specifies the configurations needed in order to manage the system’s capability to connect and query the SDMX web service. This functionality allows the system to correctly query the data and also to recover any SDMX artefacts useful to the application (for example the category scheme and the categorizations useful for the Node Catalog). It is possible to set a HTTP Authentication and a Proxy, check the specific box to support POST filters and also the possibility to enable a SOAP endpoint. User can also select the method to access the codes of the dataflow dimensions when defining criteria. There are five possibile choices regarding the criteria selection mode:
+	- *ALL_FULL*: in this case all dimensions' items are simultaneously loaded (even those that are not contained in the data) with the numerosity already present.
+	- *ALL_PARTIAL*: in this case only dimensions' items contained in the data are simultaneously loaded with the numerosity already present.
+	- *STEP_BY_STEP_FULL*: in this case all dimensions' items are loaded (even those that are not contained in the data) while moving from one tab's dimension to another. Numerosity is not showed at the beginning.
+	- *STEP_BY_STEP_PARTIAL*: in this case case only dimensions' items contained in the data are loaded while moving from one tab's dimension to another. Numerosity is not showed at the beginning.
+	- *STEP_BY_STEP_DYNAMIC*: in this case case only dimensions' items contained in the data are loaded while moving from one tab's dimension to another. Furthermore, choices made in a tab affect next selections acting as filters. Numerosity is not showed at the beginning.
+
+![nodes config - endpoint](_images/node_conf_endpoint.JPG)
+
+- The ***“Annotations”*** tab specifies the name of the components used to configure some specific visualization aspects of the node defined through the Annotation mechanism. 
+
+![nodes config - annotation](_images/node_conf_annotations.JPG)
+
+- The ***“View”*** tab specifies some other visualization aspects of the node and of all its components.
+In particular it is possible to select configurations on how to :
+	- show uncategorized dataflows.
+	- Show data not in production (for example linked dataflows).
+	- Show all the category level or just stop to the first one. 
+	- Decide which decimal separator use when data is shown.
+	- Insert territorial dimension IDs.
+	- Insert temporal dimension IDs.
+	- Exclude particular category schemes from the main page.
+	- Choose what kind of visualization the catalog navigation mode should have by default (CARD or LIST for example). 
+	- Insert attributes ids in order to not show them in the data visualization.
+	- Set page size. 
+	- Set the download file format. \
+  \
+When creating a new node, this tab will already have the following default values: \
+**category levels visible**: *first* \
+**decimal number**: *1* \
+**decimal separator**: *comma* \
+**navigation mode**: *list*
+
+![nodes config - view](_images/node_conf_view.JPG)
+
+- In the ***“Cache”*** tab, the user can manages cache. 
+In particular it is possible to set cache validity for:
+
+	- Catalog cache: it concerns the cache of data exposed by a single node, it speeds up the search on catalog, node preview, etc.. \
+	The user can decide cache time duration (in seconds) for all Catalog elements.
+	
+	- Dataflows cache: it is related to queries on individual dataflows \
+	The user can decide cache time duration (in seconds) for all Dataflows.
+
+![nodes config - view](_images/node_conf_cache.JPG)	

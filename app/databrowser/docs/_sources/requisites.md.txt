@@ -1,0 +1,29 @@
+## Pre-requisites
+
+**IIS**
+
+IIS has to be installed in a version supported by the used Windows operating system. Make sure that the *.json* MIME type is available, by performing the following steps:
+
+- click on the IIS Web Site under which the application has to be installed;
+- double click the *MIME Types*;
+- ensure that **.json** and **application/json** mime types are present;
+- if they are missing, add them by right clicking and selecting "Add".
+
+**.NET Core**
+
+The ***.Net Core Framework ver.3.1.x*** has to be installed together with ***.NET Core hosting bundle for IIS***, in compliance with the necessary requirements as specified in [https://docs.microsoft.com/en-us/dotnet/core/install/dependencies?pivots=os-windows&tabs=netcore31](https://docs.microsoft.com/en-us/dotnet/core/install/dependencies?pivots=os-windows&tabs=netcore31). \
+In order to check if these modules have been already installed, just access: 
+*Control Panel/Programs/Programs and functions.*
+
+If .NET Core has not been already installed, it is possible to proceed as follows:
+	1. Download the package from the following URL: [https://dotnet.microsoft.com/download/dotnet-core/3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) the last version of 3.1.x Hosting Bundle in the section ASP.NET Core Runtime 3.1.x.
+
+**Warning!** The installation of the *Microsoft Visual C++ 2015 Redistributable Update 3* or higher is needed. \
+Check in **Control panel/Programs/Programs and functions** if it exists or, alternatively, download and install the package from: [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685). 
+
+**SSL CERTIFICATE**
+
+In order to publish the web services in https, an SSL certificate is needed. \
+The instructions for creating such certificate depend on the certificate type and on the IIS version. \
+For IIS ver.10, instructions are available and can be followed at: [https://www.digicert.com/csr-creation-ssl-installation-iis-10.htm](https://www.digicert.com/csr-creation-ssl-installation-iis-10.htm).
+

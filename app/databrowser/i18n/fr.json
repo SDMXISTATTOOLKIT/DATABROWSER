@@ -1,0 +1,1319 @@
+{
+  "commons": {
+    "catalog": {
+      "uncategorized": "Uncategorized FR"
+    },
+    "confirm": {
+      "apply": "Apply FR",
+      "cancel": "Cancel FR",
+      "close": "Close FR",
+      "confirm": "Confirm FR",
+      "copy": "Copy FR",
+      "download": "Download FR",
+      "preview": "Preview FR",
+      "save": "Save FR",
+      "submit": "Submit FR"
+    },
+    "downloadFormat": {
+      "compactdata": "SDMX compact v. 2.1 FR",
+      "csv": "CSV FR",
+      "genericdata": "SDMX generic v. 2.1 FR",
+      "genericdata20": "SDMX generic v. 2.0 FR",
+      "jsondata": "JSON FR",
+      "structurespecificdata": "SDMX structure specific v. 2.1 FR"
+    },
+    "notImplemented": "Not implemented FR",
+    "validation": {
+      "positiveInteger": "Must be an integer greater than zero. FR",
+      "required": "This field is required. FR",
+      "requiredAnyLanguage": "This field is required. Specify a value for at least one language. FR"
+    }
+  },
+  "components": {
+    "attributeList": {
+      "datasetInformation": {
+        "title": "Dataset information FR"
+      },
+      "seriesInformation": {
+        "title": "Series information FR"
+      }
+    },
+    "autoSearchInput": {
+      "placeholder": "Search FR"
+    },
+    "categoriesTree": {
+      "goToData": "Data ({{datasetsCount}}) FR"
+    },
+    "chart": {
+      "pyramid": {
+        "invalidSecondaryDimension": "To view the pyramid chart you must select a secondary dimension with exactly two selected values FR"
+      }
+    },
+    "chartLayout": {
+      "filters": {
+        "title": "Filters FR"
+      },
+      "primaryDim": {
+        "title": "Primary dimension FR"
+      },
+      "secondaryDim": {
+        "title": "Secondary dimension FR"
+      }
+    },
+    "criteria": {
+      "dialogs": {
+        "warning": {
+          "losingFilters": {
+            "title": "Moving to this dimension will remove the filters on the following ones, continue anyway? FR"
+          }
+        }
+      },
+      "noCodelistAssociated": {
+        "info": "This dimension does not have an associated codelist, so you must enter the value manually. FR",
+        "noFilter": "No filter for this dimension FR"
+      },
+      "table": {
+        "columns": {
+          "name": {
+            "title": "Select all items FR"
+          }
+        }
+      },
+      "timePeriod": {
+        "alert": {
+          "notValidRange": "Not a valid date range FR"
+        },
+        "end": "End FR",
+        "from": "From FR",
+        "period": "Period FR",
+        "start": "Start FR",
+        "to": "To FR",
+        "year": "Year FR"
+      },
+      "tree": {
+        "nodeActions": {
+          "selectAll": {
+            "title": "Select/Unselect all children FR"
+          }
+        }
+      }
+    },
+    "customEmpty": {
+      "placeholder": "No data to display FR"
+    },
+    "customMaterialTable": {
+      "empty": "No data to display FR",
+      "search": {
+        "placeholder": "Search... FR",
+        "tooltip": "Search FR"
+      }
+    },
+    "dashboard": {
+      "actions": {
+        "download": "Download FR",
+        "fullscreen": {
+          "enter": "Fullscreen FR",
+          "exit": "Exit FR"
+        }
+      },
+      "applyFilters": "Please apply some filters FR",
+      "emptyView": "With the applied filters this view is empty FR",
+      "fetching": "Fetching dataset FR",
+      "fetchingDatasetError": "Error fetching dataset FR"
+    },
+    "dashboardBuilder": {
+      "actions": {
+        "addColumn": "Add column FR",
+        "addRow": "Add row FR",
+        "addText": "Add text FR",
+        "addView": "Add view FR",
+        "deselectView": "Deselect view FR",
+        "editText": "Edit text FR",
+        "enableFilters": "Enable filters FR",
+        "removeColumn": "Remove column FR",
+        "removeRow": "Remove row FR",
+        "resetColumn": "Reset column FR",
+        "selectView": "Select view FR",
+        "showTitle": "Show title FR"
+      },
+      "filterDimension": {
+        "label": "Dimension for territorial filters FR",
+        "noOne": "No one FR"
+      },
+      "filterLevels": "Filterable territorial detail levels FR",
+      "modals": {
+        "preview": {
+          "title": "Dashboard preview FR"
+        },
+        "text": {
+          "title": "Add text FR"
+        },
+        "views": {
+          "columns": {
+            "datasetId": "Dataset ID FR",
+            "name": "Name FR",
+            "node": "Node FR"
+          },
+          "title": "Select view FR"
+        }
+      },
+      "title": "Title FR"
+    },
+    "dashboardsManager": {
+      "addDashboard": "Add dashboard FR",
+      "fields": {
+        "showHubDashboards": {
+          "label": "Show hub dashboards FR"
+        }
+      },
+      "modals": {
+        "addDashboard": {
+          "table": {
+            "actions": {
+              "addDashboard": {
+                "tooltip": {
+                  "assigned": "Already added FR",
+                  "notAssigned": "Add FR"
+                }
+              }
+            },
+            "columns": {
+              "dashboardTitle": "Name FR"
+            }
+          },
+          "title": "Add dashboard FR"
+        }
+      },
+      "table": {
+        "actions": {
+          "dashboardOrderMoveDown": "Move down FR",
+          "dashboardOrderMoveUp": "Move up FR",
+          "removeDashboard": "Remove dashboard FR"
+        },
+        "columns": {
+          "dashboardTitle": "Name FR"
+        }
+      }
+    },
+    "datasetFilters": {
+      "primaryDim": "Primary dimension FR",
+      "secondaryDim": "Secondary dimension FR",
+      "selectedCount": "{{selected}} value selected FR",
+      "selectedCount_plural": "{{selected}} values selected FR",
+      "spinners": {
+        "loading": "Loading FR"
+      },
+      "table": {
+        "columns": {
+          "label": {
+            "title": "Select all items FR"
+          }
+        }
+      }
+    },
+    "deleteConflictModal": {
+      "contentTitle": "You have to delete these objects before: FR",
+      "contentTitleWithForce": "You have to delete these objects before or you can force delete: FR",
+      "force": "Force delete FR",
+      "objectType": {
+        "dashboard": "Dashboard FR",
+        "node": "Node FR",
+        "view": "View FR"
+      },
+      "title": "Cannot delete this object FR"
+    },
+    "enhancedTree": {
+      "collapseAll": {
+        "tooltip": "Collapse all FR"
+      },
+      "deselectAll": {
+        "tooltip": "Deselect all FR"
+      },
+      "expandAll": {
+        "tooltip": "Expand all FR"
+      },
+      "levelSelector": "Select all items at level {{level}} FR",
+      "selectAll": {
+        "tooltip": "Select all FR"
+      },
+      "showMore": "Show more {{more}} of {{remaining}}... FR"
+    },
+    "fileInput": {
+      "messages": {
+        "upload": {
+          "error": "An error occurred while uploading image on server FR",
+          "start": "Uploading image on server FR"
+        }
+      },
+      "reset": "Remove uploaded file FR",
+      "upload": "Upload FR"
+    },
+    "fontSizeSelector": {
+      "big": {
+        "tooltip": "Small FR"
+      },
+      "normal": {
+        "tooltip": "Normal FR"
+      },
+      "small": {
+        "tooltip": "Big FR"
+      }
+    },
+    "header": {
+      "drawer": {
+        "backToNodeHome": "Back to Node home page FR",
+        "categoriesTitle": "Categories FR"
+      },
+      "otherSettings": {
+        "dashboards": "Dashboards FR",
+        "views": "Views FR"
+      },
+      "settings": {
+        "app": "Application FR",
+        "clearServerCache": "Clear server cache FR",
+        "clearServerCacheAction": {
+          "messages": {
+            "clear": {
+              "start": "Clearing cache FR"
+            }
+          }
+        },
+        "nodes": "Nodes FR",
+        "queriesLog": "Get queries log FR",
+        "queriesLogModal": {
+          "content": "Insert the number of last SDMX-queries to download FR"
+        },
+        "users": "Users FR"
+      }
+    },
+    "infiniteScrollTable": {
+      "footer": {
+        "rowCount": "from {{rowNumStart}} to {{rowNumEnd}} of {{rowCount}} rows FR"
+      },
+      "preHeader": {
+        "selectedCount": "{{selectedRowCount}} selected row FR",
+        "selectedCount_plural": "{{selectedRowCount}} selected rows FR"
+      },
+      "resizing": "Resizing table FR",
+      "updating": "Updating table rows FR"
+    },
+    "labelFormatSelector": {
+      "labelFormat": {
+        "title": "Label format FR",
+        "values": {
+          "both": "Both FR",
+          "id": "ID FR",
+          "name": "Name FR"
+        }
+      }
+    },
+    "map": {
+      "detailLevel": "Detail level FR",
+      "noDataToDisplayFor": "No data to display for FR",
+      "noTerritorialDim": "No territorial dimension was found. FR",
+      "spinners": {
+        "rendering": "Rendering FR"
+      },
+      "translation": {
+        "apply": "Apply FR",
+        "cancel": "Cancel FR",
+        "classification": "Classification FR",
+        "configure": "Configure FR",
+        "endColor": "End color FR",
+        "equalInterval": "Equal interval FR",
+        "from": "from FR",
+        "naturalBreaks": "Natural breaks FR",
+        "numberOfClasses": "Number of classes FR",
+        "opacity": "Opacity FR",
+        "preview": "Preview FR",
+        "quantile": "Quantile FR",
+        "startColor": "Start color FR",
+        "to": "to FR"
+      }
+    },
+    "notImplementedSnackbar": {
+      "label": "Not implemented FR"
+    },
+    "searchInput": {
+      "label": "Search FR",
+      "placeholder": "Search... FR"
+    },
+    "table": {
+      "alerts": {
+        "attributeCopied": "Attributes copied to clipboard FR"
+      },
+      "dialogs": {
+        "observationAttributes": {
+          "title": "Observation attributes FR"
+        }
+      },
+      "scrollbars": {
+        "loading": "Loading FR"
+      },
+      "spinners": {
+        "rendering": "Rendering FR"
+      }
+    },
+    "tableLayout": {
+      "colCount": "Number of columns: {{colCount}} FR",
+      "rowCount": "Number of rows: {{rowCount}} FR",
+      "sections": {
+        "columns": "Columns FR",
+        "filters": "Filters FR",
+        "rows": "Rows FR",
+        "sections": "Sections FR"
+      }
+    },
+    "userChangePasswordForm": {
+      "messages": {
+        "submit": {
+          "start": "Updating user informations FR"
+        }
+      }
+    },
+    "userLoginDialog": {
+      "fields": {
+        "email": "Email FR",
+        "password": "Password FR"
+      },
+      "login": "Login FR",
+      "recoverPassword": "Recover password FR",
+      "recoverPasswordModal": {
+        "fields": {
+          "email": "Email FR"
+        },
+        "title": "Recover password FR"
+      },
+      "register": "Sign up FR",
+      "title": "Login FR"
+    },
+    "userRecoverPassword": {
+      "messages": {
+        "submit": {
+          "start": "Updating user informations FR"
+        }
+      }
+    },
+    "userSelect": {
+      "changePassword": "Change password FR",
+      "changePasswordModal": {
+        "fields": {
+          "newPassword": "New password FR",
+          "newPasswordConfirm": "Confirm new password FR",
+          "oldPassword": "Old password FR"
+        },
+        "title": "Change password FR",
+        "validation": {
+          "newPasswordMustBeEqual": "New passwords must be equal FR"
+        }
+      },
+      "login": "Login FR",
+      "logout": "Logout FR",
+      "messages": {
+        "fetchUser": {
+          "start": "Fetching user informations FR"
+        }
+      },
+      "registerModal": {
+        "title": "Sign up FR"
+      }
+    },
+    "userSetPasswordDialog": {
+      "fields": {
+        "email": "Email FR",
+        "password": "Password FR",
+        "passwordConfirm": "Confirm password FR"
+      },
+      "title": "Create new password FR",
+      "validation": {
+        "passwordMustBeEqual": "Passwords must be equal FR"
+      }
+    },
+    "userSetPasswordForm": {
+      "messages": {
+        "submit": {
+          "start": "Updating user informations FR"
+        }
+      }
+    }
+  },
+  "dashboards": {
+    "dynamicFilterLabels": {
+      "municipality": "Municipality FR",
+      "province": "Province FR",
+      "region": "Region FR"
+    }
+  },
+  "domains": {
+    "catalog": {
+      "messages": {
+        "fetch": {
+          "start": "Fetching node catalog FR"
+        }
+      }
+    },
+    "hub": {
+      "messages": {
+        "fetch": {
+          "start": "Fetching hub informations FR"
+        }
+      }
+    },
+    "node": {
+      "messages": {
+        "fetch": {
+          "start": "Fetching node informations FR"
+        }
+      }
+    }
+  },
+  "errors": {
+    "generic": "An error occurred while contacting the server FR"
+  },
+  "middlewares": {
+    "feedback": {
+      "emptyCatalog": "This node have an empty catalog FR"
+    },
+    "fetchDatasetAsyncHandlerMiddlewareFactory": {
+      "spinners": {
+        "layoutHandling": "Layout handling FR"
+      }
+    },
+    "user": {
+      "backToHome": "Back to home FR",
+      "messages": {
+        "refreshUser": {
+          "start": "Updating user informations FR"
+        }
+      },
+      "passwordChangedLoginNecessary": "Password is changed. A new login is needed. FR",
+      "resetPasswordEmailSent": "An email was sent to reset the password. FR",
+      "sessionExpired": "The session of the user is expired. A new login is needed. FR"
+    }
+  },
+  "scenes": {
+    "appSettings": {
+      "fields": {
+        "backgroundMediaURL": {
+          "label": "Background image/video FR"
+        },
+        "disclaimer": {
+          "label": "Disclaimer FR"
+        },
+        "logoURL": {
+          "label": "Logo FR"
+        },
+        "maxCells": {
+          "label": "Maximum table cells FR"
+        },
+        "maxObservationsAfterCriteria": {
+          "label": "Maximum number of observations that can be viewed after setting the criteria FR"
+        },
+        "slogan": {
+          "label": "Slogan FR"
+        },
+        "supportedLanguages": {
+          "helper": {
+            "linkText": "Show more FR",
+            "text": "Insert a code following ISO 639-1 standard. FR"
+          },
+          "label": "Supported languages FR",
+          "placeholder": "Insert code FR"
+        },
+        "title": {
+          "label": "Title FR"
+        }
+      },
+      "messages": {
+        "addDashboard": {
+          "start": "Adding dashboard to hub FR"
+        },
+        "fetchAllDashboards": {
+          "start": "Fetching dashboards FR"
+        },
+        "fetchConfig": {
+          "start": "Fetching hub settings FR"
+        },
+        "fetchDashboards": {
+          "start": "Fetching hub dashboards FR"
+        },
+        "removeDashboard": {
+          "start": "Removing dashboard from hub FR"
+        },
+        "sendConfig": {
+          "start": "Saving hub settings FR"
+        },
+        "sendDashboardsOrders": {
+          "start": "Ordering hub dashboards FR"
+        }
+      },
+      "tabs": {
+        "dashboards": "Dashboards FR",
+        "general": "General FR",
+        "information": "Information FR",
+        "users": "Users FR"
+      },
+      "title": "Application configuration FR"
+    },
+    "dashboard": {
+      "actions": {
+        "fetchingDashboard": "Fetching dashboard FR",
+        "fetchingDataset": "Fetching dataset FR",
+        "fetchingDatasetStructure": "Fetching dataset structure FR",
+        "fetchingGeometries": "Fetching geometries FR"
+      },
+      "noDashboard": {
+        "hub": "No dashboards selected for the hub FR",
+        "node": "No dashboards selected for this node FR"
+      }
+    },
+    "dashboardsSettings": {
+      "createDashboard": "Create dashboard FR",
+      "messages": {
+        "deleteDashboard": {
+          "start": "Deleting dashboard FR"
+        },
+        "fetchDashboard": {
+          "start": "Fetching dashboard FR"
+        },
+        "fetchDashboardViews": {
+          "start": "Fetching dashboard views FR"
+        },
+        "fetchDashboards": {
+          "start": "Fetching dashboards FR"
+        },
+        "submitDashboardCreate": {
+          "start": "Creating dashboard FR"
+        },
+        "submitDashboardUpdate": {
+          "start": "Updating dashboard FR"
+        }
+      },
+      "modals": {
+        "createDashboard": {
+          "title": "Create dashboard FR"
+        },
+        "deleteDashboard": {
+          "content": "The dashboard will be deleted. The action is irreversible. FR",
+          "title": "Delete the dashboard? FR"
+        },
+        "updateDashboard": {
+          "title": "Update dashboard FR"
+        }
+      },
+      "table": {
+        "actions": {
+          "deleteDashboard": "Delete FR",
+          "editDashboard": "Edit FR",
+          "viewDashboard": "View FR"
+        },
+        "columns": {
+          "dashboardTitle": "Name FR"
+        }
+      },
+      "title": "Dashboards FR"
+    },
+    "dataViewer": {
+      "dialogs": {
+        "chartLayout": {
+          "title": "Chart Layout FR"
+        },
+        "criteria": {
+          "title": "Criteria FR"
+        },
+        "downloadFormat": {
+          "content": "This node doesn't support this download format, please select another one FR"
+        },
+        "tableLayout": {
+          "title": "Table Layout FR"
+        },
+        "tooBigData": {
+          "content": {
+            "applyCriteria": "Please apply more restrictive criteria. FR",
+            "maxCells": "Maximum cells FR",
+            "requestCells": "Requested cells FR"
+          },
+          "title": "The table exceeds the number of allowed cells FR"
+        },
+        "tooLongQuery": {
+          "content": "With the applied criteria the query string is too long and there may be an error, continue anyway? FR"
+        },
+        "unavailableView": {
+          "content": "The desired view is no longer available, the default data will be shown. FR"
+        }
+      },
+      "errors": {
+        "applyCriteria": "No data to display: please set some criteria. FR",
+        "emptyData": "With the applied criteria the dataset is empty. FR",
+        "genericError": "An error occurred, please apply criteria again FR",
+        "tooBigData": "The table exceeds the number of allowed cells, more restrictive criteria must be applied. FR"
+      },
+      "footer": {
+        "dialogs": {
+          "worksheetDelete": {
+            "title": "Are you sure you want to delete this worksheet? FR"
+          }
+        },
+        "worksheetDelete": "Delete worksheet FR"
+      },
+      "fullscreen": {
+        "enter": "Fullscreen FR",
+        "exit": "Exit FR"
+      },
+      "header": {
+        "action": {
+          "attachments": {
+            "tooltip": "Attachments FR"
+          },
+          "attributes": {
+            "tooltip": "Attributes FR"
+          },
+          "export": {
+            "tooltip": "Export FR"
+          },
+          "goHome": {
+            "tooltip": "Go back to node's home FR"
+          },
+          "hasAnnotationLayout": {
+            "tooltip": "This dataset has a layout defined in the annotations FR"
+          },
+          "hasTemplate": {
+            "tooltip": "This dataset has a template applied FR"
+          },
+          "information": {
+            "tooltip": "Information FR"
+          },
+          "save": {
+            "tooltip": "Save FR",
+            "values": {
+              "template": "Save template FR",
+              "view": "Save view FR"
+            }
+          },
+          "share": {
+            "tooltip": "Share FR"
+          },
+          "timesLog": {
+            "tooltip": "Times log FR"
+          }
+        },
+        "dialogs": {
+          "attributes": {
+            "title": "Attributes FR"
+          },
+          "notes": {
+            "title": "Notes FR"
+          },
+          "saveTemplate": {
+            "content": {
+              "tabs": {
+                "chart": {
+                  "label": "Chart preview FR"
+                },
+                "map": {
+                  "label": "Map preview FR"
+                },
+                "options": {
+                  "cards": {
+                    "general": {
+                      "form": {
+                        "decimalPlaces": "Decimal places FR",
+                        "decimalSeparator": {
+                          "label": "Decimal separator FR",
+                          "values": {
+                            "comma": "Comma FR",
+                            "dot": "Dot FR"
+                          }
+                        },
+                        "defaultView": "Default view FR",
+                        "enableCriteria": "Enable Criteria FR",
+                        "enableLayout": "Enable Layout FR",
+                        "enableVariation": "Enable variation FR",
+                        "filterOnLastPeriods": "Filters data on the last N periods FR",
+                        "hideDimensions": "Hide dimensions (only those that have only one distinct value) FR",
+                        "title": "Title FR"
+                      },
+                      "title": "General FR"
+                    },
+                    "table": {
+                      "form": {
+                        "emptyCellPlaceholder": "Empty cell placeholder FR"
+                      },
+                      "title": "Table FR"
+                    }
+                  },
+                  "label": "Options FR",
+                  "notImplemented": "not yet implemented FR"
+                },
+                "table": {
+                  "form": {
+                    "defaultLayout": {
+                      "defaultPlaceholder": "For the current view the default layout will be applied. FR",
+                      "label": "Default layout FR",
+                      "values": {
+                        "custom": "Custom FR",
+                        "default": "Default FR"
+                      }
+                    }
+                  },
+                  "label": "Table preview FR"
+                }
+              }
+            },
+            "title": "Save new Template FR"
+          },
+          "saveView": {
+            "title": "Save new View FR"
+          }
+        }
+      },
+      "sidebar": {
+        "chart": "Chart FR",
+        "criteria": "Criteria FR",
+        "dialogs": {
+          "referenceMetadata": {
+            "title": "Reference Metadata FR"
+          }
+        },
+        "layout": "Layout FR",
+        "referenceMetadata": "Reference Metadata FR"
+      },
+      "spinners": {
+        "applyingLayout": "Applying layout FR"
+      },
+      "warnings": {
+        "maxObservation": {
+          "label": "The dataset is partial, only the first {{maxObservation}} observations are shown. Please apply more restrictive criteria. FR"
+        }
+      }
+    },
+    "dataViewers": {
+      "viewers": {
+        "area": "Area FR",
+        "doughnut": "Doughnut FR",
+        "horizontalBar": "Horizontal Bar FR",
+        "line": "Line FR",
+        "map": "Map FR",
+        "pie": "Pie FR",
+        "polarArea": "Polar area FR",
+        "pyramid": "Pyramid FR",
+        "radar": "Radar FR",
+        "table": "Table FR",
+        "verticalBar": "Vertical Bar FR"
+      }
+    },
+    "dataset": {
+      "actions": {
+        "downloadingDataset": "Downloading dataset FR",
+        "fetchingCodelist": "Fetching codelist FR",
+        "fetchingCodelists": "Fetching codelists FR",
+        "fetchingDataset": "Fetching dataset {{title}} FR",
+        "fetchingGeometries": "Fetching geometries FR",
+        "savingTemplate": "Saving new template FR",
+        "savingView": "Saving new view FR"
+      }
+    },
+    "hub": {
+      "dashboards": "Dashboards FR",
+      "informations": "Informations FR",
+      "nodes": "Nodes FR"
+    },
+    "node": {
+      "dashboards": "Dashboards FR",
+      "explore": "Explore FR",
+      "informations": "Informations FR"
+    },
+    "nodeSettings": {
+      "cacheSettings": {
+        "deleteAllDataflowCache": "Clear all dataflows cache FR",
+        "deleteCatalogCache": "Clear catalog cache FR",
+        "hideEmptyEntries": "Hide empty entries FR",
+        "table": {
+          "actions": {
+            "deleteRow": "Delete FR",
+            "editRow": "Edit FR"
+          },
+          "dataflowAccess": "Accesses FR",
+          "dataflowFiles": "Files FR",
+          "dataflowSize": "Size FR",
+          "dataflowTitle": "Title FR",
+          "dataflowValidity": "Validity FR"
+        }
+      },
+      "fields": {
+        "active": {
+          "label": "Active FR",
+          "tooltip": "An active node can be reached by users and is shown in the drop-down menu. FR"
+        },
+        "agency": {
+          "label": "Agency FR"
+        },
+        "annotations": {
+          "ATTACHED_DATA_FILES": {
+            "label": "Attached data files FR"
+          },
+          "CRITERIA_SELECTION": {
+            "label": "Criteria selection FR"
+          },
+          "DATAFLOW_NOTES": {
+            "label": "Dataflow notes FR"
+          },
+          "DATAFLOW_SOURCE": {
+            "label": "Dataflow source FR"
+          },
+          "DEFAULT": {
+            "label": "Default FR"
+          },
+          "DEFAULT_VIEW": {
+            "label": "Default view FR"
+          },
+          "GEO_ID": {
+            "label": "Geo ID FR"
+          },
+          "KEYWORDS": {
+            "label": "Keywords FR"
+          },
+          "LAST_UPDATE": {
+            "label": "Last update FR"
+          },
+          "LAYOUT_COLUMN": {
+            "label": "Layout column FR"
+          },
+          "LAYOUT_DECIMAL_SEPARATOR": {
+            "label": "Decimal separator FR"
+          },
+          "LAYOUT_EMPTY_CELL_PLACEHOLDER": {
+            "label": "Empty cell placeholder FR"
+          },
+          "LAYOUT_FILTER": {
+            "label": "Layout filter FR"
+          },
+          "LAYOUT_NUMBER_OF_DECIMALS": {
+            "label": "Number of decimals FR"
+          },
+          "LAYOUT_ROW": {
+            "label": "Layout row FR"
+          },
+          "LAYOUT_ROW_SECTION": {
+            "label": "Layout row section FR"
+          },
+          "METADATA_URL": {
+            "label": "Metadata URL FR"
+          },
+          "NOT_DISPLAYED": {
+            "label": "Not displayed FR"
+          },
+          "ORDER": {
+            "label": "Order FR"
+          },
+          "ORDER_CATEGORY": {
+            "label": "Category order FR"
+          },
+          "ORDER_CODELIST": {
+            "label": "Codelist order FR"
+          },
+          "VIRTUAL_DATAFLOW_NODE": {
+            "label": "Virtual dataflow node FR"
+          }
+        },
+        "authHttpDomain": {
+          "label": "Domain FR"
+        },
+        "authHttpPassword": {
+          "label": "Password FR"
+        },
+        "authHttpUsername": {
+          "label": "Username FR"
+        },
+        "backgroundMediaURL": {
+          "label": "Background image/video FR"
+        },
+        "catalogCacheValidity": {
+          "label": "Catalog cache validity (in seconds) FR",
+          "tooltip": "Catalog elements cache time duration (in seconds). FR"
+        },
+        "catalogNavigationMode": {
+          "label": "Catalogue navigation mode FR",
+          "values": {
+            "card": "Card FR",
+            "list": "List FR"
+          }
+        },
+        "categorySchemaExcludes": {
+          "label": "Excluded Category Schemes FR",
+          "placeholder": "Insert Category Scheme FR"
+        },
+        "code": {
+          "label": "ID FR",
+          "tooltip": "It is shown, as an alternative to the title, when space in the interface is limited. FR"
+        },
+        "criteriaSelectionMode": {
+          "label": "Criteria selection mode FR",
+          "tooltip": "Defines the method of accessing dimension codes when defining criteria in queries. FR"
+        },
+        "dataflowCacheValidity": {
+          "label": "Dataflow cache validity (in seconds) FR",
+          "tooltip": "Dataflow cache time duration (in seconds) FR"
+        },
+        "decimalNumber": {
+          "label": "Decimal number FR"
+        },
+        "decimalSeparator": {
+          "helper": "It can be overwritten by annotation at dataflow level. FR",
+          "label": "Decimal separator FR"
+        },
+        "defaultLanguage": {
+          "helper": "Have to be one of the supported languages codes FR",
+          "label": "Default language FR"
+        },
+        "downloadFormats": {
+          "label": "Download file formats FR",
+          "placeholder": "Choose download file formats FR"
+        },
+        "enableHttpAuth": {
+          "label": "HTTP authentication FR"
+        },
+        "enableProxy": {
+          "label": "Proxy FR"
+        },
+        "endPoint": {
+          "label": "Endpoint URL FR"
+        },
+        "hiddenAttributes": {
+          "label": "Hidden attributes FR",
+          "placeholder": "Insert attribute FR"
+        },
+        "labelDimensionTemporals": {
+          "label": "Temporal dimensions ID FR",
+          "placeholder": "Insert ID FR"
+        },
+        "labelDimensionTerritorials": {
+          "label": "Territorial dimensions ID FR",
+          "placeholder": "Insert ID FR"
+        },
+        "logo": {
+          "label": "Logo FR"
+        },
+        "proxyAddress": {
+          "label": "Address FR"
+        },
+        "proxyPassword": {
+          "label": "Password FR"
+        },
+        "proxyPort": {
+          "label": "Port FR",
+          "validation": "Must be a valid port number. FR"
+        },
+        "proxyUsername": {
+          "label": "Username FR"
+        },
+        "responseFormat": {
+          "label": "Response format FR"
+        },
+        "showCategoryLevels": {
+          "label": "Category levels visible in the homepage FR"
+        },
+        "showDataflowUncategorized": {
+          "label": "Show uncategorized dataflow FR"
+        },
+        "slogan": {
+          "label": "Slogan FR"
+        },
+        "supportPostFilters": {
+          "label": "Support POST filters FR"
+        },
+        "title": {
+          "label": "Title FR"
+        },
+        "type": {
+          "label": "Node type FR"
+        }
+      },
+      "permissions": {
+        "table": {
+          "columns": {
+            "userEmail": "Email FR",
+            "userFirstName": "First name FR",
+            "userLastName": "Last name FR",
+            "userOrganization": "Organization FR"
+          }
+        }
+      },
+      "tabs": {
+        "annotations": {
+          "label": "Annotations FR"
+        },
+        "cache": {
+          "label": "Cache FR"
+        },
+        "endpoint": {
+          "label": "Endpoint FR"
+        },
+        "general": {
+          "label": "General FR"
+        },
+        "information": {
+          "label": "Information FR"
+        },
+        "view": {
+          "label": "View FR"
+        }
+      },
+      "templatesSettings": {
+        "modals": {
+          "deleteTemplate": {
+            "content": "The template will be deleted. The action is irreversible. FR",
+            "title": "Delete the template? FR"
+          }
+        },
+        "table": {
+          "actions": {
+            "deleteTemplate": "Delete FR",
+            "viewData": "Go to data FR"
+          },
+          "columns": {
+            "datasetId": "Dataset ID FR",
+            "templateName": "Name FR"
+          }
+        }
+      }
+    },
+    "nodesSettings": {
+      "cacheSettings": {
+        "messages": {
+          "createDataflowCache": {
+            "start": "Creating dataflow cache info FR"
+          },
+          "deleteAllDataflowCache": {
+            "start": "Deleting all dataflows cache FR"
+          },
+          "deleteCatalogCache": {
+            "start": "Deleting catalog cache FR"
+          },
+          "deleteDataflowCache": {
+            "start": "Deleting dataflow cache FR"
+          },
+          "fetchDataflowCache": {
+            "start": "Fetching dataflow cache FR"
+          },
+          "updateDataflowCache": {
+            "start": "Updating dataflow cache FR"
+          }
+        },
+        "modals": {
+          "deleteDataflowCache": {
+            "title": "This action will reset the dataflow cache. Confirm? FR"
+          }
+        }
+      },
+      "createNode": "Create node FR",
+      "messages": {
+        "addNodeDashboard": {
+          "start": "Adding dashboard to node FR"
+        },
+        "deleteNode": {
+          "start": "Deleting node FR"
+        },
+        "fetchAllDashboards": {
+          "start": "Fetching dashboards FR"
+        },
+        "fetchNode": {
+          "start": "Fetching node settings FR"
+        },
+        "fetchNodeDashboards": {
+          "start": "Fetching node dashboards FR"
+        },
+        "fetchNodes": {
+          "start": "Fetching nodes settings FR"
+        },
+        "removeNodeDashboard": {
+          "start": "Removing dashboard from node FR"
+        },
+        "sendNodeCreate": {
+          "start": "Creating node FR"
+        },
+        "sendNodeDashboardsOrders": {
+          "start": "Ordering node dashboards FR"
+        },
+        "sendNodeEdit": {
+          "start": "Updating node settings FR"
+        },
+        "sendNodesOrder": {
+          "start": "Saving nodes order FR"
+        }
+      },
+      "modals": {
+        "editNode": "Edit node FR",
+        "nodeCache": "{{nodeCode}} cache configuration FR",
+        "nodeDashboards": "{{nodeCode}} dashboards configuration FR",
+        "nodeDelete": {
+          "content": "The node will be deleted. The action is irreversible. FR",
+          "title": "Delete the node? FR"
+        },
+        "nodePermissions": "{{nodeCode}} permissions configuration FR",
+        "nodeTemplates": "{{node}} templates FR"
+      },
+      "permissionsSettings": {
+        "fetchConfig": {
+          "start": "Fetching node permissions FR"
+        },
+        "sendConfig": {
+          "start": "Updating node permissions FR"
+        }
+      },
+      "table": {
+        "actions": {
+          "deleteNode": "Delete node FR",
+          "editNode": "Edit node FR",
+          "nodeDashboards": "Dashboards FR",
+          "nodeDataflowsCache": {
+            "label": "CACHE FR",
+            "tooltip": "Dataflows cache FR"
+          },
+          "nodeOrderMoveDown": "Move down FR",
+          "nodeOrderMoveUp": "Move up FR",
+          "nodePermissions": "Permissions FR",
+          "nodeTemplates": {
+            "label": "TEMPL. FR",
+            "tooltip": "Templates FR"
+          }
+        },
+        "columns": {
+          "isNodeActive": {
+            "title": "Active FR",
+            "values": {
+              "false": "No FR",
+              "true": "Yes FR"
+            }
+          },
+          "nodeCode": "Code FR",
+          "nodeName": "Name FR"
+        }
+      },
+      "templatesSettings": {
+        "deleteTemplate": {
+          "start": "Deleting template FR"
+        },
+        "fetchConfig": {
+          "start": "Fetching node templates FR"
+        }
+      },
+      "title": "Nodes FR"
+    },
+    "results": {
+      "a11yModeToggle": {
+        "label": "Accessible mode FR"
+      },
+      "datasetsCount": {
+        "none": "No datasets FR",
+        "plural": "{{datasetsCount}} datasets FR",
+        "singular": "{{datasetsCount}} dataset FR"
+      },
+      "searchTitle": "Search results for \"{{query}}\"  FR"
+    },
+    "usersConfig": {
+      "deleteUser": {
+        "start": "Deleting user FR"
+      },
+      "fetchUser": {
+        "start": "Fetching user infos FR"
+      },
+      "fetchUsers": {
+        "start": "Fetching users infos FR"
+      },
+      "sendUserCreate": {
+        "start": "Creating user FR"
+      },
+      "sendUserEdit": {
+        "start": "Updating user infos FR"
+      }
+    },
+    "usersSettings": {
+      "createUser": "Create user FR",
+      "modals": {
+        "createUser": "Create new user FR",
+        "deleteUser": {
+          "content": "The user will be deleted and the views he created, if any, will be deleted as well. The action is irreversible. FR",
+          "title": "Delete the user? FR"
+        },
+        "editUser": "Edit user informations FR"
+      },
+      "table": {
+        "actions": {
+          "deleteUser": "Delete user FR",
+          "editUser": "Edit user FR"
+        },
+        "columns": {
+          "isActive": {
+            "title": "Active FR",
+            "values": {
+              "false": "No FR",
+              "true": "Yes FR"
+            }
+          },
+          "userEmail": "Email FR",
+          "userFirstName": "First name FR",
+          "userLastName": "Last name FR",
+          "userOrganization": "Organization FR"
+        }
+      },
+      "title": "Users FR",
+      "userSettings": {
+        "disclaimerModal": {
+          "title": "Disclaimer FR"
+        },
+        "fields": {
+          "disclaimerAccepted": {
+            "label": "I've read and I accept the disclaimer. FR",
+            "link": "Read the disclaimer FR"
+          },
+          "email": "Email FR",
+          "emailConfirm": "Confirm email FR",
+          "firstName": "First name FR",
+          "isActive": {
+            "label": "Active FR"
+          },
+          "lastName": "Last name FR",
+          "organization": "Organization FR",
+          "password": "Password FR",
+          "passwordConfirm": "Confirm password FR"
+        },
+        "validation": {
+          "emailsMustBeEqual": "Emails must be equal FR",
+          "mustAcceptDisclaimer": "In order to register you have to read and accept the disclaimer FR",
+          "passwordsMustBeEqual": "Passwords must be equal FR"
+        }
+      }
+    },
+    "viewsConfig": {
+      "messages": {
+        "deleteView": {
+          "start": "Deleting view FR"
+        },
+        "fetchViews": {
+          "start": "Fetching views FR"
+        }
+      }
+    },
+    "viewsSettings": {
+      "modals": {
+        "deleteView": {
+          "content": "The view will be deleted. The action is irreversible. FR",
+          "title": "Delete the view? FR"
+        }
+      },
+      "table": {
+        "actions": {
+          "deleteView": "Delete FR",
+          "viewView": "View FR"
+        },
+        "columns": {
+          "viewDatasetId": "Dataset ID FR",
+          "viewNodeId": "Node FR",
+          "viewTitle": "Name FR"
+        }
+      },
+      "title": "Views FR"
+    }
+  }
+}

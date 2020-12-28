@@ -1,0 +1,16 @@
+## How to manage views
+
+The user can search for the views he saved and delete them, by selecting “Views” from the suitcase icon that appears in the main menu bar on the top-right of the pane.
+
+![view1](_images/new_view.JPG)
+
+![view2](_images/new_view2.JPG)
+
+The new window shows the information about the saved view (which node is part of, the data ID, name) and also actions the user can perform (visualize the view, delete it).
+
+![show views](_images/savedviews.PNG)
+
+Once the user visualizes a view, it is also possible to modify it. In this case changes can be used to overwrite the existing view or create a new one. This selection can be made by choosing the preferred option from the menu shown by clicking the save button.
+
+![update view](_images/update_view.JPG)
+

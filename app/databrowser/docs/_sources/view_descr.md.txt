@@ -1,0 +1,4 @@
+## What is a view
+
+Views can be described as visualization at user level that, once saved, they can be accessed again in other moments as long as the user doesn’t decide to delete them.
+The user modifies criteria and/or layout and saves his choices, so that when he reopens the saved view, the output will show the settings he previously configured for the table.

@@ -1,0 +1,15 @@
+## How to browse different data providers
+
+The landing page shows information about default node (if set). From the landing page the user can choose to browse a different node by selecting the data providers in the section **Other nodes** both by clicking on the images or the descriptions.
+
+![other nodes](_images/othernodes.png)
+
+Another way of reaching a different node from the default one, is by selecting the node from the top left menu of the page and choosing from the pop-up list.
+
+![menu](_images/topleftmenu.JPG) => ![menu](_images/nodeslist.JPG)
+
+Once the node is clicked, the Public Statistics Hub will show the node's homepage including: information, data grouped by categories and dashboards.
+
+![node homepage](_images/node_page.png)
+
+From a node's homepage it is possible to browse a different data provider by clicking again on the top left menu and selecting a different node from the list.

@@ -1,0 +1,18 @@
+## How to save a view
+
+```eval_rst
+ .. |SB| image:: _images/savebutton.PNG
+    :width: 14
+
+Once the user visualizes his data, as shown in previous paragraphs, it is possible to change the criteria (this enables filters on the output) or the table layout 
+(by changing position of the dimensions in the table). The new table presents a different output from the default. This new visualization can be saved as a View.
+Multiple views can be saved for the same table.
+To save a view, the user must click on the save button |SB| and select “Save View” from the list that appears:
+
+ .. image:: _images/save_view.JPG
+
+this will bring to a new window that enables the user to set the name to the view. The multilanguage functionality allows users to set different titles depending on the selected language. This is made possible by selecting the flag related to a language and by defining a title for that language.
+
+ .. image:: _images/saveview.JPG
+```
+

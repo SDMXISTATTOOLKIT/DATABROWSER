@@ -1,0 +1,15 @@
+# Acronym and Glossary
+
+**.NET Core**
+
+Free and open source software development framework for different operating systems: Microsoft Windows, MacOS e Linux
+
+**IIS**
+
+Internet Information Services
+
+**DataBrowser Hub WS**
+
+Data Browser Hub Web Services
+
+

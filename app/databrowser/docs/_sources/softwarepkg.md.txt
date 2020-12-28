@@ -1,0 +1,316 @@
+## Software package
+
+**PACKAGE DESCRIPTION**
+
+The software package ***databrowser_x.x.zip*** contains a main folder ***app*** and inside the following folders:
+- databrowser: configuration for client side.
+- databrowserhub: configuration for server side.
+
+**CONFIGURATIONS**
+
+The client application is already configured to communicate to the web service listening on [http://localhost/databrowserhub/](http://localhost/databrowserhub/).
+The endpoint address can be set in the path [**ROOT_IIS**]\databrowser\config.json
+
+The *json* file appsettings.json, included in the databrowserhub folder, contains all the information regarding paths and settings of the application. 
+Let's take a closer look to all the possibile configurations.
+
+***Memory cache***
+
+In this part of the configuration, the user defines time values for the data to be held in cache.
+
+```
+"MemoryCache": {
+  "ExpirationKeys": {
+    "CatalogTree": "12:00:00",
+    "DefaultTimeSpan": "12:00:00"
+  }
+},
+```
+
+The *CatalogTree* refers to the catalog cache containing all informations regarding the nodes (dataflows, DSDs, codelists, concept schemes).
+Its format is hh:mm:ss and user can overwrite the default value.
+*DefaultTimeSpan* is the default value for all keys in cache. Its format is hh:mm:ss.
+
+***DataflowDataCache***
+
+In this part of the configuration, the user defines all settings regarding the storage of the jsonstat for dataflow data.
+
+```
+"DataflowDataCache": {
+  "Type": "NoSql",
+  "ConnectionString": "Data Source=DB/DataflowDataCache.sqlite;",
+  "IsEnable": true,
+  "SaveDataOnFile": true,
+  "SavedDataFilePath": "_DataflowDataFiles",
+  "Expiration": 604800, //Second
+  "ExclusionList": ["DataflowId"],
+  ]
+},
+```
+
+Specifically:
+- *Type* is the server storage's type (supports only "NoSql").
+- *ConnectionString* specifies the path of the sqlite database. 
+- *IsEnable (true/false)* indicates if the DataBrowser can use (or not use) the cache.
+- *SaveDataOnFile* specifies if the jsonstat will be saved in a separated file or inside the nosql database (true is recommendedn).
+- *Expiration* indicates the default value, in seconds, for the validity of the jsonstat in cache. This value can be overwritten by NodeId or DataflowID.
+
+***SDMX Cache***
+
+In this part of the configuration, the user defines the path where some sdmx value will be saved in order to improve the SOAP operation (get namespace and other default values from WSDL). 
+It is recommended to always leave the default values.
+
+```
+"SDMXCache": {
+  "ConnectionString": "Data Source=DB/SDMXCache.sqlite;",
+  "ExpiredTime": 86400,
+  "DisableSdmxCache": true,
+  "DisableGlobalCache": true,
+  "DisableNamespace": false
+},
+```
+
+***Database***
+
+In this part of the configuration, the user defines all settings necessary for the storage of information regarding the databrowser (nodes, dashboards, views, templates, users and so on).
+
+```
+"Database": {
+  "DbType": "SQLite",
+  "ConnectionString": "Data Source=DB/DataBrowserDevDB.sqlite;",
+  "EnableQueryOptimizer": false,
+  "QueryOptimizerDbType": "microsoft.data.sqlite", //system.data.sqlclient
+  "QueryOptimizerConnectionString": "Data Source=DB/DataBrowserDevDB.sqlite;",
+  "UseMigrationScript": true
+},
+```
+
+Specifically:
+- *DBType* is the server storage's type.
+- *ConnectionString* is the path of the sqlite database.
+- *EnableQueryOptimizer* supports only the value false.
+- *QueryOptimizerDbType* supports only the "microsoft.data.sqlite" string
+- *QueryOptimizerConnectionString* must be null or with the same value of the ConnectionString (this value is only used if the EnableQueryOptimizer is true).
+- *UseMigrationScript true/false* indicates if the new version of the software can automatically update the used database (recommended value is true).
+
+***Geometry Database***
+
+In this part of the configuration, the user defines the path of the database needed for the geometries.
+
+```
+"GeometryDatabase": {
+  "DbType": "SQLite",
+  "ConnectionString": "Data Source=DB/Geometry.sqlite;"
+},
+```
+
+***CORS policies***
+
+In this part of the configuration, the user decides if CORS policies must be enabled or not.
+
+```
+"General": {
+  "CORS": {
+    "Enable": true
+  },
+```
+
+***Validation rules***
+
+In this part of the configuration, the user defines the rules regarding the validity of the entities contained in the Data Browser (nodes, dashboards, views, ...).
+
+```
+"ValidationRules": {
+      "View": [ "UniqueNamaForUser" ],
+      "Template": [ "NONE"  ],
+      "Node": null
+    },
+```
+
+Specifically:
+- *View*: contains the name of the rules that are needed for the creation/update of the entity. In particular, UniqueNamaForUser is the rule that checks if the view has an unique name 
+comparing all the views assigned to the current user.
+- *Template*: defines the rules necessary to assign the template.
+- *Node*: defines the rules necessary to assign the node.
+
+In general, the value of NONE to a rule, indicates that the current entity hasn’t got any rules to be checked.
+If the entity has a NULL value, then the default rules for all entity will be applied.
+The default rule for View is UniqueNamaForUser; for Template and Node the default rule is null.
+
+***External and internal rules***
+
+```
+"EndPointResponseLogForDebug": false,
+```
+
+If true and log level is "debug", all responses from NSI will be saved on log file.
+
+```
+"InternalRestUrl": "",
+```
+
+Specifies the URL used for calling the DataBrowserAPI from the installation server.
+
+```
+"ExternalRestUrl": "http://databrowser/api/",
+```
+
+Specifies the URL used for calling the DataBrowserAPI from outside the installation server.
+
+```
+"ExternalClientUrl": http://demo.databrowser.sister.it/
+```
+Specifies the URL used for calling the DataBrowser frontend from outside the installation server.
+
+***Authentication***
+
+In this part of the configuration, the user defines settings regarding login for authenticated users.
+
+```
+"Authentication": {
+  "IsActive": true,
+  "Key": "8CF07358F9BB4CA98C0EE4D26A97858C",
+  "Issuer": "DataBrowserIssuerApi",
+  "Audience": "DataBrowserApiUser",
+  "JwtTokenLifeTime": 15, //Minute
+  "EnableRefreshToken": true,
+  "EnableAuditLogin": false,
+  "TryLoginMax": 3,
+  "TryLoginTime": 60,
+  "DelayLogin": 3000,
+```
+
+Specifically:
+
+- *IsActive* if set to false, all APIs will be accessible from anonymous users.
+- *Key* is used for the generation of the hash token needed for login.
+- *Audience* is used to generate login token.
+- *JwtTokenLifeTime* specifies the time to live of the generated token.
+- *EnableRefreshToken* tells the system to regenerate a new token from cookie instead of recalling token with user and password.
+- *EnableAuditLogin* saves all tentative to login by all user on database.
+- *TryLoginMax* sets the maximum number of login before activating the system of delay response.
+- *DelayLogin* (ms) specifes the time of delay of login response (time is incremented by this value for each invalid login).
+
+***Refresh cookie options***
+
+In this part of the configuration, the user defines the cookie's settings to refresh the token.
+
+```
+"RefreshCookieOptions": {
+  //"Name": null,
+  //"Domain": null,
+  "HttpOnly": true,
+  //"Path": null,
+  "SameSite": "Lax", //null, "Unspecified", "None", "Lax", "Strict"
+  "Secure": false,
+  "RefreshTokenLifeTime": 14400 //Minute
+```
+
+Specifically:
+- *HttpOnly* is recommended to be always set to true.
+- *SameSite: Lax* is recommended. If it is necessary to use crossdomain cookie, set it to "None" and use an Https connection.
+- *Secure* must be set to true in case of https connection.
+- *RefreshTokenLifeTime* defines validation time (in minutes) of the cookie.
+
+***User policy for password***
+
+In this part of the configuration, the user defines settings for password policy and mail in order to enable the user to create or change password.
+
+```
+"UserPolicy": {
+  "PasswordRequiredLength": 8,
+  "PasswordRequireNonAlphanumeric": true,
+  "PasswordRequireLowercase": true,
+  "PasswordRequireUppercase": true,
+  "PasswordRequireDigit": true
+}
+```
+
+For the creation/change password configuration, it is necessary to set SMTP information important for email exchange from DataBrowserAPI.
+
+```
+"Mail": {
+  "Smtp": {
+    "Host": "",
+    "Port": 1234,
+    "Secure": false,
+    "Username": "user",
+    "Password": "pass"
+},
+"DefaultMail": "info@databrowser",
+"Templates": {
+  "ResetPassword": {
+  "Sender": "",
+  "Subject": "Recovery Password",
+  "Message": "config/Template/recoveryPassword.html"
+}
+```
+
+In particular:
+- *DefaultMail* is the default sender's email address.
+- *Template* contains all html templates used for sending email. The only available template is ResetPassword.
+In this section, "Subject" is the subject of the email sent to reset the password. "Message" is the body of the email sent in html format.
+Usually the path to the html is specified. In this case the folder must be inside of DataBrowserAPI folder.
+This message can be overwritten by UserLang used from request. If the folder contains the config/Template/recoveryPassword.{UserLang}.html, that will be used as file for the message.
+
+***Scheduler***
+
+In this part of the configuration, the user defines settings to enable the scheduler. In this case a timer is set to specify the interval to check if there is any work to do (five minutes is the recommended interval 00:05:00).
+
+```
+"Scheduler": {
+  "IsEnable": true,
+  "Timer": "00:05:00",
+}
+```
+
+***Special cache management***
+
+When talking about *cache* we refer to data stored so that future requests for that data can be served faster; the data stored in a cache might be the result of an earlier computation or a copy of data stored elsewhere. In this application, cache is very important especially when considering filterable dashboards that hold territorial dimensions and allow users to query results by changing these dimensions. For this reason timing is very important and a key component for a responsive and functional application. \
+In order to manage these requests, we consider services for handling cache regeneration depending on whether we are considering filterable or non-filterable dashboards (see section [Dashboards](dashboard) for more information). \
+In particular, in the appsettings.json file a scheduler is defined in which a timer is set to specify the interval to check if there is any work to do (usually five minutes is the recommended interval 00:05:00). This scheduler picks the two 
+files present in the config folder (config\dashboarddatacachegenerator.json and config\dataflowdatacachegenerator.json) to generate ***DataflowDataCacheGenerator*** (refreshes all dataflows configured in the DataflowDataCache section config) and ***DashboardDataCacheGenerator*** (refreshes all dataflows assigned to static not-filterable views in a dashboard).
+
+```
+"Scheduler": {
+  "IsEnable": true,
+  "Timer": "00:05:00",
+}
+```
+
+In order to set the dashboards to refresh, user must follow these code lines:
+
+```
+"DashboardDataCacheGenerator": {
+    "IsEnable": true,
+    "StartTimer": "20:30:00",
+    "Days": [ 0, 1, 2, 3, 4, 5, 6],
+}
+```
+
+in which, *StartTime* defines the starting time *Days* indicates the day the worker runs (0 = Sunday and 6 = Monday).
+And for dataflows:
+
+```
+"DataflowDataCacheGenerator": {
+    "IsEnable": true,
+    "StartTimer": "20:30:00",
+    "Days": [ 0, 1, 2, 3, 4, 5, 6],
+    "DataflowsRefresh": [
+      {
+        "Id": "Agency+Id+Version",
+        "Dimensions": [ "DimensionId" ],
+        "NodeCode": "NodeId",
+        "GruopByNumber": {
+          "GroupSize": 20
+        }
+      },
+}
+```
+
+In particular:
+- *DataflowsRefresh* is an array that contains the list of all dataflows that need to be refreshed in cache.
+- *Dimensions* can have only one value and defines the dimension's ID to refresh.
+- *NodeCode* defines the node's ID that contains the dataflowid to refresh.
+- *GroupByNumber* contains the configuration for grouping the call to get the data that needs to be inserted in cache.
+- *GroupSize* defines the number of codes that will be send for each request to the endpoint.

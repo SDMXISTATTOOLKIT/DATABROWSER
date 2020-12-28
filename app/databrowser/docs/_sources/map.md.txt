@@ -1,0 +1,40 @@
+### How to customize a map
+
+From the tabular visualization, it is also possible to move to the map section where a map is shown. Although the map button is not always enabled, in fact if in the node configuration the user does not specify territorial dimension's IDs, 
+the application doesn't recognize any dimension for the map automatically. So first of all, in the node configuration window, under the "View" tab, the "Territorial dimensions Ids" must be filled with the territorial ids that it is possible to find 
+in the datasets (for example: ITTER107, REF_AREA, COM and so on). If no territorial id is set in the node configuration, another way to visualize the map for a specific data is to set a geographic annotation 
+when data is uploaded.
+
+Once the user detects that the map visualization is available, he can click on the related button. If no criteria is selected initially, the dimensions present in the data are inserted as filters in the map visualization otherwise they are printed, with the chosen value, under the title of the data.
+
+```eval_rst
+  .. |M1| image:: _images/Map1.JPG
+
+  .. |M2| image:: _images/Map2.JPG
+    :width: 450
+
+|M1| => |M2|
+```
+
+The dimension based on the territory, goes in a specific filter, labelled as "Detail level", which is categorized considering the geographic section (area, region, province, municipality) and user can drill down or drill up in the map.
+
+Map configuration can be personalized expanding the "Show legend" indication on the top right of the map which opens the following window
+
+![Map1](_images/Map_config.JPG)
+
+Opacity of the map can be selected by moving the scroll bar that shows the percentage of opaqueness. If, instead, the user decides to change the colors in the map, classification or number of classes in order to choose the way intervals are divided, this is made possibile by clicking on "configure".
+
+![Map5](_images/Map_classification.JPG)
+
+![Map6](_images/Map_num_class.JPG)
+
+![Map2](_images/Map_config2.JPG)
+
+Selecting "Start color" or "End color", enables the user to change colors in the map and, right away, there is a preview of the new colors. Modifications take place right after the user clicks on "Apply". The map will now have the new colors.
+
+![Map3](_images/Map_config3.JPG)
+
+![Map4](_images/Map_config4.JPG)
+
+ 
+

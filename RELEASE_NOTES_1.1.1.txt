@@ -1,0 +1,41 @@
+RELEASE NOTES - 03-12-2020
+
+- DATABROWSER v.1.1.1 (.NET CORE 3.1.0)
+Data di rilascio: 03 Dicembre 2020
+
+Rispetto alla versione 1.1.0 sono incluse le seguenti funzionalità e bug fix:
+- Risoluzione mancata visualizzazione delle scrollbar in tabella
+- Rimozione mappa di sfondo openstreetmap
+- Alcune migliorie sull'accessibilità
+
+
+- DATABROWSER v.1.1.0 (.NET CORE 3.1.0)
+Data di rilascio: 25 Novembre 2020
+
+Rispetto alla versione 1.0.1 sono incluse le seguenti funzionalità e bug fix:
+
+ISTAT-230 Raffinamento versione accessibile
+ISTAT-343 Selezione colori per gli item della dimensione graficata
+ISTAT-356 Spostare i files delle immagini (categorie) a livello di nodo
+ISTAT-383 Aggiungere la possibilità di collassare la legenda in mappa
+ISTAT-387 Spostare esternamente all'appconfig le configurazioni dei servizi "schedulabili"
+ISTAT-386 Introdotto l'utilizzo della count del numero di record
+ISTAT-378 Loading di mappe
+ISTAT-414 Duplicazione dashboard a livello di applicazione e normalizzazione
+ISTAT-264 Problema scorrimento cursore nelle dashboard
+ISTAT-269 Problematiche gestione filtri
+ISTAT-280 template creati su mappe non vengono mantenuti
+ISTAT-290 Nelle codelist piatte (criteria) aggiungere il "deseleziona tutti"
+ISTAT-365 Disabilitare la scroll interna alle viste scorrendo la dashboard
+ISTAT-367 Dashboard, Mappe mancanza di sincronizzazione con la rotellina di attesa
+ISTAT-374 Problemi di creazione delle viste relative alle mappe
+ISTAT-380 Verifica efficienza query
+- Problema con cambio e recupero password
+- Problema con il salvataggio in view/template della configurazione della mappa
+- Verifica del corretto funzionamento della scadenza della cache
+- Nelle dashboard alcuni oggetti  non vengono visualizzati in modo randomico
+- Nella registrazione il campo "Organizzazione" non deve essere obbligatorio
+- La lingua di default configurata deve vincere su tutto quando si riapre l'applicazione 
+- In alto a sinistra non deve essere visibile la combo-box nel caso si parta con il nodo di default ed il nodo sia l'unico presente
+- Nella home-page del nodo di default non deve essere visibile il pulsante "altri nodi" nel caso in cui il nodo sia l'unico presente
+- La combo-box dei nodi in alto a sinistra deve riportare il nome del nodo e non l'ID dei nodi

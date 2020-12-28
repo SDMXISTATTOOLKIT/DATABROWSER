@@ -1,0 +1,20 @@
+# Data Browsing
+
+In this chapter we’ll see how to:
+
+- select a data provider (node)
+- explore node’s  contents through categories tree
+- find specific data
+- display data in tabular, graphic and map format
+- configure visualization and modify display layout
+
+```eval_rst
+ .. toctree::
+    :maxdepth: 3
+
+    browseproviders.md
+    browseaprov.md
+    visualizedata.md
+    Views <views.md>
+    linked_dataflows.md
+```

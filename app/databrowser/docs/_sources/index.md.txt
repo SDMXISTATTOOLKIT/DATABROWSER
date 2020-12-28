@@ -1,0 +1,12 @@
+# Data Browser - User Manual
+
+```eval_rst
+ .. toctree::
+    :maxdepth: 3
+
+    glossary.md
+    about.md
+    installation.md
+    administration.md
+    databrowsing.md
+```

@@ -1,0 +1,23 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:web="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/webservices"
+               xmlns:reg="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/webservices/registry"
+               xmlns:m="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+               xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure"
+               xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <soap:Header />
+  <soap:Body>
+    <web:SubmitStructure>
+      <m:SubmitStructureRequest>
+        <m:Header>
+          <m:ID>?</m:ID>
+          <m:Test>false</m:Test>
+          <m:Prepared>?</m:Prepared>
+          <m:Sender id="?" />
+          <m:Receiver id="?" />
+        </m:Header>
+        <m:SubmitStructureRequest action="?" externalDependencies="false">
+        </m:SubmitStructureRequest>
+      </m:SubmitStructureRequest>
+    </web:SubmitStructure>
+  </soap:Body>
+</soap:Envelope>

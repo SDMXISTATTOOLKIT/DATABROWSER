@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Structure xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+           xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+           xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+           xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+  <mes:Header>
+    <mes:ID>?</mes:ID>
+    <mes:Test>false</mes:Test>
+    <mes:Prepared>?</mes:Prepared>
+    <mes:Sender id="?" />
+    <mes:Receiver id="?" />
+  </mes:Header>
+</Structure>

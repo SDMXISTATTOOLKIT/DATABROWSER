@@ -1,0 +1,13 @@
+# About
+
+This User Manual describes the Data Browser project giving an overview of its functionalities from a technical and practical point of view.
+
+All sections fully describe configuration, management and organization of each single component in order to make it easy for the reader to understand and know how to directly move inside the system.
+
+```eval_rst
+ .. toctree::
+    :maxdepth: 3
+
+    License * <license.md>
+    product_overview.md
+```

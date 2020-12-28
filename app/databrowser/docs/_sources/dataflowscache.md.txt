@@ -1,0 +1,21 @@
+### How to configure Dataflows cache
+
+By clicking on "CACHE" on Nodes configuration frame the user opens a new window where it is possible to edit or delete cache for each dataflow.
+
+![nodes config - general](_images/Dataflow_cache.JPG)
+
+In Dataflows cache configuration window, for each dataflow these attributes are listed:
+- cache duration time (in seconds)
+- number of cached files 
+- cache size 
+	
+The super administrator user, after selecting a dataflow, can change cache duration time (pencil icon) or delete cache (trashcan icon).
+
+Moreover the user can:
+- clear catalog cache
+- clear dataflow cache for all the dataflows in the node
+- show/hide not cached dataflows. By checking the "Hide empty entries" box, if data is not cached, it is not show in the list of cached data.
+
+![nodes config - general](_images/cache3.JPG)
+
+Node administrator users are allowed to manage cache only if the super administrator user sets them the right permission otherwise the "CACHE" clickable link won't even be present in the node configuration window.

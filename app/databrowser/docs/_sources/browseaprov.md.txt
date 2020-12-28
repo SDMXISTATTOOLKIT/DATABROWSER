@@ -1,0 +1,7 @@
+## How to browse a data provider
+
+In this section we’ll explain data’s organization and how to search specific data.
+
+* [Data catalog](datacatalog.md)
+* [Textual search](textsearch.md)
+

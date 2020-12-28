@@ -1,0 +1,10 @@
+#spinner {
+    opacity: 1;
+    z-index: 2000;
+    /*transition: opacity 1s, zIndex 0s, 1s*/
+}
+
+#spinner.invisible {
+    opacity: 0;
+    z-index: 0;
+}

@@ -1,0 +1,24 @@
+﻿<message:HierarchicalCodelistQuery
+  xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+  xmlns:query="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/query"
+  xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>HierarchicalCodelistQuery</message:ID>
+    <message:Test>true</message:Test>
+    <message:Prepared>2014-06-23T08:00:33+01:00</message:Prepared>
+    <message:Sender id="MGTest" />
+    <message:Receiver id="ISTAT" />
+  </message:Header>
+  <message:Query>
+    <query:ReturnDetails detail="">
+      <query:References>
+        <query:None />
+      </query:References>
+    </query:ReturnDetails>
+    <query:HierarchicalCodelistWhere>
+      <query:ID></query:ID>
+      <query:Version></query:Version>
+      <query:AgencyID></query:AgencyID>
+    </query:HierarchicalCodelistWhere>
+  </message:Query>
+</message:HierarchicalCodelistQuery>

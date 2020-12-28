@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--NSI Web Service v7.9.0.0-->
+<message:GenericData xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" xmlns:footer="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message/footer" xmlns:generic="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <message:Header>
+      <message:ID>IREF0351769064b144ed815d93b026d6f309</message:ID>
+      <message:Test>true</message:Test>
+      <message:Prepared>2020-09-07T10:36:04</message:Prepared>
+      <message:Sender id="NOT_CONFIGURED" />
+      <message:Structure structureID="SDMX_NA_SU278324_1_10" dimensionAtObservation="TIME_PERIOD">
+         <common:Structure>
+            <Ref agencyID="SDMX" id="NA_SU278324" version="1.10" />
+         </common:Structure>
+      </message:Structure>
+      <message:DataSetAction>Information</message:DataSetAction>
+   </message:Header>
+   <message:DataSet action="Information" structureRef="SDMX_NA_SU278324_1_10">
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="REF_AREA" value="RS" />
+            <generic:Value id="COUNTERPART_AREA" value="B0" />
+            <generic:Value id="REF_SECTOR" value="S1" />
+            <generic:Value id="COUNTERPART_SECTOR" value="S1" />
+            <generic:Value id="ACCOUNTING_ENTRY" value="C" />
+            <generic:Value id="STO" value="P7" />
+            <generic:Value id="ACTIVITY" value="_Z" />
+            <generic:Value id="ACTIVITY_TO" value="_Z" />
+            <generic:Value id="PRODUCT" value="_T" />
+            <generic:Value id="PRODUCT_TO" value="_Z" />
+            <generic:Value id="UNIT_MEASURE" value="XDC" />
+            <generic:Value id="VALUATION" value="_Z" />
+            <generic:Value id="PRICES" value="V" />
+            <generic:Value id="CUST_BREAKDOWN" value="_T" />
+         </generic:SeriesKey>
+         <generic:Attributes>
+            <generic:Value id="TIME_FORMAT" value="P1Y" />
+            <generic:Value id="DECIMALS" value="8" />
+            <generic:Value id="UNIT_MULT" value="6" />
+         </generic:Attributes>
+         <generic:Obs>
+            <generic:ObsDimension id="TIME_PERIOD" value="2015" />
+            <generic:ObsValue value="1326692" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="A" />
+               <generic:Value id="CONF_STATUS" value="F" />
+            </generic:Attributes>
+         </generic:Obs>
+         <generic:Obs>
+            <generic:ObsDimension id="TIME_PERIOD" value="2016" />
+            <generic:ObsValue value="1442408" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="A" />
+               <generic:Value id="CONF_STATUS" value="F" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="REF_AREA" value="RS" />
+            <generic:Value id="COUNTERPART_AREA" value="B0" />
+            <generic:Value id="REF_SECTOR" value="S1" />
+            <generic:Value id="COUNTERPART_SECTOR" value="S1" />
+            <generic:Value id="ACCOUNTING_ENTRY" value="C" />
+            <generic:Value id="STO" value="P7" />
+            <generic:Value id="ACTIVITY" value="_Z" />
+            <generic:Value id="ACTIVITY_TO" value="_Z" />
+            <generic:Value id="PRODUCT" value="_T" />
+            <generic:Value id="PRODUCT_TO" value="_Z" />
+            <generic:Value id="UNIT_MEASURE" value="XDC" />
+            <generic:Value id="VALUATION" value="_Z" />
+            <generic:Value id="PRICES" value="V" />
+            <generic:Value id="CUST_BREAKDOWN" value="C01" />
+         </generic:SeriesKey>
+         <generic:Attributes>
+            <generic:Value id="TIME_FORMAT" value="P1Y" />
+            <generic:Value id="DECIMALS" value="8" />
+            <generic:Value id="UNIT_MULT" value="6" />
+         </generic:Attributes>
+         <generic:Obs>
+            <generic:ObsDimension id="TIME_PERIOD" value="2015" />
+            <generic:ObsValue value="0" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="A" />
+               <generic:Value id="CONF_STATUS" value="F" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+   </message:DataSet>
+</message:GenericData>

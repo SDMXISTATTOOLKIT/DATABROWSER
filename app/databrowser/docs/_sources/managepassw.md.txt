@@ -1,0 +1,23 @@
+### Manage user's password
+
+It might happen that the user doesn't remember his password or, in some cases, he would like to change it. In this application, the before mentioned operations are possible and easy to perform.
+
+**RECOVER PASSWORD**
+
+In the login window, right under the User/Password boxes, there is the *"Recover password"* link that allows the user to retrieve his password. Once the user clicks this link, a new window opens 
+in which the email address must be inserted. The user will receive an email containing a restore password link that helps the user to redefine the password once again. \
+So, no password is sent via email, this operation guides the user to create a new one.
+
+**CHANGE PASSWORD**
+
+The change password operation is also very easy to perform. Once the user is logged in, by clicking on the user icon on the top right of the page, will show him a small window where the 
+*"Change password"* link is available
+
+![change password](_images/Change_passw.JPG)
+
+Once the link is clicked, a new window appaers in which the user defines his new password
+
+```eval_rst
+ .. image:: _images/Change_passw2.JPG
+    :scale: 70%
+```

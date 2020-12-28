@@ -1,0 +1,82 @@
+.infinite-scroll-table__header__cell {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.infinite-scroll-table__header {
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e8e8e8;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.infinite-scroll-table__header-placeholder {
+    border: none;
+    background-color: #ffffff;
+}
+
+.infinite-scroll-table__grid__cell {
+    padding: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.infinite-scroll-table__grid__row--even .infinite-scroll-table__grid__cell {
+    background: #ffffff;
+}
+
+.infinite-scroll-table__grid__row--odd .infinite-scroll-table__grid__cell {
+    background: #ffffff;
+}
+
+.infinite-scroll-table__grid__cell {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.infinite-scroll-table__header__icon {
+    color: #bfbfbf;
+}
+
+.infinite-scroll-table__header__icon--active {
+    color: red;
+}
+
+.infinite-scroll-table__grid-container {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.infinite-scroll-table__grid__cell--disabled {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.infinite-scroll-table__grid__cell__actions-container {
+    opacity: 0;
+    transition: opacity .5s linear;
+}
+
+.infinite-scroll-table__grid__row:hover .infinite-scroll-table__grid__cell__actions-container {
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+.infinite-scroll-table__header__cells-container,
+.infinite-scroll-table__header__scrollbar-padding {
+    display: inline-block;
+}
+
+/*.infinite-scroll-table__footer__spinner {*/
+/*    font-size: 10px;*/
+/*}*/
+
+/*.infinite-scroll-table__footer__spinner .ant-spin-dot {*/
+/*    width: 13px;*/
+/*    height: 13px;*/
+/*}*/
+
+.ant-modal {
+    animation-duration: 0s !important;
+}

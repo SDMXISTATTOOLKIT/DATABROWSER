@@ -1,0 +1,12 @@
+# Views
+
+In this section, we will explain how to manage, save and share views once data is visualized.
+
+```eval_rst
+ .. toctree::
+    :maxdepth: 3
+
+    view_descr.md
+    save_view.md
+    manage_view.md
+```

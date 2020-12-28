@@ -1,0 +1,3 @@
+﻿namespace DataBrowser.Query.Hubs
+{
+}

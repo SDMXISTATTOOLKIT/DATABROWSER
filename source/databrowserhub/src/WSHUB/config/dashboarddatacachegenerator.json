@@ -1,0 +1,7 @@
+﻿{
+  "DashboardDataCacheGenerator": {
+    "IsEnable": true,
+    "StartTime": "16:20:00",
+    "Days": [ 0, 1, 2, 3, 4, 5, 6 ]
+  }
+}

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.Targets" Version="3.1.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataBrowser.Interfaces\DataBrowser.Interfaces.csproj" />
+    <ProjectReference Include="..\EndPointConnector.Interfaces.Sdmx\EndPointConnector.Interfaces.Sdmx.csproj" />
+    <ProjectReference Include="..\EndPointConnector.ParserSdmx\EndPointConnector.ParserSdmx.csproj" />
+  </ItemGroup>
+
+</Project>

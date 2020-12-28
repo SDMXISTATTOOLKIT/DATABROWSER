@@ -1,0 +1,9 @@
+body {
+    /* prevengono la scomparsa della scrollbar causata da Popover */
+    overflow: auto !important;
+    padding: 0 !important;
+}
+
+.MuiToolbar-root {
+    padding-left: 16px !important
+}

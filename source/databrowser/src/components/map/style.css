@@ -1,0 +1,20 @@
+.lmap,
+.lmap .ant-btn,
+.lmap .ant-card,
+.lmap .ant-card-head-title,
+.lmap .ant-modal-body,
+.lmap .ant-modal-title {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+}
+
+.lmap__info {
+    position: initial;
+    display: flex;
+    left: 16px;
+    justify-content: center;
+    padding-top: 16px
+}
+
+.lmap__info__content {
+    font-size: 14px
+}

@@ -1,0 +1,102 @@
+.jsonstat-table table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.jsonstat-table .c {
+    border-top: 1px solid rgba(0, 0, 0, .12);
+    border-left: 1px solid rgba(0, 0, 0, .12);
+    background: #FFFFFF;
+    text-align: end;
+    vertical-align: top;
+    font-size: 13px;
+    padding: 2px 8px !important;
+    white-space: nowrap;
+}
+
+.jsonstat-table .c-rb { /* cells for table right border */
+    border-top: none;
+    padding: 0 !important;
+}
+
+.jsonstat-table .c-bb { /* cells for table bottom border */
+    border-left: none;
+}
+
+.jsonstat-table .c.cfs {
+    font-size: 12px;
+    padding: 0 4px !important;
+}
+
+.jsonstat-table .c.cfm {
+    font-size: 13px;
+    padding: 2px 8px !important;
+}
+
+.jsonstat-table .c.cfl {
+    font-size: 14px;
+    padding: 4px 8px !important;
+}
+
+.jsonstat-table .c.ch {
+    background: #EEEEEE;
+    text-align: start;
+    font-weight: 500;
+    z-index: 1;
+    white-space: normal;
+}
+
+.jsonstat-table .c.csh {
+    background: #F5F5F5;
+    text-align: start;
+    font-weight: 400;
+    white-space: normal;
+}
+
+.jsonstat-table .c.cs {
+    background: #E0E0E0;
+    text-align: start;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.jsonstat-table .cs .cs-d {
+    font-weight: 500;
+}
+
+.jsonstat-table .c.c:not(.ch):not(.csh):not(.cs):not(.c-rb):not(.c-bb):hover {
+    background: #F5F5F5;
+}
+
+.jsonstat-table .ca .ct {
+    cursor: pointer;
+}
+
+.jsonstat-table .ca .ct .ct-a {
+    color: rgb(136, 136, 136);
+    font-family: "Do Hyeon", "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.jsonstat-table .ca .ct .ct-c {
+    color: rgb(255, 255, 255);
+    background-color: rgb(136, 136, 136);
+    border-radius: 3px;
+    padding: 1px 4px;
+}
+
+.jsonstat-table .ctt {
+    visibility: hidden;
+    position: fixed;
+    font-size: 13px;
+    color: #fff;
+    background-color: rgba(108, 108, 108, 0.8);
+    padding: 8px;
+    z-index: 3;
+}
+
+.jsonstat-table .ctt .cttt {
+    max-width: 480px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
