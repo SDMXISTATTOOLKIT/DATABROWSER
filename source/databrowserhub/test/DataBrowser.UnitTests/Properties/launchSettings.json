@@ -1,7 +1,0 @@
-{
-  "profiles": {
-    "DataBrowser.UnitTests": {
-      "commandName": "Executable"
-    }
-  }
-}

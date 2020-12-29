@@ -1,7 +1,0 @@
-{
-  "DataflowId": "IT1+DF_TR_AEREO+1.0",
-  "DataCriterias": [
-    { "Id": "ITTER107", "FilterValues": ["IT"] }, { "Id": "FREQ", "FilterValues": ["A"] },
-    { "Id": "SERV_AEREO_TIPO", "FilterValues": ["ALL"] }
-  ]
-}
