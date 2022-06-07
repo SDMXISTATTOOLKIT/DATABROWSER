@@ -1,0 +1,2684 @@
+﻿{
+  "ariaLabels": {
+    "header": {
+      "a11y": "Change site version",
+      "appLanguage": "Change app language",
+      "dashboard": "View dahsbords",
+      "header": "Header",
+      "info": "App informations",
+      "search": "Cerca Dataset",
+      "settings": "Apri settaggi",
+      "user": "Apri menu utente"
+    }
+  },
+  "commons": {
+    "catalog": {
+      "uncategorized": "Non categorizzato Davide"
+    },
+    "confirm": {
+      "apply": "Apply",
+      "cancel": "Cancella",
+      "close": "Chiudi",
+      "confirm": "Conferma 2",
+      "copy": "Copia",
+      "download": "Scarica 1",
+      "edit": "Edit",
+      "preview": "Preview",
+      "save": "Salva",
+      "submit": "Submit"
+    },
+    "downloadFormat": {
+      "compactdata": "SDMX compact v. 2.0",
+      "csv": "CSV",
+      "excel": "Excel",
+      "genericdata": "SDMX generic v. 2.1",
+      "genericdata20": "SDMX generic v. 2.0",
+      "jpeg": "Image",
+      "jsondata": "JSON",
+      "structure": "SDMX structure",
+      "structurespecificdata": "SDMX structure specific v. 2.1"
+    },
+    "export": {
+      "custom": {
+        "attributes": {
+          "values": {
+            "dataset": "Informazioni Dataset",
+            "series": "Series information"
+          }
+        },
+        "messages": {
+          "colsAndRowsLimitsExceeded": "The displayed table is partial: there are only",
+          "colsLimitsExceeded": "the first {{colsLimit}} columns",
+          "rowsLimitsExceeded": "the first {{rowsLimit}} rows"
+        },
+        "variation": {
+          "title": "Variations",
+          "values": {
+            "cyclical": "Cyclical",
+            "trend": "Trend",
+            "value": "Value"
+          }
+        }
+      }
+    },
+    "hashLinks": {
+      "accessible": "Switch to accessibile version",
+      "footer": "Reach the footer",
+      "main": "Go to main content"
+    },
+    "validation": {
+      "inRange": "Must be an integer between {{min}} and {{max}}",
+      "positiveInteger": "Must be an integer greater than zero.",
+      "required": "This field is required.",
+      "requiredAnyLanguage": "This field is required. Specify a value for at least one language."
+    }
+  },
+  "component": {
+    "results": {
+      "breadcrumbs": {
+        "ariaLabel": "Breadcrumbs",
+        "links": {
+          "home": "Home"
+        }
+      }
+    }
+  },
+  "components": {
+    "a11ySelect": {
+      "disable": "Classic version",
+      "enable": "Accessible version"
+    },
+    "appInfo": {
+      "content": "",
+      "poweredBy": "Powered by"
+    },
+    "attributeIcons": {
+      "dialog": {
+        "title": "Attributes"
+      }
+    },
+    "attributeList": {
+      "datasetInformation": {
+        "title": "Dataset information"
+      },
+      "seriesInformation": {
+        "title": "Series information"
+      }
+    },
+    "autoSearchInput": {
+      "placeholder": "Search"
+    },
+    "cardsGrid": {
+      "actions": {
+        "description": {
+          "title": "Description"
+        }
+      }
+    },
+    "catalogInfoButton": {
+      "label": "Information"
+    },
+    "catalogMetadataButton": {
+      "label": "Reference Metadata"
+    },
+    "categoriesTree": {
+      "actions": {
+        "description": {
+          "title": "Description"
+        }
+      },
+      "goToData": "Data ({{datasetsCount}})"
+    },
+    "chart": {
+      "axis": {
+        "variation": {
+          "label": "Variations"
+        }
+      },
+      "emptyChart": "With the filters set the dataset is empty, please select another combination.",
+      "error": {
+        "observationAttribute": "An error occurred while retrieving attributes at observation level"
+      },
+      "invalidPyramid": "To view the pyramid chart you must select a secondary dimension with exactly two selected values",
+      "tooltip": {
+        "attributes": {
+          "observation": {
+            "label": "Observation attributes"
+          }
+        }
+      }
+    },
+    "chartLayout": {
+      "filters": {
+        "title": "Filters"
+      },
+      "primaryDim": {
+        "title": "Primary dimension"
+      },
+      "secondaryDim": {
+        "title": "Secondary dimension"
+      }
+    },
+    "criteria": {
+      "dialogs": {
+        "warning": {
+          "losingFilters": {
+            "title": "Moving to this dimension will remove the filters on the following ones, continue anyway?"
+          },
+          "notCodedDimension": {
+            "label": "With value \"{{filterValue}}\" on dimension \"{{dimension}}\" there is no data."
+          }
+        }
+      },
+      "emptyCodelist": {
+        "label": "This dimension has no selectable items; continue with other dimensions."
+      },
+      "noCodelistAssociated": {
+        "info": "This dimension does not have an associated codelist, so you must enter the value manually.",
+        "noFilter": "No filter for this dimension"
+      },
+      "table": {
+        "actions": {
+          "deselectAll": {
+            "tooltip": "Deselect all"
+          },
+          "selectAll": {
+            "tooltip": "Select all"
+          }
+        }
+      },
+      "timePeriod": {
+        "alert": {
+          "notValidRange": "Not a valid date range"
+        },
+        "customRange": {
+          "end": "End",
+          "from": "From",
+          "period": "Period",
+          "start": "Start",
+          "to": "To",
+          "year": "Year"
+        },
+        "fullRange": {
+          "label": "No filters will be applied on the time dimension"
+        },
+        "selectLastPeriods": {
+          "helperText": "Must be an integer greater than 1",
+          "periods": "periods",
+          "selectLast": "Select last"
+        },
+        "typeSelector": {
+          "label": "Select",
+          "value": {
+            "customRange": "Custom range",
+            "fullRange": "Full range",
+            "onlyLastPeriods": "Only last periods"
+          }
+        }
+      },
+      "tree": {
+        "nodeActions": {
+          "selectAll": {
+            "title": "Select/Unselect all children"
+          }
+        }
+      }
+    },
+    "customEmpty": {
+      "placeholder": "No data to display"
+    },
+    "customMaterialTable": {
+      "empty": "No data to display",
+      "search": {
+        "placeholder": "Search...",
+        "tooltip": "Search"
+      }
+    },
+    "dashboard": {
+      "actions": {
+        "attributes": "Attributes",
+        "download": "Download",
+        "fullscreen": {
+          "enter": "Fullscreen",
+          "exit": "Exit"
+        }
+      },
+      "applyFilters": "Please apply some filters",
+      "dialogs": {
+        "attributes": {
+          "title": "Attributes"
+        }
+      },
+      "emptyView": "With the applied filters this view is empty",
+      "errors": {
+        "fetchDashboard": "Error fetching dashboard"
+      },
+      "fetching": "Fetching dataset",
+      "fetchingDatasetError": "Error fetching dataset",
+      "fetchingGeometriesError": "Error fetching geometries",
+      "missingView": "The view is no more available"
+    },
+    "dashboardBuilder": {
+      "actions": {
+        "addColumn": "Add column",
+        "addRow": "Add row",
+        "addText": "Add text",
+        "addView": "Add view",
+        "deselectView": "Deselect view",
+        "editText": "Edit text",
+        "enableFilters": "Enable filters",
+        "removeColumn": "Remove column",
+        "removeRow": "Remove row",
+        "resetColumn": "Reset column",
+        "selectView": "Select view",
+        "showTitle": "Show title"
+      },
+      "filterDimension": {
+        "label": "Dimension for territorial filters",
+        "noOne": "No one"
+      },
+      "filterLevels": "Filterable territorial detail levels",
+      "modals": {
+        "preview": {
+          "title": "Dashboard preview"
+        },
+        "text": {
+          "title": "Add text"
+        },
+        "views": {
+          "columns": {
+            "datasetId": "Dataset ID",
+            "name": "Name",
+            "node": "Node"
+          },
+          "title": "Select view"
+        }
+      },
+      "title": "Title"
+    },
+    "dashboardsManager": {
+      "addDashboard": "Add dashboard",
+      "modals": {
+        "addDashboard": {
+          "table": {
+            "actions": {
+              "addDashboard": {
+                "tooltip": {
+                  "assigned": "Already added",
+                  "notAssigned": "Add"
+                }
+              }
+            },
+            "columns": {
+              "dashboardTitle": "Name"
+            }
+          },
+          "title": "Add dashboard"
+        }
+      },
+      "table": {
+        "actions": {
+          "dashboardOrderMoveDown": "Move down",
+          "dashboardOrderMoveUp": "Move up",
+          "removeDashboard": "Remove dashboard"
+        },
+        "columns": {
+          "dashboardTitle": "Name"
+        }
+      }
+    },
+    "datasetCard": {
+      "actions": {
+        "notes": {
+          "title": "Notes"
+        }
+      },
+      "isMultiCategorized": {
+        "title": "This dataset has more than one category associated"
+      }
+    },
+    "datasetFilters": {
+      "primaryDim": "Primary dimension",
+      "secondaryDim": "Secondary dimension",
+      "selectedCount": "{{selected}} value selected",
+      "selectedCount_plural": "{{selected}} values selected",
+      "table": {
+        "columns": {
+          "label": {
+            "title": "Select all items"
+          }
+        }
+      }
+    },
+    "deleteConflictModal": {
+      "contentTitle": "You have to delete these objects before:",
+      "contentTitleWithForce": "You have to delete these objects before or you can force delete:",
+      "force": "Force delete",
+      "objectType": {
+        "dashboard": "Dashboard",
+        "node": "Node",
+        "view": "View"
+      },
+      "title": "Cannot delete this object"
+    },
+    "enhancedTree": {
+      "collapseAll": {
+        "tooltip": "Collapse all"
+      },
+      "deselectAll": {
+        "tooltip": "Deselect all"
+      },
+      "expandAll": {
+        "tooltip": "Expand all"
+      },
+      "levelSelector": "Select all items at level {{level}}",
+      "selectAll": {
+        "tooltip": "Select all"
+      },
+      "showMore": "Show more {{more}} of {{remaining}}..."
+    },
+    "fileInput": {
+      "messages": {
+        "upload": {
+          "error": "An error occurred while uploading image on server",
+          "start": "Uploading image on server"
+        }
+      },
+      "reset": "Remove uploaded file",
+      "upload": "Upload"
+    },
+    "fontSizeSelector": {
+      "big": {
+        "tooltip": "Big"
+      },
+      "normal": {
+        "tooltip": "Normal"
+      },
+      "small": {
+        "tooltip": "Small"
+      }
+    },
+    "header": {
+      "drawer": {
+        "backToNodeHome": "Back to Node home page",
+        "categoriesTitle": "Categories"
+      },
+      "settings": {
+        "app": "Application",
+        "clearServerCacheAction": {
+          "messages": {
+            "clear": {
+              "start": "Clearing cache"
+            }
+          }
+        },
+        "nodes": "Nodes",
+        "queriesLog": "Get queries log",
+        "queriesLogModal": {
+          "content": "Insert the number of last SDMX-queries to download"
+        },
+        "users": "Users"
+      }
+    },
+    "infiniteScrollTable": {
+      "footer": {
+        "rowCount": "from {{rowNumStart}} to {{rowNumEnd}} of {{rowCount}} rows"
+      },
+      "preHeader": {
+        "selectedCount": "{{selectedRowCount}} selected row",
+        "selectedCount_plural": "{{selectedRowCount}} selected rows"
+      },
+      "resizing": "Resizing table",
+      "updating": "Updating table rows"
+    },
+    "labelFormatSelector": {
+      "labelFormat": {
+        "title": "Label format",
+        "values": {
+          "both": "Both",
+          "id": "ID",
+          "name": "Name"
+        }
+      }
+    },
+    "map": {
+      "baseMap": {
+        "italyRegions": "Italy regions",
+        "osm": "Open Street Map"
+      },
+      "detailLevel": "Detail level",
+      "dialogs": {
+        "attributes": {
+          "content": {
+            "dimAttributes": {
+              "title": "Territorial dimension attributes"
+            },
+            "obsAttributes": {
+              "title": "Observation attributes"
+            }
+          },
+          "title": "Attributes"
+        }
+      },
+      "emptyMap": "With the filters set the dataset is empty, please select another combination.",
+      "noTerritorialDim": "No territorial dimension was found.",
+      "spinners": {
+        "loading": "Loading",
+        "rendering": "Rendering"
+      },
+      "tooltip": {
+        "attributes": {
+          "suffix": "Click on the territory to view the attributes"
+        }
+      },
+      "translation": {
+        "apply": "Apply",
+        "cancel": "Cancel",
+        "classification": "Classification",
+        "collapse": "Hide",
+        "configure": "Configure",
+        "endColor": "End color",
+        "equalInterval": "Equal interval",
+        "from": "from",
+        "legend": "Legend",
+        "naturalBreaks": "Natural breaks",
+        "numberOfClasses": "Number of classes",
+        "opacity": "Opacity",
+        "preview": "Preview",
+        "quantile": "Quantile",
+        "startColor": "Start color",
+        "to": "to",
+        "uncollapse": "Show"
+      }
+    },
+    "notImplementedSnackbar": {
+      "label": "Not implemented"
+    },
+    "query": {
+      "alert": {
+        "queryCopied": {
+          "label": "Query copied to clipboard"
+        }
+      }
+    },
+    "results": {
+      "actions": {
+        "description": {
+          "title": "Description"
+        }
+      }
+    },
+    "searchInput": {
+      "label": "Search",
+      "placeholder": "Search..."
+    },
+    "table": {
+      "alerts": {
+        "attributeCopied": "Attributes copied to clipboard"
+      },
+      "dialogs": {
+        "attributes": {
+          "title": "Attributes"
+        }
+      },
+      "emptyTable": "With the filters set the dataset is empty, please select another combination.",
+      "error": {
+        "observationAttribute": "An error occurred while retrieving attributes at observation level"
+      },
+      "initializing": "Initializing table",
+      "scrollbars": {
+        "loading": "Loading"
+      },
+      "spinners": {
+        "rendering": "Rendering"
+      }
+    },
+    "tableLayout": {
+      "colCount": "Number of columns: {{colCount}}",
+      "rowCount": "Number of rows: {{rowCount}}",
+      "sections": {
+        "columns": "Columns",
+        "filters": "Filters",
+        "rows": "Rows",
+        "sections": "Sections"
+      }
+    },
+    "userChangePasswordForm": {
+      "messages": {
+        "submit": {
+          "start": "Updating user informations"
+        }
+      }
+    },
+    "userLoginDialog": {
+      "fields": {
+        "email": "Email",
+        "password": "Password"
+      },
+      "login": "Accedi Alessio 1",
+      "recoverPassword": "Recover password",
+      "recoverPasswordModal": {
+        "fields": {
+          "email": "Email"
+        },
+        "title": "Recover password"
+      },
+      "register": "Sign up",
+      "title": "Accedi Alessio 2"
+    },
+    "userRecoverPassword": {
+      "messages": {
+        "submit": {
+          "start": "Updating user informations"
+        }
+      }
+    },
+    "userSelect": {
+      "accountSettings": "Account settings",
+      "changePassword": "Change password",
+      "changePasswordModal": {
+        "fields": {
+          "newPassword": "New password",
+          "newPasswordConfirm": "Confirm new password",
+          "oldPassword": "Old password"
+        },
+        "title": "Change password",
+        "validation": {
+          "newPasswordMustBeEqual": "New passwords must be equal"
+        }
+      },
+      "dashboards": "Dashboards",
+      "editUser": "Edit user information",
+      "editUserModal": {
+        "title": "Edit user information"
+      },
+      "login": "Accedi Alessio 3",
+      "logout": "Logout",
+      "messages": {
+        "fetchUser": {
+          "start": "Fetching user informations"
+        }
+      },
+      "registerModal": {
+        "submit": {
+          "label": "Sign up"
+        },
+        "title": "Sign up"
+      },
+      "userObjects": "User objects",
+      "views": "Views"
+    },
+    "userSetPasswordDialog": {
+      "fields": {
+        "email": "Email",
+        "password": "Password",
+        "passwordConfirm": "Confirm password"
+      },
+      "title": "Create new password",
+      "validation": {
+        "passwordMustBeEqual": "Passwords must be equal"
+      }
+    },
+    "userSetPasswordForm": {
+      "messages": {
+        "submit": {
+          "start": "Updating user informations"
+        }
+      }
+    },
+    "variationSelector": {
+      "variation": {
+        "both": "Both",
+        "none": "None",
+        "title": "Variations"
+      }
+    }
+  },
+  "dashboards": {
+    "dynamicFilterLabels": {
+      "municipality": "Municipality",
+      "province": "Province",
+      "region": "Region"
+    }
+  },
+  "domains": {
+    "catalog": {
+      "messages": {
+        "fetch": {
+          "start": "Fetching node catalog"
+        }
+      }
+    },
+    "hub": {
+      "messages": {
+        "fetch": {
+          "start": "Fetching hub informations"
+        }
+      }
+    },
+    "node": {
+      "messages": {
+        "datasetCsvFetch": {
+          "start": "Fetching dataset {{title}}"
+        },
+        "fetch": {
+          "start": "Fetching node informations"
+        }
+      }
+    }
+  },
+  "errors": {
+    "generic": "An error occurred while contacting the server",
+    "user": {
+      "concurrencyFailure": "Concurrency failure",
+      "defaultError": "An error occurred",
+      "duplicateEmail": "Email already in use",
+      "duplicateRoleName": "Duplicate role",
+      "duplicateUsername": "Username already in use",
+      "generic": "There is an error in the submitted form",
+      "invalidEmail": "Invalid email",
+      "invalidLogin": "Invalid credentials",
+      "invalidRoleName": "Invalid role",
+      "invalidToken": "Invalid token",
+      "invalidUserName": "Invalid username",
+      "loginAlreadyAssociated": "Login already associated",
+      "passwordMismatch": "Password mismatch",
+      "passwordRequiresDigit": "Password must contain at least one digit",
+      "passwordRequiresLower": "Password must contain at least one lowercase character",
+      "passwordRequiresNonAlphanumeric": "Password must contain at least one special character",
+      "passwordRequiresUpper": "Password must contain at least one uppercase character",
+      "passwordTooShort": "Password is too short.",
+      "userAlreadyHasPassword": "User already has password",
+      "userAlreadyInRole": "User already in role",
+      "userLockoutNotEnabled": "User lockout not enabled",
+      "userNotInRole": "User not in role"
+    }
+  },
+  "middlewares": {
+    "feedback": {
+      "emptyCatalog": "This node has an empty catalog"
+    },
+    "fetchDatasetAsyncHandlerMiddlewareFactory": {
+      "feedback": {
+        "layoutHandlingError": "An error occurred while handling the layout"
+      },
+      "spinners": {
+        "layoutHandling": "Layout handling"
+      }
+    },
+    "user": {
+      "messages": {
+        "refreshUser": {
+          "start": "Updating user informations"
+        }
+      },
+      "passwordChangedLoginNecessary": "Password is changed. A new login is needed.",
+      "resetPasswordEmailSent": "An email was sent to reset the password.",
+      "sessionExpired": "The session of the user is expired. A new login is needed.",
+      "userRegisterSuccess": "User registered successfully."
+    }
+  },
+  "nutsLevel0": "Country",
+  "nutsLevel1": "Territorial divisions",
+  "nutsLevel10": "",
+  "nutsLevel11": "",
+  "nutsLevel12": "",
+  "nutsLevel13": "",
+  "nutsLevel14": "",
+  "nutsLevel15": "",
+  "nutsLevel16": "",
+  "nutsLevel17": "",
+  "nutsLevel18": "",
+  "nutsLevel19": "",
+  "nutsLevel2": "Regions",
+  "nutsLevel3": "Province",
+  "nutsLevel4": "Municipality",
+  "nutsLevel5": "",
+  "nutsLevel6": "",
+  "nutsLevel7": "",
+  "nutsLevel8": "",
+  "nutsLevel9": "",
+  "scenes": {
+    "appSettings": {
+      "fields": {
+        "backgroundMediaURL": {
+          "label": "Background image/video"
+        },
+        "disclaimer": {
+          "label": "Disclaimer"
+        },
+        "headerLogoURL": {
+          "label": "Header logo"
+        },
+        "logoURL": {
+          "label": "Logo"
+        },
+        "mapCopyright": {
+          "label": "Map copyright notice",
+          "noCopyright": "No notice will be shown"
+        },
+        "maxCells": {
+          "label": "Maximum table cells"
+        },
+        "maxObservationsAfterCriteria": {
+          "label": "Maximum number of observations that can be viewed after setting the criteria"
+        },
+        "slogan": {
+          "label": "Slogan"
+        },
+        "supportedLanguages": {
+          "helper": {
+            "linkText": "Show more",
+            "text": "Insert a code following ISO 639-1 standard."
+          },
+          "label": "Supported languages",
+          "placeholder": "Insert code"
+        },
+        "title": {
+          "label": "Title"
+        },
+        "treePageSize": {
+          "label": "Tree page size"
+        }
+      },
+      "messages": {
+        "addDashboard": {
+          "start": "Adding dashboard to hub"
+        },
+        "fetchAllDashboards": {
+          "start": "Fetching dashboards"
+        },
+        "fetchConfig": {
+          "start": "Fetching hub settings"
+        },
+        "fetchDashboards": {
+          "start": "Fetching hub dashboards"
+        },
+        "removeDashboard": {
+          "start": "Removing dashboard from hub"
+        },
+        "sendConfig": {
+          "start": "Saving hub settings"
+        },
+        "sendDashboardsOrders": {
+          "start": "Ordering hub dashboards"
+        }
+      },
+      "tabs": {
+        "dashboards": "Dashboards",
+        "general": "General",
+        "information": "Information",
+        "map": "Map",
+        "users": "Users"
+      },
+      "title": "Application configuration"
+    },
+    "dashboard": {
+      "actions": {
+        "fetchingDashboard": "Fetching dashboard",
+        "fetchingDataset": "Fetching dataset",
+        "fetchingDatasetStructure": "Fetching dataset structure",
+        "fetchingGeometries": "Fetching geometries"
+      },
+      "noDashboard": {
+        "hub": "No dashboards selected for the hub",
+        "node": "No dashboards selected for this node"
+      },
+      "title": "Dashboard"
+    },
+    "dashboardsSettings": {
+      "createDashboard": "Create dashboard",
+      "messages": {
+        "deleteDashboard": {
+          "start": "Deleting dashboard"
+        },
+        "fetchDashboard": {
+          "start": "Fetching dashboard"
+        },
+        "fetchDashboardViews": {
+          "start": "Fetching dashboard views"
+        },
+        "fetchDashboards": {
+          "start": "Fetching dashboards"
+        },
+        "submitDashboardCreate": {
+          "start": "Creating dashboard"
+        },
+        "submitDashboardUpdate": {
+          "start": "Updating dashboard"
+        }
+      },
+      "modals": {
+        "createDashboard": {
+          "title": "Create dashboard"
+        },
+        "deleteDashboard": {
+          "content": "The dashboard will be deleted. The action is irreversible.",
+          "title": "Delete the dashboard?"
+        },
+        "updateDashboard": {
+          "title": "Update dashboard"
+        }
+      },
+      "table": {
+        "actions": {
+          "deleteDashboard": "Delete",
+          "editDashboard": "Edit",
+          "viewDashboard": "View"
+        },
+        "columns": {
+          "dashboardTitle": "Name"
+        }
+      },
+      "title": "Dashboards"
+    },
+    "dataViewer": {
+      "actions": {
+        "chartSettings": "Chart settings",
+        "fullscreen": {
+          "enter": "Fullscreen",
+          "exit": "Exit"
+        },
+        "mapSettings": "Map settings"
+      },
+      "chartSettings": {
+        "categoryAxisLabel": {
+          "label": "Category axis label"
+        },
+        "colors": {
+          "actions": {
+            "addColor": "Add color"
+          },
+          "addColor": {
+            "resetDimension": "Reset dimension",
+            "resetDimensionValue": "Reset dimension value",
+            "selectDimension": "Select dimension",
+            "selectDimensionValue": "Select dimension value"
+          },
+          "allDimValues": "ALL VALUES",
+          "color": "Color",
+          "dimension": "Dimension",
+          "dimensionValue": "Dimension Value",
+          "row": {
+            "actions": {
+              "delete": "Remove color",
+              "edit": "Edit color"
+            }
+          }
+        },
+        "customizeCategoryAxis": {
+          "label": "Customize category axis label"
+        },
+        "dataLabelType": {
+          "label": "Show values on chart"
+        },
+        "isStacked": {
+          "label": "Stack secondary dimension"
+        },
+        "legendPosition": {
+          "label": "Legend positioning",
+          "values": {
+            "bottom": "Bottom",
+            "left": "Left",
+            "right": "Right",
+            "top": "Top"
+          }
+        },
+        "showAxesLabel": {
+          "label": "Show axes label"
+        },
+        "showFilters": {
+          "label": "Include filters information"
+        },
+        "showTitle": {
+          "label": "Include title"
+        },
+        "tabs": {
+          "colors": "Colors",
+          "export": "Export",
+          "general": "General"
+        },
+        "title": {
+          "label": "Customize title"
+        },
+        "valueAxisLabel": {
+          "label": "Value axis label"
+        }
+      },
+      "dialogs": {
+        "chartLayout": {
+          "title": "Chart Layout"
+        },
+        "chartSettings": {
+          "title": "Chart settings"
+        },
+        "criteria": {
+          "title": "Criteria"
+        },
+        "criteriaAlert": {
+          "isTooLongQuery": {
+            "content": "Please select fewer filters to be able to make this request correctly.",
+            "title": "The query for this request is too long"
+          },
+          "tooBigData": {
+            "content": "The table exceeds the number of allowed cells",
+            "title": "Please apply more restrictive criteria."
+          }
+        },
+        "downloadFormat": {
+          "content": "This node doesn't support this download format, please select another one"
+        },
+        "excelExport": {
+          "export": {
+            "label": "Export",
+            "values": {
+              "multiSheet": "full data",
+              "singleSheet": "current visualization"
+            }
+          },
+          "title": "Export data in Excel",
+          "warning": "The exported data may be incomplete because with the current layout the number of estimated filter combination exceed the limit; the max number of sheets generated will be {{sheetsLimit}}."
+        },
+        "mapSettings": {
+          "title": "Map settings"
+        },
+        "obsCountWarning": {
+          "content": "With the applied criteria the dataset exceeds the maximum allowed number of observations and will be cut, continue anyway?"
+        },
+        "tableLayout": {
+          "title": "Table Layout"
+        },
+        "unavailableView": {
+          "content": "The desired view is no longer available, the default data will be shown."
+        }
+      },
+      "errors": {
+        "applyCriteria": "No data to display: please set some criteria.",
+        "emptyData": "With the applied criteria the dataset is empty.",
+        "genericError": "An error occurred, please apply criteria again",
+        "tooBigData": "The table exceeds the number of allowed cells, more restrictive criteria must be applied."
+      },
+      "footer": {
+        "dataset": {
+          "add": "Save bookmark",
+          "delete": "Remove bookmark"
+        },
+        "dialogs": {
+          "datasetDelete": {
+            "title": "Are you sure you want to remove this bookmark?"
+          }
+        }
+      },
+      "header": {
+        "action": {
+          "attachments": {
+            "tooltip": "Attachments"
+          },
+          "attributes": {
+            "tooltip": "Attributes"
+          },
+          "export": {
+            "tooltip": "Export"
+          },
+          "hasAnnotationLayout": {
+            "tooltip": "This dataset has a layout defined in the annotations"
+          },
+          "hasTemplateLayout": {
+            "tooltip": "This dataset has a Template applied"
+          },
+          "hasViewLayout": {
+            "tooltip": "This dataset has a View applied"
+          },
+          "information": {
+            "tooltip": "Information"
+          },
+          "query": {
+            "tooltip": "SDMX query"
+          },
+          "save": {
+            "tooltip": "Save",
+            "values": {
+              "createTemplate": "Create new template",
+              "createView": "Create new view",
+              "updateTemplate": "Update template",
+              "updateView": "Update view"
+            }
+          },
+          "share": {
+            "tooltip": "Share"
+          },
+          "timesLog": {
+            "tooltip": "Times log"
+          }
+        },
+        "dialogs": {
+          "attributes": {
+            "title": "Attributes"
+          },
+          "duplicateViewError": {
+            "content": "The title is duplicated in the following languages",
+            "title": "Error creating view"
+          },
+          "notes": {
+            "title": "Notes"
+          },
+          "query": {
+            "content": {
+              "dataQuery": {
+                "title": "Data query"
+              },
+              "structureQuery": {
+                "title": "Structure query"
+              }
+            },
+            "title": "SDMX query"
+          },
+          "template": {
+            "title": {
+              "create": "Create new template",
+              "update": "Update template"
+            }
+          },
+          "view": {
+            "title": {
+              "create": "Create new view",
+              "update": "Update view"
+            }
+          }
+        }
+      },
+      "mapSettings": {
+        "showFilters": {
+          "label": "Include filters information"
+        },
+        "showTitle": {
+          "label": "Include title"
+        },
+        "tabs": {
+          "export": "Export"
+        },
+        "title": {
+          "label": "Customize title"
+        }
+      },
+      "sidebar": {
+        "chart": "Chart",
+        "criteria": "Criteria",
+        "dialogs": {
+          "referenceMetadata": {
+            "title": "Reference Metadata"
+          }
+        },
+        "layout": "Pivoting",
+        "referenceMetadata": "Reference Metadata"
+      },
+      "templateBuilder": {
+        "tabs": {
+          "chart": {
+            "cards": {
+              "form": {
+                "chartType": {
+                  "label": "Chart type"
+                }
+              }
+            },
+            "label": "Chart"
+          },
+          "map": {
+            "label": "Map"
+          },
+          "options": {
+            "cards": {
+              "general": {
+                "form": {
+                  "decimalPlaces": {
+                    "label": "Decimal places"
+                  },
+                  "decimalSeparator": {
+                    "label": "Decimal separator",
+                    "values": {
+                      "comma": "Comma",
+                      "dot": "Dot"
+                    }
+                  },
+                  "defaultView": "Default view",
+                  "enableCriteria": "Enable Criteria",
+                  "enableLayout": "Enable Layout",
+                  "enableVariation": "Enable variation",
+                  "hiddenDimensions": {
+                    "label": "Hidden dimensions",
+                    "placeholder": "Insert dimension"
+                  },
+                  "title": "Template name"
+                },
+                "title": "General"
+              },
+              "table": {
+                "form": {
+                  "emptyCellPlaceholder": "Empty cell placeholder"
+                },
+                "title": "Table"
+              }
+            },
+            "label": "Options"
+          },
+          "table": {
+            "form": {
+              "defaultLayout": {
+                "defaultPlaceholder": "For the current view the default layout will be applied.",
+                "label": "Default layout",
+                "values": {
+                  "custom": "Custom",
+                  "default": "Default"
+                }
+              }
+            },
+            "label": "Table"
+          }
+        }
+      },
+      "viewBuilder": {
+        "form": {
+          "title": {
+            "label": "Title"
+          }
+        }
+      },
+      "viewTemplateBuilder": {
+        "warnings": {
+          "lastNPeriod": "Since you have set a filter of type \"last N periods\", any values set for the time dimension in the filters or in the primary/secondary dimension will be ignored when viewing this view."
+        }
+      },
+      "warnings": {
+        "maxObservation": {
+          "label": "The dataset is partial, please apply more restrictive criteria."
+        }
+      }
+    },
+    "dataViewers": {
+      "viewers": {
+        "area": "Area",
+        "doughnut": "Doughnut",
+        "horizontalBar": "Horizontal Bar",
+        "line": "Line",
+        "map": "Map",
+        "pie": "Pie",
+        "polarArea": "Polar area",
+        "pyramid": "Pyramid",
+        "radar": "Radar",
+        "table": "Table",
+        "verticalBar": "Vertical Bar"
+      }
+    },
+    "dataset": {
+      "actions": {
+        "downloadingDataset": "Scaricamento Dataset",
+        "fetchingCodelist": "Fetching codelist",
+        "fetchingCodelists": "Fetching codelists",
+        "fetchingDataset": "Fetching dataset {{title}}",
+        "fetchingDatasetSdmxQuery": "Fetching SDMX query",
+        "fetchingGeometries": "Fetching geometries",
+        "savingTemplate": "Saving template",
+        "savingView": "Saving view"
+      }
+    },
+    "hub": {
+      "dashboards": "Dashboards",
+      "informations": "Informations",
+      "nodes": "Nodes",
+      "title": "Data Browser"
+    },
+    "node": {
+      "dashboards": "Dashboards",
+      "explore": "Explore",
+      "exploreSection": {
+        "ariaLabel": "Explore folders"
+      },
+      "informations": "Informations",
+      "otherNodes": "Other nodes"
+    },
+    "nodeSettings": {
+      "cacheSettings": {
+        "alwaysValid": "Always valid",
+        "deleteAllDataflowCache": "Clear all dataflows cache",
+        "deleteCatalogCache": "Clear catalog cache",
+        "disabled": "Disabled",
+        "hideEmptyEntries": "Hide empty entries",
+        "invalidTtl": {
+          "label": "The allowed value are: -1 (always valid), 0 (disabled) or a positive value"
+        },
+        "table": {
+          "actions": {
+            "deleteRow": "Delete",
+            "editRow": "Edit"
+          },
+          "dataflowAccess": "Accesses",
+          "dataflowFiles": "Files",
+          "dataflowSize": "Size",
+          "dataflowTitle": "Title",
+          "dataflowValidity": "Validity"
+        }
+      },
+      "fields": {
+        "active": {
+          "label": "Active",
+          "tooltip": "An active node can be reached by users and is shown in the drop-down menu."
+        },
+        "agency": {
+          "label": "Agency"
+        },
+        "annotations": {
+          "ATTACHED_DATA_FILES": {
+            "label": "Attached data files",
+            "tooltip": "Attached data files"
+          },
+          "CRITERIA_SELECTION": {
+            "label": "Criteria selection",
+            "tooltip": "Criteria selection"
+          },
+          "DATAFLOW_CATALOG_TYPE": {
+            "label": "Dataflow catalog type",
+            "tooltip": "Dataflow catalog type"
+          },
+          "DATAFLOW_HIDDEN": {
+            "label": "Hidden dataflow",
+            "tooltip": "Hidden dataflow"
+          },
+          "DATAFLOW_NOTES": {
+            "label": "Dataflow notes",
+            "tooltip": "Dataflow notes"
+          },
+          "DATAFLOW_SOURCE": {
+            "label": "Dataflow source",
+            "tooltip": "Dataflow source"
+          },
+          "DEFAULT": {
+            "label": "Default",
+            "tooltip": "Default"
+          },
+          "DEFAULT_VIEW": {
+            "label": "Default view",
+            "tooltip": "Default view"
+          },
+          "GEO_ID": {
+            "label": "Geo ID",
+            "tooltip": "Geo ID"
+          },
+          "KEYWORDS": {
+            "label": "Keywords",
+            "tooltip": "Keywords"
+          },
+          "LAST_UPDATE": {
+            "label": "Last update",
+            "tooltip": "Last update"
+          },
+          "LAYOUT_CHART_FILTER": {
+            "label": "Chart dimensions in filters",
+            "tooltip": "Chart dimensions in filters"
+          },
+          "LAYOUT_CHART_PRIMARY_DIM": {
+            "label": "Chart primary dimension",
+            "tooltip": "Chart primary dimension"
+          },
+          "LAYOUT_CHART_SECONDARY_DIM": {
+            "label": "Chart secondary dimension",
+            "tooltip": "Chart secondary dimension"
+          },
+          "LAYOUT_COLUMN": {
+            "label": "Table dimensions in column",
+            "tooltip": "Table dimensions in column"
+          },
+          "LAYOUT_DECIMAL_SEPARATOR": {
+            "label": "Decimal separator",
+            "tooltip": "Decimal separator"
+          },
+          "LAYOUT_EMPTY_CELL_PLACEHOLDER": {
+            "label": "Empty cell placeholder",
+            "tooltip": "Empty cell placeholder"
+          },
+          "LAYOUT_FILTER": {
+            "label": "Table dimensions in filters",
+            "tooltip": "Table dimensions in filters"
+          },
+          "LAYOUT_NUMBER_OF_DECIMALS": {
+            "label": "Number of decimals",
+            "tooltip": "Number of decimals"
+          },
+          "LAYOUT_ROW": {
+            "label": "Table dimensions in row",
+            "tooltip": "Table dimensions in row"
+          },
+          "LAYOUT_ROW_SECTION": {
+            "label": "Table dimensions in row section",
+            "tooltip": "Table dimensions in row section"
+          },
+          "METADATA_URL": {
+            "label": "Metadata URL",
+            "tooltip": "Metadata URL"
+          },
+          "NOT_DISPLAYED": {
+            "label": "Not displayed",
+            "tooltip": "Not displayed"
+          },
+          "ORDER": {
+            "label": "Order",
+            "tooltip": "Order"
+          },
+          "ORDER_CATEGORY": {
+            "label": "Category order",
+            "tooltip": "Category order"
+          },
+          "ORDER_CODELIST": {
+            "label": "Codelist order",
+            "tooltip": "Codelist order"
+          },
+          "VIRTUAL_DATAFLOW_NODE": {
+            "label": "Linked dataflow node",
+            "tooltip": "Linked dataflow node"
+          }
+        },
+        "authHttpDomain": {
+          "label": "Domain"
+        },
+        "authHttpPassword": {
+          "label": "Password"
+        },
+        "authHttpUsername": {
+          "label": "Username"
+        },
+        "backgroundMediaURL": {
+          "label": "Background image/video"
+        },
+        "baseMap": {
+          "label": "Base map"
+        },
+        "catalogCacheValidity": {
+          "label": "Catalog cache validity (in seconds)",
+          "tooltip": "Catalog elements cache time duration (in seconds)."
+        },
+        "catalogNavigationMode": {
+          "label": "Catalogue navigation mode",
+          "values": {
+            "card": "Card",
+            "list": "List"
+          }
+        },
+        "categorySchemaExcludes": {
+          "label": "Excluded Category Schemes",
+          "placeholder": "Insert one or more Category Schemes, e.g. IT1+CATEGORY_SCHEME_ID+1.0"
+        },
+        "code": {
+          "label": "ID",
+          "tooltip": "It is shown, as an alternative to the title, when space in the interface is limited."
+        },
+        "criteriaSelectionMode": {
+          "label": "Criteria selection mode",
+          "tooltip": "Defines the method of accessing dimension codes when defining criteria in queries."
+        },
+        "dataflowCacheValidity": {
+          "label": "Dataflow cache validity (in seconds)",
+          "tooltip": "Dataflow cache time duration (in seconds)"
+        },
+        "decimalNumber": {
+          "label": "Decimal number"
+        },
+        "decimalSeparator": {
+          "helper": "It can be overwritten by annotation at dataflow level.",
+          "label": "Decimal separator"
+        },
+        "default": {
+          "label": "Default"
+        },
+        "defaultLanguage": {
+          "helper": "Have to be one of the supported languages codes",
+          "label": "Default language"
+        },
+        "defaultLastNPeriods": {
+          "label": "Default last N periods",
+          "tooltip": "Disabled if the criteria selection mode is set to \"STEP_BY_STEP_FULL\" or \"ALL_FULL\""
+        },
+        "downloadFormats": {
+          "label": "Download file formats",
+          "placeholder": "Choose download file formats"
+        },
+        "enableHttpAuth": {
+          "label": "HTTP authentication"
+        },
+        "enableProxy": {
+          "label": "Proxy"
+        },
+        "endPoint": {
+          "label": "Endpoint URL"
+        },
+        "endpointV20": {
+          "label": "SOAP Endpoint 2.0"
+        },
+        "hiddenAttributes": {
+          "label": "Hidden attributes",
+          "placeholder": "Insert attribute"
+        },
+        "labelDimensionTerritorials": {
+          "label": "Territorial dimensions ID",
+          "placeholder": "Insert ID"
+        },
+        "logo": {
+          "label": "Logo"
+        },
+        "proxyAddress": {
+          "label": "Address"
+        },
+        "proxyPassword": {
+          "label": "Password"
+        },
+        "proxyPort": {
+          "label": "Port",
+          "validation": "Must be a valid port number."
+        },
+        "proxyUsername": {
+          "label": "Username"
+        },
+        "queryInfo": {
+          "label": "Show SDMX query info"
+        },
+        "responseFormat": {
+          "label": "Response format"
+        },
+        "showCategoryLevels": {
+          "label": "Category levels visible in the homepage"
+        },
+        "showDataflowNotInProduction": {
+          "label": "Show dataflow not in production"
+        },
+        "showDataflowUncategorized": {
+          "label": "Show uncategorized dataflow"
+        },
+        "showLinkedDataflow": {
+          "label": "Enable linked dataflow"
+        },
+        "showOnlyFileDataflow": {
+          "label": "Show only file dataflow"
+        },
+        "slogan": {
+          "label": "Slogan"
+        },
+        "structureFilters": {
+          "default": {
+            "label": "Pass filters in GET"
+          },
+          "enableEndpointV20": {
+            "label": "Enable SOAP Endpoint 2.0",
+            "tooltip": "Temporary configuration waiting for implementation of passing filters in POST in \\\"availableconstraint\\\" requests for REST endpoints. Enabled only if the criteria selection mode is set to \\\"STEP_BY_STEP_DYNAMIC\\\"."
+          },
+          "supportPostFiltersStructure": {
+            "label": "Pass filters in POST"
+          }
+        },
+        "supportPostFilters": {
+          "label": "Support POST filters for data"
+        },
+        "timePeriodRange": {
+          "label": "Default temporal range configuration used when it's not possible to retrieve the data range from available constraint"
+        },
+        "timePeriodRangeEnd": {
+          "label": "End day"
+        },
+        "timePeriodRangeStart": {
+          "label": "Start day"
+        },
+        "title": {
+          "label": "Title"
+        },
+        "type": {
+          "label": "Node type"
+        }
+      },
+      "permissions": {
+        "table": {
+          "columns": {
+            "manageCache": "Manage cache",
+            "manageConfig": "Manage config",
+            "manageTemplate": "Manage templates",
+            "userEmail": "Email",
+            "userFirstName": "First name",
+            "userLastName": "Last name",
+            "userOrganization": "Organization"
+          }
+        }
+      },
+      "tabs": {
+        "annotations": {
+          "label": "Annotations"
+        },
+        "cache": {
+          "label": "Cache"
+        },
+        "endpoint": {
+          "cards": {
+            "structureFilters": {
+              "label": "Mode used for passing filters when changing dimension",
+              "tooltip": "Enabled only if the criteria selection mode is set to \"STEP_BY_STEP_DYNAMIC\""
+            }
+          },
+          "label": "Endpoint"
+        },
+        "general": {
+          "label": "General"
+        },
+        "information": {
+          "label": "Information"
+        },
+        "view": {
+          "cards": {
+            "catalog": {
+              "title": "Catalog"
+            },
+            "dataflow": {
+              "cards": {
+                "timePeriod": {
+                  "title": "Time Period"
+                }
+              },
+              "title": "Dataflow"
+            }
+          },
+          "label": "View"
+        }
+      },
+      "templatesSettings": {
+        "modals": {
+          "deleteTemplate": {
+            "content": "The template will be deleted. The action is irreversible.",
+            "title": "Delete the template?"
+          }
+        },
+        "table": {
+          "actions": {
+            "deleteTemplate": "Delete",
+            "viewData": "Go to data"
+          },
+          "columns": {
+            "datasetId": "Dataset ID",
+            "templateName": "Name"
+          }
+        }
+      },
+      "validation": {
+        "ttlCatalog": "The allowed value are: -1 (always valid), 0 (disabled) or a positive value",
+        "ttlDataflow": "The allowed value are: -1 (always valid), 0 (disabled) or a positive value"
+      }
+    },
+    "nodesSettings": {
+      "cacheSettings": {
+        "messages": {
+          "createDataflowCache": {
+            "start": "Creating dataflow cache info"
+          },
+          "deleteAllDataflowCache": {
+            "start": "Deleting all dataflows cache"
+          },
+          "deleteCatalogCache": {
+            "start": "Deleting catalog cache"
+          },
+          "deleteDataflowCache": {
+            "start": "Deleting dataflow cache"
+          },
+          "fetchDataflowCache": {
+            "start": "Fetching dataflow cache"
+          },
+          "updateDataflowCache": {
+            "start": "Updating dataflow cache"
+          }
+        },
+        "modals": {
+          "deleteDataflowCache": {
+            "title": "This action will reset the dataflow cache. Confirm?"
+          }
+        }
+      },
+      "createNode": "Create node",
+      "messages": {
+        "addNodeDashboard": {
+          "start": "Adding dashboard to node"
+        },
+        "deleteNode": {
+          "start": "Deleting node"
+        },
+        "fetchAllDashboards": {
+          "start": "Fetching dashboards"
+        },
+        "fetchNode": {
+          "start": "Fetching node settings"
+        },
+        "fetchNodeDashboards": {
+          "start": "Fetching node dashboards"
+        },
+        "fetchNodes": {
+          "start": "Fetching nodes settings"
+        },
+        "removeNodeDashboard": {
+          "start": "Removing dashboard from node"
+        },
+        "sendNodeCreate": {
+          "start": "Creating node"
+        },
+        "sendNodeDashboardsOrders": {
+          "start": "Ordering node dashboards"
+        },
+        "sendNodeEdit": {
+          "start": "Updating node settings"
+        },
+        "sendNodesOrder": {
+          "start": "Saving nodes order"
+        }
+      },
+      "modals": {
+        "editNode": "Edit node",
+        "nodeCache": "{{nodeCode}} cache configuration",
+        "nodeDashboards": "{{nodeCode}} dashboards configuration",
+        "nodeDelete": {
+          "content": "The node will be deleted. The action is irreversible.",
+          "title": "Delete the node?"
+        },
+        "nodePermissions": "{{nodeCode}} permissions configuration",
+        "nodeTemplates": "{{node}} templates"
+      },
+      "permissionsSettings": {
+        "fetchConfig": {
+          "start": "Fetching node permissions"
+        },
+        "sendConfig": {
+          "start": "Updating node permissions"
+        }
+      },
+      "table": {
+        "actions": {
+          "deleteNode": "Delete node",
+          "editNode": "Edit node",
+          "nodeDashboards": "Dashboards",
+          "nodeDataflowsCache": {
+            "label": "CACHE",
+            "tooltip": "Dataflows cache"
+          },
+          "nodeOrderMoveDown": "Move down",
+          "nodeOrderMoveUp": "Move up",
+          "nodePermissions": "Permissions",
+          "nodeTemplates": {
+            "label": "TEMPL.",
+            "tooltip": "Templates"
+          }
+        },
+        "columns": {
+          "isNodeActive": {
+            "title": "Active",
+            "values": {
+              "false": "No",
+              "true": "Yes"
+            }
+          },
+          "isNodeDefault": {
+            "title": "Default",
+            "values": {
+              "false": "No",
+              "true": "Yes"
+            }
+          },
+          "nodeCode": "Code",
+          "nodeName": "Name"
+        }
+      },
+      "templatesSettings": {
+        "deleteTemplate": {
+          "start": "Deleting template"
+        },
+        "fetchConfig": {
+          "start": "Fetching node templates"
+        }
+      },
+      "title": "Nodes"
+    },
+    "results": {
+      "datasetCard": {
+        "downloadAria": "Download {{title}} in {{extension}} format"
+      },
+      "datasetsCount": {
+        "none": "No datasets",
+        "plural": "{{datasetsCount}} datasets",
+        "singular": "{{datasetsCount}} dataset"
+      },
+      "searchTitle": "Search results for \"{{query}}\""
+    },
+    "usersConfig": {
+      "deleteUser": {
+        "start": "Deleting user"
+      },
+      "fetchUser": {
+        "start": "Fetching user infos"
+      },
+      "fetchUsers": {
+        "start": "Fetching users infos"
+      },
+      "sendUserCreate": {
+        "start": "Creating user"
+      },
+      "sendUserEdit": {
+        "start": "Updating user infos"
+      }
+    },
+    "usersSettings": {
+      "createUser": "Create user",
+      "modals": {
+        "createUser": "Create new user",
+        "deleteUser": {
+          "content": "The user will be deleted and the views he created, if any, will be deleted as well. The action is irreversible.",
+          "title": "Delete the user?"
+        },
+        "editUser": "Edit user informations"
+      },
+      "table": {
+        "actions": {
+          "deleteUser": "Delete user",
+          "editUser": "Edit user"
+        },
+        "columns": {
+          "isActive": {
+            "title": "Active",
+            "values": {
+              "false": "No",
+              "true": "Yes"
+            }
+          },
+          "type": "Typology",
+          "userEmail": "Email",
+          "userFirstName": "First name",
+          "userLastName": "Last name",
+          "userOrganization": "Organization"
+        }
+      },
+      "title": "Users",
+      "userSettings": {
+        "disclaimerModal": {
+          "title": "Registered user disclaimer"
+        },
+        "fields": {
+          "disclaimerAccepted": {
+            "label": "I've read and I accept the disclaimer.",
+            "link": "Read the disclaimer"
+          },
+          "email": "Email",
+          "emailConfirm": "Confirm email",
+          "firstName": "First name",
+          "isActive": {
+            "label": "Active"
+          },
+          "lastName": "Last name",
+          "organization": "Organization",
+          "password": "Password",
+          "passwordConfirm": "Confirm password",
+          "type": {
+            "label": "Typology"
+          }
+        },
+        "validation": {
+          "emailsMustBeEqual": "Emails must be equal",
+          "mustAcceptDisclaimer": "In order to register you have to read and accept the disclaimer",
+          "passwordsMustBeEqual": "Passwords must be equal"
+        }
+      }
+    },
+    "viewsConfig": {
+      "messages": {
+        "deleteView": {
+          "start": "Deleting view"
+        },
+        "fetchViews": {
+          "start": "Fetching views"
+        }
+      }
+    },
+    "viewsSettings": {
+      "modals": {
+        "deleteView": {
+          "content": "The view will be deleted. The action is irreversible.",
+          "title": "Delete the view?"
+        }
+      },
+      "table": {
+        "actions": {
+          "deleteView": "Delete",
+          "viewView": "View"
+        },
+        "columns": {
+          "viewDatasetId": "Dataset ID",
+          "viewNodeId": "Node",
+          "viewTitle": "Name"
+        }
+      },
+      "title": "Views"
+    }
+  },
+  "timings": {
+    "cacheRead": "Read cache",
+    "clientTimings": "Client timings",
+    "filterDataCache": "Filtering cached data",
+    "generatingHtml": "Generating table HTML",
+    "jsonToJsonStat": "Converting JSON to JsonStat",
+    "nsiResponse": "NSI response",
+    "nsiResponseDownload": "NSI response download",
+    "nsiResponseDownloadSize": "NSI response size",
+    "observationCount": "Observation count",
+    "others": "Others",
+    "serverTimings": "Server timings",
+    "total": "Total",
+    "variation": "Variation Calculation",
+    "xmlToJsonStat": "Converting XML to JsonStat"
+  },
+  "variation": {
+    "dimension": {
+      "label": "Variation"
+    },
+    "options": {
+      "cyclical": {
+        "label": "Cyclical"
+      },
+      "trend": {
+        "label": "Trend"
+      },
+      "value": {
+        "label": "Value"
+      }
+    }
+  },
+  "LastModifiedKeys": {
+    "ariaLabels\\header\\search": "2022-04-05",
+    "ariaLabels\\header\\settings": "2022-04-05",
+    "commons\\catalog\\uncategorized": "2022-04-05",
+    "commons\\confirm\\close": "2022-04-05",
+    "commons\\confirm\\download": "2022-04-05",
+    "commons\\confirm\\save": "2022-04-05",
+    "components\\userLoginDialog\\login": "2022-04-05",
+    "components\\userLoginDialog\\title": "2022-04-05",
+    "components\\userSelect\\login": "2022-04-05",
+    "ariaLabels\\header\\user": "2022-04-05",
+    "commons\\confirm\\cancel": "2022-04-05",
+    "commons\\export\\custom\\attributes\\values\\dataset": "2022-04-05",
+    "ariaLabels\\header\\a11y": "2022-04-05",
+    "ariaLabels\\header\\appLanguage": "2022-04-05",
+    "ariaLabels\\header\\dashboard": "2022-04-05",
+    "ariaLabels\\header\\header": "2022-04-05",
+    "ariaLabels\\header\\info": "2022-04-05",
+    "commons\\confirm\\apply": "2022-04-05",
+    "commons\\confirm\\confirm": "2022-04-05",
+    "commons\\confirm\\copy": "2022-04-05",
+    "commons\\confirm\\edit": "2022-04-05",
+    "commons\\confirm\\preview": "2022-04-05",
+    "commons\\confirm\\submit": "2022-04-05",
+    "commons\\downloadFormat\\compactdata": "2022-04-05",
+    "commons\\downloadFormat\\csv": "2022-04-05",
+    "commons\\downloadFormat\\excel": "2022-04-05",
+    "commons\\downloadFormat\\genericdata": "2022-04-05",
+    "commons\\downloadFormat\\genericdata20": "2022-04-05",
+    "commons\\downloadFormat\\jpeg": "2022-04-05",
+    "commons\\downloadFormat\\jsondata": "2022-04-05",
+    "commons\\downloadFormat\\structure": "2022-04-05",
+    "commons\\downloadFormat\\structurespecificdata": "2022-04-05",
+    "commons\\export\\custom\\attributes\\values\\series": "2022-04-05",
+    "commons\\export\\custom\\messages\\colsAndRowsLimitsExceeded": "2022-04-05",
+    "commons\\export\\custom\\messages\\colsLimitsExceeded": "2022-04-05",
+    "commons\\export\\custom\\messages\\rowsLimitsExceeded": "2022-04-05",
+    "commons\\export\\custom\\variation\\title": "2022-04-05",
+    "commons\\export\\custom\\variation\\values\\cyclical": "2022-04-05",
+    "commons\\export\\custom\\variation\\values\\trend": "2022-04-05",
+    "commons\\export\\custom\\variation\\values\\value": "2022-04-05",
+    "commons\\hashLinks\\accessible": "2022-04-05",
+    "commons\\hashLinks\\footer": "2022-04-05",
+    "commons\\hashLinks\\main": "2022-04-05",
+    "commons\\validation\\inRange": "2022-04-05",
+    "commons\\validation\\positiveInteger": "2022-04-05",
+    "commons\\validation\\required": "2022-04-05",
+    "commons\\validation\\requiredAnyLanguage": "2022-04-05",
+    "component\\results\\breadcrumbs\\ariaLabel": "2022-04-05",
+    "component\\results\\breadcrumbs\\links\\home": "2022-04-05",
+    "components\\a11ySelect\\disable": "2022-04-05",
+    "components\\a11ySelect\\enable": "2022-04-05",
+    "components\\appInfo\\content": "2022-04-05",
+    "components\\appInfo\\poweredBy": "2022-04-05",
+    "components\\attributeIcons\\dialog\\title": "2022-04-05",
+    "components\\attributeList\\datasetInformation\\title": "2022-04-05",
+    "components\\attributeList\\seriesInformation\\title": "2022-04-05",
+    "components\\autoSearchInput\\placeholder": "2022-04-05",
+    "components\\cardsGrid\\actions\\description\\title": "2022-04-05",
+    "components\\catalogInfoButton\\label": "2022-04-05",
+    "components\\catalogMetadataButton\\label": "2022-04-05",
+    "components\\categoriesTree\\actions\\description\\title": "2022-04-05",
+    "components\\categoriesTree\\goToData": "2022-04-05",
+    "components\\chart\\axis\\variation\\label": "2022-04-05",
+    "components\\chart\\emptyChart": "2022-04-05",
+    "components\\chart\\error\\observationAttribute": "2022-04-05",
+    "components\\chart\\invalidPyramid": "2022-04-05",
+    "components\\chart\\tooltip\\attributes\\observation\\label": "2022-04-05",
+    "components\\chartLayout\\filters\\title": "2022-04-05",
+    "components\\chartLayout\\primaryDim\\title": "2022-04-05",
+    "components\\chartLayout\\secondaryDim\\title": "2022-04-05",
+    "components\\criteria\\dialogs\\warning\\losingFilters\\title": "2022-04-05",
+    "components\\criteria\\dialogs\\warning\\notCodedDimension\\label": "2022-04-05",
+    "components\\criteria\\emptyCodelist\\label": "2022-04-05",
+    "components\\criteria\\noCodelistAssociated\\info": "2022-04-05",
+    "components\\criteria\\noCodelistAssociated\\noFilter": "2022-04-05",
+    "components\\criteria\\table\\actions\\deselectAll\\tooltip": "2022-04-05",
+    "components\\criteria\\table\\actions\\selectAll\\tooltip": "2022-04-05",
+    "components\\criteria\\timePeriod\\alert\\notValidRange": "2022-04-05",
+    "components\\criteria\\timePeriod\\customRange\\end": "2022-04-05",
+    "components\\criteria\\timePeriod\\customRange\\from": "2022-04-05",
+    "components\\criteria\\timePeriod\\customRange\\period": "2022-04-05",
+    "components\\criteria\\timePeriod\\customRange\\start": "2022-04-05",
+    "components\\criteria\\timePeriod\\customRange\\to": "2022-04-05",
+    "components\\criteria\\timePeriod\\customRange\\year": "2022-04-05",
+    "components\\criteria\\timePeriod\\fullRange\\label": "2022-04-05",
+    "components\\criteria\\timePeriod\\selectLastPeriods\\helperText": "2022-04-05",
+    "components\\criteria\\timePeriod\\selectLastPeriods\\periods": "2022-04-05",
+    "components\\criteria\\timePeriod\\selectLastPeriods\\selectLast": "2022-04-05",
+    "components\\criteria\\timePeriod\\typeSelector\\label": "2022-04-05",
+    "components\\criteria\\timePeriod\\typeSelector\\value\\customRange": "2022-04-05",
+    "components\\criteria\\timePeriod\\typeSelector\\value\\fullRange": "2022-04-05",
+    "components\\criteria\\timePeriod\\typeSelector\\value\\onlyLastPeriods": "2022-04-05",
+    "components\\criteria\\tree\\nodeActions\\selectAll\\title": "2022-04-05",
+    "components\\customEmpty\\placeholder": "2022-04-05",
+    "components\\customMaterialTable\\empty": "2022-04-05",
+    "components\\customMaterialTable\\search\\placeholder": "2022-04-05",
+    "components\\customMaterialTable\\search\\tooltip": "2022-04-05",
+    "components\\dashboard\\actions\\attributes": "2022-04-05",
+    "components\\dashboard\\actions\\download": "2022-04-05",
+    "components\\dashboard\\actions\\fullscreen\\enter": "2022-04-05",
+    "components\\dashboard\\actions\\fullscreen\\exit": "2022-04-05",
+    "components\\dashboard\\applyFilters": "2022-04-05",
+    "components\\dashboard\\dialogs\\attributes\\title": "2022-04-05",
+    "components\\dashboard\\emptyView": "2022-04-05",
+    "components\\dashboard\\errors\\fetchDashboard": "2022-04-05",
+    "components\\dashboard\\fetching": "2022-04-05",
+    "components\\dashboard\\fetchingDatasetError": "2022-04-05",
+    "components\\dashboard\\fetchingGeometriesError": "2022-04-05",
+    "components\\dashboard\\missingView": "2022-04-05",
+    "components\\dashboardBuilder\\actions\\addColumn": "2022-04-05",
+    "components\\dashboardBuilder\\actions\\addRow": "2022-04-05",
+    "components\\dashboardBuilder\\actions\\addText": "2022-04-05",
+    "components\\dashboardBuilder\\actions\\addView": "2022-04-05",
+    "components\\dashboardBuilder\\actions\\deselectView": "2022-04-05",
+    "components\\dashboardBuilder\\actions\\editText": "2022-04-05",
+    "components\\dashboardBuilder\\actions\\enableFilters": "2022-04-05",
+    "components\\dashboardBuilder\\actions\\removeColumn": "2022-04-05",
+    "components\\dashboardBuilder\\actions\\removeRow": "2022-04-05",
+    "components\\dashboardBuilder\\actions\\resetColumn": "2022-04-05",
+    "components\\dashboardBuilder\\actions\\selectView": "2022-04-05",
+    "components\\dashboardBuilder\\actions\\showTitle": "2022-04-05",
+    "components\\dashboardBuilder\\filterDimension\\label": "2022-04-05",
+    "components\\dashboardBuilder\\filterDimension\\noOne": "2022-04-05",
+    "components\\dashboardBuilder\\filterLevels": "2022-04-05",
+    "components\\dashboardBuilder\\modals\\preview\\title": "2022-04-05",
+    "components\\dashboardBuilder\\modals\\text\\title": "2022-04-05",
+    "components\\dashboardBuilder\\modals\\views\\columns\\datasetId": "2022-04-05",
+    "components\\dashboardBuilder\\modals\\views\\columns\\name": "2022-04-05",
+    "components\\dashboardBuilder\\modals\\views\\columns\\node": "2022-04-05",
+    "components\\dashboardBuilder\\modals\\views\\title": "2022-04-05",
+    "components\\dashboardBuilder\\title": "2022-04-05",
+    "components\\dashboardsManager\\addDashboard": "2022-04-05",
+    "components\\dashboardsManager\\modals\\addDashboard\\table\\actions\\addDashboard\\tooltip\\assigned": "2022-04-05",
+    "components\\dashboardsManager\\modals\\addDashboard\\table\\actions\\addDashboard\\tooltip\\notAssigned": "2022-04-05",
+    "components\\dashboardsManager\\modals\\addDashboard\\table\\columns\\dashboardTitle": "2022-04-05",
+    "components\\dashboardsManager\\modals\\addDashboard\\title": "2022-04-05",
+    "components\\dashboardsManager\\table\\actions\\dashboardOrderMoveDown": "2022-04-05",
+    "components\\dashboardsManager\\table\\actions\\dashboardOrderMoveUp": "2022-04-05",
+    "components\\dashboardsManager\\table\\actions\\removeDashboard": "2022-04-05",
+    "components\\dashboardsManager\\table\\columns\\dashboardTitle": "2022-04-05",
+    "components\\datasetCard\\actions\\notes\\title": "2022-04-05",
+    "components\\datasetCard\\isMultiCategorized\\title": "2022-04-05",
+    "components\\datasetFilters\\primaryDim": "2022-04-05",
+    "components\\datasetFilters\\secondaryDim": "2022-04-05",
+    "components\\datasetFilters\\selectedCount": "2022-04-05",
+    "components\\datasetFilters\\selectedCount_plural": "2022-04-05",
+    "components\\datasetFilters\\table\\columns\\label\\title": "2022-04-05",
+    "components\\deleteConflictModal\\contentTitle": "2022-04-05",
+    "components\\deleteConflictModal\\contentTitleWithForce": "2022-04-05",
+    "components\\deleteConflictModal\\force": "2022-04-05",
+    "components\\deleteConflictModal\\objectType\\dashboard": "2022-04-05",
+    "components\\deleteConflictModal\\objectType\\node": "2022-04-05",
+    "components\\deleteConflictModal\\objectType\\view": "2022-04-05",
+    "components\\deleteConflictModal\\title": "2022-04-05",
+    "components\\enhancedTree\\collapseAll\\tooltip": "2022-04-05",
+    "components\\enhancedTree\\deselectAll\\tooltip": "2022-04-05",
+    "components\\enhancedTree\\expandAll\\tooltip": "2022-04-05",
+    "components\\enhancedTree\\levelSelector": "2022-04-05",
+    "components\\enhancedTree\\selectAll\\tooltip": "2022-04-05",
+    "components\\enhancedTree\\showMore": "2022-04-05",
+    "components\\fileInput\\messages\\upload\\error": "2022-04-05",
+    "components\\fileInput\\messages\\upload\\start": "2022-04-05",
+    "components\\fileInput\\reset": "2022-04-05",
+    "components\\fileInput\\upload": "2022-04-05",
+    "components\\fontSizeSelector\\big\\tooltip": "2022-04-05",
+    "components\\fontSizeSelector\\normal\\tooltip": "2022-04-05",
+    "components\\fontSizeSelector\\small\\tooltip": "2022-04-05",
+    "components\\header\\drawer\\backToNodeHome": "2022-04-05",
+    "components\\header\\drawer\\categoriesTitle": "2022-04-05",
+    "components\\header\\settings\\app": "2022-04-05",
+    "components\\header\\settings\\clearServerCacheAction\\messages\\clear\\start": "2022-04-05",
+    "components\\header\\settings\\nodes": "2022-04-05",
+    "components\\header\\settings\\queriesLog": "2022-04-05",
+    "components\\header\\settings\\queriesLogModal\\content": "2022-04-05",
+    "components\\header\\settings\\users": "2022-04-05",
+    "components\\infiniteScrollTable\\footer\\rowCount": "2022-04-05",
+    "components\\infiniteScrollTable\\preHeader\\selectedCount": "2022-04-05",
+    "components\\infiniteScrollTable\\preHeader\\selectedCount_plural": "2022-04-05",
+    "components\\infiniteScrollTable\\resizing": "2022-04-05",
+    "components\\infiniteScrollTable\\updating": "2022-04-05",
+    "components\\labelFormatSelector\\labelFormat\\title": "2022-04-05",
+    "components\\labelFormatSelector\\labelFormat\\values\\both": "2022-04-05",
+    "components\\labelFormatSelector\\labelFormat\\values\\id": "2022-04-05",
+    "components\\labelFormatSelector\\labelFormat\\values\\name": "2022-04-05",
+    "components\\map\\baseMap\\italyRegions": "2022-04-05",
+    "components\\map\\baseMap\\osm": "2022-04-05",
+    "components\\map\\detailLevel": "2022-04-05",
+    "components\\map\\dialogs\\attributes\\content\\dimAttributes\\title": "2022-04-05",
+    "components\\map\\dialogs\\attributes\\content\\obsAttributes\\title": "2022-04-05",
+    "components\\map\\dialogs\\attributes\\title": "2022-04-05",
+    "components\\map\\emptyMap": "2022-04-05",
+    "components\\map\\noTerritorialDim": "2022-04-05",
+    "components\\map\\spinners\\loading": "2022-04-05",
+    "components\\map\\spinners\\rendering": "2022-04-05",
+    "components\\map\\tooltip\\attributes\\suffix": "2022-04-05",
+    "components\\map\\translation\\apply": "2022-04-05",
+    "components\\map\\translation\\cancel": "2022-04-05",
+    "components\\map\\translation\\classification": "2022-04-05",
+    "components\\map\\translation\\collapse": "2022-04-05",
+    "components\\map\\translation\\configure": "2022-04-05",
+    "components\\map\\translation\\endColor": "2022-04-05",
+    "components\\map\\translation\\equalInterval": "2022-04-05",
+    "components\\map\\translation\\from": "2022-04-05",
+    "components\\map\\translation\\legend": "2022-04-05",
+    "components\\map\\translation\\naturalBreaks": "2022-04-05",
+    "components\\map\\translation\\numberOfClasses": "2022-04-05",
+    "components\\map\\translation\\opacity": "2022-04-05",
+    "components\\map\\translation\\preview": "2022-04-05",
+    "components\\map\\translation\\quantile": "2022-04-05",
+    "components\\map\\translation\\startColor": "2022-04-05",
+    "components\\map\\translation\\to": "2022-04-05",
+    "components\\map\\translation\\uncollapse": "2022-04-05",
+    "components\\notImplementedSnackbar\\label": "2022-04-05",
+    "components\\query\\alert\\queryCopied\\label": "2022-04-05",
+    "components\\results\\actions\\description\\title": "2022-04-05",
+    "components\\searchInput\\label": "2022-04-05",
+    "components\\searchInput\\placeholder": "2022-04-05",
+    "components\\table\\alerts\\attributeCopied": "2022-04-05",
+    "components\\table\\dialogs\\attributes\\title": "2022-04-05",
+    "components\\table\\emptyTable": "2022-04-05",
+    "components\\table\\error\\observationAttribute": "2022-04-05",
+    "components\\table\\initializing": "2022-04-05",
+    "components\\table\\scrollbars\\loading": "2022-04-05",
+    "components\\table\\spinners\\rendering": "2022-04-05",
+    "components\\tableLayout\\colCount": "2022-04-05",
+    "components\\tableLayout\\rowCount": "2022-04-05",
+    "components\\tableLayout\\sections\\columns": "2022-04-05",
+    "components\\tableLayout\\sections\\filters": "2022-04-05",
+    "components\\tableLayout\\sections\\rows": "2022-04-05",
+    "components\\tableLayout\\sections\\sections": "2022-04-05",
+    "components\\userChangePasswordForm\\messages\\submit\\start": "2022-04-05",
+    "components\\userLoginDialog\\fields\\email": "2022-04-05",
+    "components\\userLoginDialog\\fields\\password": "2022-04-05",
+    "components\\userLoginDialog\\recoverPassword": "2022-04-05",
+    "components\\userLoginDialog\\recoverPasswordModal\\fields\\email": "2022-04-05",
+    "components\\userLoginDialog\\recoverPasswordModal\\title": "2022-04-05",
+    "components\\userLoginDialog\\register": "2022-04-05",
+    "components\\userRecoverPassword\\messages\\submit\\start": "2022-04-05",
+    "components\\userSelect\\accountSettings": "2022-04-05",
+    "components\\userSelect\\changePassword": "2022-04-05",
+    "components\\userSelect\\changePasswordModal\\fields\\newPassword": "2022-04-05",
+    "components\\userSelect\\changePasswordModal\\fields\\newPasswordConfirm": "2022-04-05",
+    "components\\userSelect\\changePasswordModal\\fields\\oldPassword": "2022-04-05",
+    "components\\userSelect\\changePasswordModal\\title": "2022-04-05",
+    "components\\userSelect\\changePasswordModal\\validation\\newPasswordMustBeEqual": "2022-04-05",
+    "components\\userSelect\\dashboards": "2022-04-05",
+    "components\\userSelect\\editUser": "2022-04-05",
+    "components\\userSelect\\editUserModal\\title": "2022-04-05",
+    "components\\userSelect\\logout": "2022-04-05",
+    "components\\userSelect\\messages\\fetchUser\\start": "2022-04-05",
+    "components\\userSelect\\registerModal\\submit\\label": "2022-04-05",
+    "components\\userSelect\\registerModal\\title": "2022-04-05",
+    "components\\userSelect\\userObjects": "2022-04-05",
+    "components\\userSelect\\views": "2022-04-05",
+    "components\\userSetPasswordDialog\\fields\\email": "2022-04-05",
+    "components\\userSetPasswordDialog\\fields\\password": "2022-04-05",
+    "components\\userSetPasswordDialog\\fields\\passwordConfirm": "2022-04-05",
+    "components\\userSetPasswordDialog\\title": "2022-04-05",
+    "components\\userSetPasswordDialog\\validation\\passwordMustBeEqual": "2022-04-05",
+    "components\\userSetPasswordForm\\messages\\submit\\start": "2022-04-05",
+    "components\\variationSelector\\variation\\both": "2022-04-05",
+    "components\\variationSelector\\variation\\none": "2022-04-05",
+    "components\\variationSelector\\variation\\title": "2022-04-05",
+    "dashboards\\dynamicFilterLabels\\municipality": "2022-04-05",
+    "dashboards\\dynamicFilterLabels\\province": "2022-04-05",
+    "dashboards\\dynamicFilterLabels\\region": "2022-04-05",
+    "domains\\catalog\\messages\\fetch\\start": "2022-04-05",
+    "domains\\hub\\messages\\fetch\\start": "2022-04-05",
+    "domains\\node\\messages\\datasetCsvFetch\\start": "2022-04-05",
+    "domains\\node\\messages\\fetch\\start": "2022-04-05",
+    "errors\\generic": "2022-04-05",
+    "errors\\user\\concurrencyFailure": "2022-04-05",
+    "errors\\user\\defaultError": "2022-04-05",
+    "errors\\user\\duplicateEmail": "2022-04-05",
+    "errors\\user\\duplicateRoleName": "2022-04-05",
+    "errors\\user\\duplicateUsername": "2022-04-05",
+    "errors\\user\\generic": "2022-04-05",
+    "errors\\user\\invalidEmail": "2022-04-05",
+    "errors\\user\\invalidLogin": "2022-04-05",
+    "errors\\user\\invalidRoleName": "2022-04-05",
+    "errors\\user\\invalidToken": "2022-04-05",
+    "errors\\user\\invalidUserName": "2022-04-05",
+    "errors\\user\\loginAlreadyAssociated": "2022-04-05",
+    "errors\\user\\passwordMismatch": "2022-04-05",
+    "errors\\user\\passwordRequiresDigit": "2022-04-05",
+    "errors\\user\\passwordRequiresLower": "2022-04-05",
+    "errors\\user\\passwordRequiresNonAlphanumeric": "2022-04-05",
+    "errors\\user\\passwordRequiresUpper": "2022-04-05",
+    "errors\\user\\passwordTooShort": "2022-04-05",
+    "errors\\user\\userAlreadyHasPassword": "2022-04-05",
+    "errors\\user\\userAlreadyInRole": "2022-04-05",
+    "errors\\user\\userLockoutNotEnabled": "2022-04-05",
+    "errors\\user\\userNotInRole": "2022-04-05",
+    "middlewares\\feedback\\emptyCatalog": "2022-04-05",
+    "middlewares\\fetchDatasetAsyncHandlerMiddlewareFactory\\feedback\\layoutHandlingError": "2022-04-05",
+    "middlewares\\fetchDatasetAsyncHandlerMiddlewareFactory\\spinners\\layoutHandling": "2022-04-05",
+    "middlewares\\user\\messages\\refreshUser\\start": "2022-04-05",
+    "middlewares\\user\\passwordChangedLoginNecessary": "2022-04-05",
+    "middlewares\\user\\resetPasswordEmailSent": "2022-04-05",
+    "middlewares\\user\\sessionExpired": "2022-04-05",
+    "middlewares\\user\\userRegisterSuccess": "2022-04-05",
+    "nutsLevel0": "2022-04-05",
+    "nutsLevel1": "2022-04-05",
+    "nutsLevel10": "2022-04-05",
+    "nutsLevel11": "2022-04-05",
+    "nutsLevel12": "2022-04-05",
+    "nutsLevel13": "2022-04-05",
+    "nutsLevel14": "2022-04-05",
+    "nutsLevel15": "2022-04-05",
+    "nutsLevel16": "2022-04-05",
+    "nutsLevel17": "2022-04-05",
+    "nutsLevel18": "2022-04-05",
+    "nutsLevel19": "2022-04-05",
+    "nutsLevel2": "2022-04-05",
+    "nutsLevel3": "2022-04-05",
+    "nutsLevel4": "2022-04-05",
+    "nutsLevel5": "2022-04-05",
+    "nutsLevel6": "2022-04-05",
+    "nutsLevel7": "2022-04-05",
+    "nutsLevel8": "2022-04-05",
+    "nutsLevel9": "2022-04-05",
+    "scenes\\appSettings\\fields\\backgroundMediaURL\\label": "2022-04-05",
+    "scenes\\appSettings\\fields\\disclaimer\\label": "2022-04-05",
+    "scenes\\appSettings\\fields\\headerLogoURL\\label": "2022-04-05",
+    "scenes\\appSettings\\fields\\logoURL\\label": "2022-04-05",
+    "scenes\\appSettings\\fields\\mapCopyright\\label": "2022-04-05",
+    "scenes\\appSettings\\fields\\mapCopyright\\noCopyright": "2022-04-05",
+    "scenes\\appSettings\\fields\\maxCells\\label": "2022-04-05",
+    "scenes\\appSettings\\fields\\maxObservationsAfterCriteria\\label": "2022-04-05",
+    "scenes\\appSettings\\fields\\slogan\\label": "2022-04-05",
+    "scenes\\appSettings\\fields\\supportedLanguages\\helper\\linkText": "2022-04-05",
+    "scenes\\appSettings\\fields\\supportedLanguages\\helper\\text": "2022-04-05",
+    "scenes\\appSettings\\fields\\supportedLanguages\\label": "2022-04-05",
+    "scenes\\appSettings\\fields\\supportedLanguages\\placeholder": "2022-04-05",
+    "scenes\\appSettings\\fields\\title\\label": "2022-04-05",
+    "scenes\\appSettings\\fields\\treePageSize\\label": "2022-04-05",
+    "scenes\\appSettings\\messages\\addDashboard\\start": "2022-04-05",
+    "scenes\\appSettings\\messages\\fetchAllDashboards\\start": "2022-04-05",
+    "scenes\\appSettings\\messages\\fetchConfig\\start": "2022-04-05",
+    "scenes\\appSettings\\messages\\fetchDashboards\\start": "2022-04-05",
+    "scenes\\appSettings\\messages\\removeDashboard\\start": "2022-04-05",
+    "scenes\\appSettings\\messages\\sendConfig\\start": "2022-04-05",
+    "scenes\\appSettings\\messages\\sendDashboardsOrders\\start": "2022-04-05",
+    "scenes\\appSettings\\tabs\\dashboards": "2022-04-05",
+    "scenes\\appSettings\\tabs\\general": "2022-04-05",
+    "scenes\\appSettings\\tabs\\information": "2022-04-05",
+    "scenes\\appSettings\\tabs\\map": "2022-04-05",
+    "scenes\\appSettings\\tabs\\users": "2022-04-05",
+    "scenes\\appSettings\\title": "2022-04-05",
+    "scenes\\dashboard\\actions\\fetchingDashboard": "2022-04-05",
+    "scenes\\dashboard\\actions\\fetchingDataset": "2022-04-05",
+    "scenes\\dashboard\\actions\\fetchingDatasetStructure": "2022-04-05",
+    "scenes\\dashboard\\actions\\fetchingGeometries": "2022-04-05",
+    "scenes\\dashboard\\noDashboard\\hub": "2022-04-05",
+    "scenes\\dashboard\\noDashboard\\node": "2022-04-05",
+    "scenes\\dashboard\\title": "2022-04-05",
+    "scenes\\dashboardsSettings\\createDashboard": "2022-04-05",
+    "scenes\\dashboardsSettings\\messages\\deleteDashboard\\start": "2022-04-05",
+    "scenes\\dashboardsSettings\\messages\\fetchDashboard\\start": "2022-04-05",
+    "scenes\\dashboardsSettings\\messages\\fetchDashboards\\start": "2022-04-05",
+    "scenes\\dashboardsSettings\\messages\\fetchDashboardViews\\start": "2022-04-05",
+    "scenes\\dashboardsSettings\\messages\\submitDashboardCreate\\start": "2022-04-05",
+    "scenes\\dashboardsSettings\\messages\\submitDashboardUpdate\\start": "2022-04-05",
+    "scenes\\dashboardsSettings\\modals\\createDashboard\\title": "2022-04-05",
+    "scenes\\dashboardsSettings\\modals\\deleteDashboard\\content": "2022-04-05",
+    "scenes\\dashboardsSettings\\modals\\deleteDashboard\\title": "2022-04-05",
+    "scenes\\dashboardsSettings\\modals\\updateDashboard\\title": "2022-04-05",
+    "scenes\\dashboardsSettings\\table\\actions\\deleteDashboard": "2022-04-05",
+    "scenes\\dashboardsSettings\\table\\actions\\editDashboard": "2022-04-05",
+    "scenes\\dashboardsSettings\\table\\actions\\viewDashboard": "2022-04-05",
+    "scenes\\dashboardsSettings\\table\\columns\\dashboardTitle": "2022-04-05",
+    "scenes\\dashboardsSettings\\title": "2022-04-05",
+    "scenes\\dataset\\actions\\downloadingDataset": "2022-04-05",
+    "scenes\\dataset\\actions\\fetchingCodelist": "2022-04-05",
+    "scenes\\dataset\\actions\\fetchingCodelists": "2022-04-05",
+    "scenes\\dataset\\actions\\fetchingDataset": "2022-04-05",
+    "scenes\\dataset\\actions\\fetchingDatasetSdmxQuery": "2022-04-05",
+    "scenes\\dataset\\actions\\fetchingGeometries": "2022-04-05",
+    "scenes\\dataset\\actions\\savingTemplate": "2022-04-05",
+    "scenes\\dataset\\actions\\savingView": "2022-04-05",
+    "scenes\\dataViewer\\actions\\chartSettings": "2022-04-05",
+    "scenes\\dataViewer\\actions\\fullscreen\\enter": "2022-04-05",
+    "scenes\\dataViewer\\actions\\fullscreen\\exit": "2022-04-05",
+    "scenes\\dataViewer\\actions\\mapSettings": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\categoryAxisLabel\\label": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\colors\\actions\\addColor": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\colors\\addColor\\resetDimension": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\colors\\addColor\\resetDimensionValue": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\colors\\addColor\\selectDimension": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\colors\\addColor\\selectDimensionValue": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\colors\\allDimValues": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\colors\\color": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\colors\\dimension": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\colors\\dimensionValue": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\colors\\row\\actions\\delete": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\colors\\row\\actions\\edit": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\customizeCategoryAxis\\label": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\dataLabelType\\label": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\isStacked\\label": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\legendPosition\\label": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\legendPosition\\values\\bottom": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\legendPosition\\values\\left": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\legendPosition\\values\\right": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\legendPosition\\values\\top": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\showAxesLabel\\label": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\showFilters\\label": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\showTitle\\label": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\tabs\\colors": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\tabs\\export": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\tabs\\general": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\title\\label": "2022-04-05",
+    "scenes\\dataViewer\\chartSettings\\valueAxisLabel\\label": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\chartLayout\\title": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\chartSettings\\title": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\criteria\\title": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\criteriaAlert\\isTooLongQuery\\content": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\criteriaAlert\\isTooLongQuery\\title": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\criteriaAlert\\tooBigData\\content": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\criteriaAlert\\tooBigData\\title": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\downloadFormat\\content": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\excelExport\\export\\label": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\excelExport\\export\\values\\multiSheet": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\excelExport\\export\\values\\singleSheet": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\excelExport\\title": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\excelExport\\warning": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\mapSettings\\title": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\obsCountWarning\\content": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\tableLayout\\title": "2022-04-05",
+    "scenes\\dataViewer\\dialogs\\unavailableView\\content": "2022-04-05",
+    "scenes\\dataViewer\\errors\\applyCriteria": "2022-04-05",
+    "scenes\\dataViewer\\errors\\emptyData": "2022-04-05",
+    "scenes\\dataViewer\\errors\\genericError": "2022-04-05",
+    "scenes\\dataViewer\\errors\\tooBigData": "2022-04-05",
+    "scenes\\dataViewer\\footer\\dataset\\add": "2022-04-05",
+    "scenes\\dataViewer\\footer\\dataset\\delete": "2022-04-05",
+    "scenes\\dataViewer\\footer\\dialogs\\datasetDelete\\title": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\attachments\\tooltip": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\attributes\\tooltip": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\export\\tooltip": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\hasAnnotationLayout\\tooltip": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\hasTemplateLayout\\tooltip": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\hasViewLayout\\tooltip": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\information\\tooltip": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\query\\tooltip": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\save\\tooltip": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\save\\values\\createTemplate": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\save\\values\\createView": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\save\\values\\updateTemplate": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\save\\values\\updateView": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\share\\tooltip": "2022-04-05",
+    "scenes\\dataViewer\\header\\action\\timesLog\\tooltip": "2022-04-05",
+    "scenes\\dataViewer\\header\\dialogs\\attributes\\title": "2022-04-05",
+    "scenes\\dataViewer\\header\\dialogs\\duplicateViewError\\content": "2022-04-05",
+    "scenes\\dataViewer\\header\\dialogs\\duplicateViewError\\title": "2022-04-05",
+    "scenes\\dataViewer\\header\\dialogs\\notes\\title": "2022-04-05",
+    "scenes\\dataViewer\\header\\dialogs\\query\\content\\dataQuery\\title": "2022-04-05",
+    "scenes\\dataViewer\\header\\dialogs\\query\\content\\structureQuery\\title": "2022-04-05",
+    "scenes\\dataViewer\\header\\dialogs\\query\\title": "2022-04-05",
+    "scenes\\dataViewer\\header\\dialogs\\template\\title\\create": "2022-04-05",
+    "scenes\\dataViewer\\header\\dialogs\\template\\title\\update": "2022-04-05",
+    "scenes\\dataViewer\\header\\dialogs\\view\\title\\create": "2022-04-05",
+    "scenes\\dataViewer\\header\\dialogs\\view\\title\\update": "2022-04-05",
+    "scenes\\dataViewer\\mapSettings\\showFilters\\label": "2022-04-05",
+    "scenes\\dataViewer\\mapSettings\\showTitle\\label": "2022-04-05",
+    "scenes\\dataViewer\\mapSettings\\tabs\\export": "2022-04-05",
+    "scenes\\dataViewer\\mapSettings\\title\\label": "2022-04-05",
+    "scenes\\dataViewer\\sidebar\\chart": "2022-04-05",
+    "scenes\\dataViewer\\sidebar\\criteria": "2022-04-05",
+    "scenes\\dataViewer\\sidebar\\dialogs\\referenceMetadata\\title": "2022-04-05",
+    "scenes\\dataViewer\\sidebar\\layout": "2022-04-05",
+    "scenes\\dataViewer\\sidebar\\referenceMetadata": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\chart\\cards\\form\\chartType\\label": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\chart\\label": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\map\\label": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\general\\form\\decimalPlaces\\label": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\general\\form\\decimalSeparator\\label": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\general\\form\\decimalSeparator\\values\\comma": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\general\\form\\decimalSeparator\\values\\dot": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\general\\form\\defaultView": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\general\\form\\enableCriteria": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\general\\form\\enableLayout": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\general\\form\\enableVariation": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\general\\form\\hiddenDimensions\\label": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\general\\form\\hiddenDimensions\\placeholder": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\general\\form\\title": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\general\\title": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\table\\form\\emptyCellPlaceholder": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\cards\\table\\title": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\options\\label": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\table\\form\\defaultLayout\\defaultPlaceholder": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\table\\form\\defaultLayout\\label": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\table\\form\\defaultLayout\\values\\custom": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\table\\form\\defaultLayout\\values\\default": "2022-04-05",
+    "scenes\\dataViewer\\templateBuilder\\tabs\\table\\label": "2022-04-05",
+    "scenes\\dataViewer\\viewBuilder\\form\\title\\label": "2022-04-05",
+    "scenes\\dataViewer\\viewTemplateBuilder\\warnings\\lastNPeriod": "2022-04-05",
+    "scenes\\dataViewer\\warnings\\maxObservation\\label": "2022-04-05",
+    "scenes\\dataViewers\\viewers\\area": "2022-04-05",
+    "scenes\\dataViewers\\viewers\\doughnut": "2022-04-05",
+    "scenes\\dataViewers\\viewers\\horizontalBar": "2022-04-05",
+    "scenes\\dataViewers\\viewers\\line": "2022-04-05",
+    "scenes\\dataViewers\\viewers\\map": "2022-04-05",
+    "scenes\\dataViewers\\viewers\\pie": "2022-04-05",
+    "scenes\\dataViewers\\viewers\\polarArea": "2022-04-05",
+    "scenes\\dataViewers\\viewers\\pyramid": "2022-04-05",
+    "scenes\\dataViewers\\viewers\\radar": "2022-04-05",
+    "scenes\\dataViewers\\viewers\\table": "2022-04-05",
+    "scenes\\dataViewers\\viewers\\verticalBar": "2022-04-05",
+    "scenes\\hub\\dashboards": "2022-04-05",
+    "scenes\\hub\\informations": "2022-04-05",
+    "scenes\\hub\\nodes": "2022-04-05",
+    "scenes\\hub\\title": "2022-04-05",
+    "scenes\\node\\dashboards": "2022-04-05",
+    "scenes\\node\\explore": "2022-04-05",
+    "scenes\\node\\exploreSection\\ariaLabel": "2022-04-05",
+    "scenes\\node\\informations": "2022-04-05",
+    "scenes\\node\\otherNodes": "2022-04-05",
+    "scenes\\nodeSettings\\cacheSettings\\alwaysValid": "2022-04-05",
+    "scenes\\nodeSettings\\cacheSettings\\deleteAllDataflowCache": "2022-04-05",
+    "scenes\\nodeSettings\\cacheSettings\\deleteCatalogCache": "2022-04-05",
+    "scenes\\nodeSettings\\cacheSettings\\disabled": "2022-04-05",
+    "scenes\\nodeSettings\\cacheSettings\\hideEmptyEntries": "2022-04-05",
+    "scenes\\nodeSettings\\cacheSettings\\invalidTtl\\label": "2022-04-05",
+    "scenes\\nodeSettings\\cacheSettings\\table\\actions\\deleteRow": "2022-04-05",
+    "scenes\\nodeSettings\\cacheSettings\\table\\actions\\editRow": "2022-04-05",
+    "scenes\\nodeSettings\\cacheSettings\\table\\dataflowAccess": "2022-04-05",
+    "scenes\\nodeSettings\\cacheSettings\\table\\dataflowFiles": "2022-04-05",
+    "scenes\\nodeSettings\\cacheSettings\\table\\dataflowSize": "2022-04-05",
+    "scenes\\nodeSettings\\cacheSettings\\table\\dataflowTitle": "2022-04-05",
+    "scenes\\nodeSettings\\cacheSettings\\table\\dataflowValidity": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\active\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\active\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\agency\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\ATTACHED_DATA_FILES\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\ATTACHED_DATA_FILES\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\CRITERIA_SELECTION\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\CRITERIA_SELECTION\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\DATAFLOW_CATALOG_TYPE\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\DATAFLOW_CATALOG_TYPE\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\DATAFLOW_HIDDEN\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\DATAFLOW_HIDDEN\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\DATAFLOW_NOTES\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\DATAFLOW_NOTES\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\DATAFLOW_SOURCE\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\DATAFLOW_SOURCE\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\DEFAULT\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\DEFAULT\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\DEFAULT_VIEW\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\DEFAULT_VIEW\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\GEO_ID\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\GEO_ID\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\KEYWORDS\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\KEYWORDS\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAST_UPDATE\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAST_UPDATE\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_CHART_FILTER\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_CHART_FILTER\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_CHART_PRIMARY_DIM\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_CHART_PRIMARY_DIM\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_CHART_SECONDARY_DIM\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_CHART_SECONDARY_DIM\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_COLUMN\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_COLUMN\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_DECIMAL_SEPARATOR\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_DECIMAL_SEPARATOR\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_EMPTY_CELL_PLACEHOLDER\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_EMPTY_CELL_PLACEHOLDER\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_FILTER\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_FILTER\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_NUMBER_OF_DECIMALS\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_NUMBER_OF_DECIMALS\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_ROW\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_ROW\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_ROW_SECTION\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\LAYOUT_ROW_SECTION\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\METADATA_URL\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\METADATA_URL\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\NOT_DISPLAYED\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\NOT_DISPLAYED\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\ORDER\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\ORDER\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\ORDER_CATEGORY\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\ORDER_CATEGORY\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\ORDER_CODELIST\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\ORDER_CODELIST\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\VIRTUAL_DATAFLOW_NODE\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\annotations\\VIRTUAL_DATAFLOW_NODE\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\authHttpDomain\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\authHttpPassword\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\authHttpUsername\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\backgroundMediaURL\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\baseMap\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\catalogCacheValidity\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\catalogCacheValidity\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\catalogNavigationMode\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\catalogNavigationMode\\values\\card": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\catalogNavigationMode\\values\\list": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\categorySchemaExcludes\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\categorySchemaExcludes\\placeholder": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\code\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\code\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\criteriaSelectionMode\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\criteriaSelectionMode\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\dataflowCacheValidity\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\dataflowCacheValidity\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\decimalNumber\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\decimalSeparator\\helper": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\decimalSeparator\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\default\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\defaultLanguage\\helper": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\defaultLanguage\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\defaultLastNPeriods\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\defaultLastNPeriods\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\downloadFormats\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\downloadFormats\\placeholder": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\enableHttpAuth\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\enableProxy\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\endPoint\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\endpointV20\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\hiddenAttributes\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\hiddenAttributes\\placeholder": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\labelDimensionTerritorials\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\labelDimensionTerritorials\\placeholder": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\logo\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\proxyAddress\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\proxyPassword\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\proxyPort\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\proxyPort\\validation": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\proxyUsername\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\queryInfo\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\responseFormat\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\showCategoryLevels\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\showDataflowNotInProduction\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\showDataflowUncategorized\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\showLinkedDataflow\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\showOnlyFileDataflow\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\slogan\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\structureFilters\\default\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\structureFilters\\enableEndpointV20\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\structureFilters\\enableEndpointV20\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\structureFilters\\supportPostFiltersStructure\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\supportPostFilters\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\timePeriodRange\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\timePeriodRangeEnd\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\timePeriodRangeStart\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\title\\label": "2022-04-05",
+    "scenes\\nodeSettings\\fields\\type\\label": "2022-04-05",
+    "scenes\\nodeSettings\\permissions\\table\\columns\\manageCache": "2022-04-05",
+    "scenes\\nodeSettings\\permissions\\table\\columns\\manageConfig": "2022-04-05",
+    "scenes\\nodeSettings\\permissions\\table\\columns\\manageTemplate": "2022-04-05",
+    "scenes\\nodeSettings\\permissions\\table\\columns\\userEmail": "2022-04-05",
+    "scenes\\nodeSettings\\permissions\\table\\columns\\userFirstName": "2022-04-05",
+    "scenes\\nodeSettings\\permissions\\table\\columns\\userLastName": "2022-04-05",
+    "scenes\\nodeSettings\\permissions\\table\\columns\\userOrganization": "2022-04-05",
+    "scenes\\nodeSettings\\tabs\\annotations\\label": "2022-04-05",
+    "scenes\\nodeSettings\\tabs\\cache\\label": "2022-04-05",
+    "scenes\\nodeSettings\\tabs\\endpoint\\cards\\structureFilters\\label": "2022-04-05",
+    "scenes\\nodeSettings\\tabs\\endpoint\\cards\\structureFilters\\tooltip": "2022-04-05",
+    "scenes\\nodeSettings\\tabs\\endpoint\\label": "2022-04-05",
+    "scenes\\nodeSettings\\tabs\\general\\label": "2022-04-05",
+    "scenes\\nodeSettings\\tabs\\information\\label": "2022-04-05",
+    "scenes\\nodeSettings\\tabs\\view\\cards\\catalog\\title": "2022-04-05",
+    "scenes\\nodeSettings\\tabs\\view\\cards\\dataflow\\cards\\timePeriod\\title": "2022-04-05",
+    "scenes\\nodeSettings\\tabs\\view\\cards\\dataflow\\title": "2022-04-05",
+    "scenes\\nodeSettings\\tabs\\view\\label": "2022-04-05",
+    "scenes\\nodeSettings\\templatesSettings\\modals\\deleteTemplate\\content": "2022-04-05",
+    "scenes\\nodeSettings\\templatesSettings\\modals\\deleteTemplate\\title": "2022-04-05",
+    "scenes\\nodeSettings\\templatesSettings\\table\\actions\\deleteTemplate": "2022-04-05",
+    "scenes\\nodeSettings\\templatesSettings\\table\\actions\\viewData": "2022-04-05",
+    "scenes\\nodeSettings\\templatesSettings\\table\\columns\\datasetId": "2022-04-05",
+    "scenes\\nodeSettings\\templatesSettings\\table\\columns\\templateName": "2022-04-05",
+    "scenes\\nodeSettings\\validation\\ttlCatalog": "2022-04-05",
+    "scenes\\nodeSettings\\validation\\ttlDataflow": "2022-04-05",
+    "scenes\\nodesSettings\\cacheSettings\\messages\\createDataflowCache\\start": "2022-04-05",
+    "scenes\\nodesSettings\\cacheSettings\\messages\\deleteAllDataflowCache\\start": "2022-04-05",
+    "scenes\\nodesSettings\\cacheSettings\\messages\\deleteCatalogCache\\start": "2022-04-05",
+    "scenes\\nodesSettings\\cacheSettings\\messages\\deleteDataflowCache\\start": "2022-04-05",
+    "scenes\\nodesSettings\\cacheSettings\\messages\\fetchDataflowCache\\start": "2022-04-05",
+    "scenes\\nodesSettings\\cacheSettings\\messages\\updateDataflowCache\\start": "2022-04-05",
+    "scenes\\nodesSettings\\cacheSettings\\modals\\deleteDataflowCache\\title": "2022-04-05",
+    "scenes\\nodesSettings\\createNode": "2022-04-05",
+    "scenes\\nodesSettings\\messages\\addNodeDashboard\\start": "2022-04-05",
+    "scenes\\nodesSettings\\messages\\deleteNode\\start": "2022-04-05",
+    "scenes\\nodesSettings\\messages\\fetchAllDashboards\\start": "2022-04-05",
+    "scenes\\nodesSettings\\messages\\fetchNode\\start": "2022-04-05",
+    "scenes\\nodesSettings\\messages\\fetchNodeDashboards\\start": "2022-04-05",
+    "scenes\\nodesSettings\\messages\\fetchNodes\\start": "2022-04-05",
+    "scenes\\nodesSettings\\messages\\removeNodeDashboard\\start": "2022-04-05",
+    "scenes\\nodesSettings\\messages\\sendNodeCreate\\start": "2022-04-05",
+    "scenes\\nodesSettings\\messages\\sendNodeDashboardsOrders\\start": "2022-04-05",
+    "scenes\\nodesSettings\\messages\\sendNodeEdit\\start": "2022-04-05",
+    "scenes\\nodesSettings\\messages\\sendNodesOrder\\start": "2022-04-05",
+    "scenes\\nodesSettings\\modals\\editNode": "2022-04-05",
+    "scenes\\nodesSettings\\modals\\nodeCache": "2022-04-05",
+    "scenes\\nodesSettings\\modals\\nodeDashboards": "2022-04-05",
+    "scenes\\nodesSettings\\modals\\nodeDelete\\content": "2022-04-05",
+    "scenes\\nodesSettings\\modals\\nodeDelete\\title": "2022-04-05",
+    "scenes\\nodesSettings\\modals\\nodePermissions": "2022-04-05",
+    "scenes\\nodesSettings\\modals\\nodeTemplates": "2022-04-05",
+    "scenes\\nodesSettings\\permissionsSettings\\fetchConfig\\start": "2022-04-05",
+    "scenes\\nodesSettings\\permissionsSettings\\sendConfig\\start": "2022-04-05",
+    "scenes\\nodesSettings\\table\\actions\\deleteNode": "2022-04-05",
+    "scenes\\nodesSettings\\table\\actions\\editNode": "2022-04-05",
+    "scenes\\nodesSettings\\table\\actions\\nodeDashboards": "2022-04-05",
+    "scenes\\nodesSettings\\table\\actions\\nodeDataflowsCache\\label": "2022-04-05",
+    "scenes\\nodesSettings\\table\\actions\\nodeDataflowsCache\\tooltip": "2022-04-05",
+    "scenes\\nodesSettings\\table\\actions\\nodeOrderMoveDown": "2022-04-05",
+    "scenes\\nodesSettings\\table\\actions\\nodeOrderMoveUp": "2022-04-05",
+    "scenes\\nodesSettings\\table\\actions\\nodePermissions": "2022-04-05",
+    "scenes\\nodesSettings\\table\\actions\\nodeTemplates\\label": "2022-04-05",
+    "scenes\\nodesSettings\\table\\actions\\nodeTemplates\\tooltip": "2022-04-05",
+    "scenes\\nodesSettings\\table\\columns\\isNodeActive\\title": "2022-04-05",
+    "scenes\\nodesSettings\\table\\columns\\isNodeActive\\values\\false": "2022-04-05",
+    "scenes\\nodesSettings\\table\\columns\\isNodeActive\\values\\true": "2022-04-05",
+    "scenes\\nodesSettings\\table\\columns\\isNodeDefault\\title": "2022-04-05",
+    "scenes\\nodesSettings\\table\\columns\\isNodeDefault\\values\\false": "2022-04-05",
+    "scenes\\nodesSettings\\table\\columns\\isNodeDefault\\values\\true": "2022-04-05",
+    "scenes\\nodesSettings\\table\\columns\\nodeCode": "2022-04-05",
+    "scenes\\nodesSettings\\table\\columns\\nodeName": "2022-04-05",
+    "scenes\\nodesSettings\\templatesSettings\\deleteTemplate\\start": "2022-04-05",
+    "scenes\\nodesSettings\\templatesSettings\\fetchConfig\\start": "2022-04-05",
+    "scenes\\nodesSettings\\title": "2022-04-05",
+    "scenes\\results\\datasetCard\\downloadAria": "2022-04-05",
+    "scenes\\results\\datasetsCount\\none": "2022-04-05",
+    "scenes\\results\\datasetsCount\\plural": "2022-04-05",
+    "scenes\\results\\datasetsCount\\singular": "2022-04-05",
+    "scenes\\results\\searchTitle": "2022-04-05",
+    "scenes\\usersConfig\\deleteUser\\start": "2022-04-05",
+    "scenes\\usersConfig\\fetchUser\\start": "2022-04-05",
+    "scenes\\usersConfig\\fetchUsers\\start": "2022-04-05",
+    "scenes\\usersConfig\\sendUserCreate\\start": "2022-04-05",
+    "scenes\\usersConfig\\sendUserEdit\\start": "2022-04-05",
+    "scenes\\usersSettings\\createUser": "2022-04-05",
+    "scenes\\usersSettings\\modals\\createUser": "2022-04-05",
+    "scenes\\usersSettings\\modals\\deleteUser\\content": "2022-04-05",
+    "scenes\\usersSettings\\modals\\deleteUser\\title": "2022-04-05",
+    "scenes\\usersSettings\\modals\\editUser": "2022-04-05",
+    "scenes\\usersSettings\\table\\actions\\deleteUser": "2022-04-05",
+    "scenes\\usersSettings\\table\\actions\\editUser": "2022-04-05",
+    "scenes\\usersSettings\\table\\columns\\isActive\\title": "2022-04-05",
+    "scenes\\usersSettings\\table\\columns\\isActive\\values\\false": "2022-04-05",
+    "scenes\\usersSettings\\table\\columns\\isActive\\values\\true": "2022-04-05",
+    "scenes\\usersSettings\\table\\columns\\type": "2022-04-05",
+    "scenes\\usersSettings\\table\\columns\\userEmail": "2022-04-05",
+    "scenes\\usersSettings\\table\\columns\\userFirstName": "2022-04-05",
+    "scenes\\usersSettings\\table\\columns\\userLastName": "2022-04-05",
+    "scenes\\usersSettings\\table\\columns\\userOrganization": "2022-04-05",
+    "scenes\\usersSettings\\title": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\disclaimerModal\\title": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\fields\\disclaimerAccepted\\label": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\fields\\disclaimerAccepted\\link": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\fields\\email": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\fields\\emailConfirm": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\fields\\firstName": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\fields\\isActive\\label": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\fields\\lastName": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\fields\\organization": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\fields\\password": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\fields\\passwordConfirm": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\fields\\type\\label": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\validation\\emailsMustBeEqual": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\validation\\mustAcceptDisclaimer": "2022-04-05",
+    "scenes\\usersSettings\\userSettings\\validation\\passwordsMustBeEqual": "2022-04-05",
+    "scenes\\viewsConfig\\messages\\deleteView\\start": "2022-04-05",
+    "scenes\\viewsConfig\\messages\\fetchViews\\start": "2022-04-05",
+    "scenes\\viewsSettings\\modals\\deleteView\\content": "2022-04-05",
+    "scenes\\viewsSettings\\modals\\deleteView\\title": "2022-04-05",
+    "scenes\\viewsSettings\\table\\actions\\deleteView": "2022-04-05",
+    "scenes\\viewsSettings\\table\\actions\\viewView": "2022-04-05",
+    "scenes\\viewsSettings\\table\\columns\\viewDatasetId": "2022-04-05",
+    "scenes\\viewsSettings\\table\\columns\\viewNodeId": "2022-04-05",
+    "scenes\\viewsSettings\\table\\columns\\viewTitle": "2022-04-05",
+    "scenes\\viewsSettings\\title": "2022-04-05",
+    "timings\\cacheRead": "2022-04-05",
+    "timings\\clientTimings": "2022-04-05",
+    "timings\\filterDataCache": "2022-04-05",
+    "timings\\generatingHtml": "2022-04-05",
+    "timings\\jsonToJsonStat": "2022-04-05",
+    "timings\\nsiResponse": "2022-04-05",
+    "timings\\nsiResponseDownload": "2022-04-05",
+    "timings\\nsiResponseDownloadSize": "2022-04-05",
+    "timings\\observationCount": "2022-04-05",
+    "timings\\others": "2022-04-05",
+    "timings\\serverTimings": "2022-04-05",
+    "timings\\total": "2022-04-05",
+    "timings\\variation": "2022-04-05",
+    "timings\\xmlToJsonStat": "2022-04-05",
+    "variation\\dimension\\label": "2022-04-05",
+    "variation\\options\\cyclical\\label": "2022-04-05",
+    "variation\\options\\trend\\label": "2022-04-05",
+    "variation\\options\\value\\label": "2022-04-05"
+  }
+}

@@ -1,0 +1,18 @@
+### Enable/Disable user
+
+It might happen that a user needs to be disabled, in this case the super administrator user can perform the disable operation. \
+In the user setting menu (accessible from the main menu of the page), the list of all the registered user appears. Every line of the list refers to an user and his information (name, surname,
+organization) and one specific column in the lines tells if the user is active or not. If the user's account is active, there will be a YES, otherwise there will be a NO. To change the activeness of
+the account, the super administrator user needs to click the edit button (pencil icon) and select/deselect the active box.
+
+```eval_rst
+ .. image:: _images/enable_disable_user.JPG
+    :scale: 70%
+```
+
+If disabled users try to login the application, an error message will describe the inability to connect.
+
+```eval_rst
+ .. image:: _images/account_disabled.JPG
+    :scale: 70%
+```

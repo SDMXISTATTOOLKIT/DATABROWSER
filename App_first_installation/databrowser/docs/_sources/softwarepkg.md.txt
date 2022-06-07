@@ -1,0 +1,14 @@
+## Software package
+
+**PACKAGE DESCRIPTION**
+
+The software package ***databrowser_x.x.zip*** contains two folders ***app_first_installation*** and ***app_upgrade***.
+
+Both contain the following folders:
+- databrowser: configuration for client side.
+- databrowserhub: configuration for server side.
+
+app_first_installation is used for the first installation and includes: configuration files, customizations and application files.
+
+app_upgrade is used to upgrade an already configured application. In this case, the package contains also translations but configurations are removed. If translations have been previously customized, 
+related files must be manually overwritten in the folder i18n (for example the it.json and en.json files).

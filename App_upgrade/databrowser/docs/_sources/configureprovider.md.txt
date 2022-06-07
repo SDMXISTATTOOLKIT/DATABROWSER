@@ -1,0 +1,91 @@
+### How to configure a data provider
+
+Editing an existing node or  adding a new one,  will bring to another window where it is possible to configure the fields  that will afterwards be the settings for that node.
+In general these parametes can be customized in the normal node configuration set-up, with a data annotation setting or with the creation of a template. In particular, the parameters relate to:
+- Decimal separator: symbol used to separate the integer part from the fractional part of a number written in decimal form. Possible values . or ,
+- Number of decimals: number of digits that appear after the decimal point. Usually is set to 1.
+- Empty cell character: value set which appears when data has an empty cell
+- Default views: default visualization setting (table, chart or map)
+
+All elements will be described in the following paragraphs when talking about the related configuration levels.
+
+In some tabs the multilingual funcionality is enabled (indicated by the presence of the flag in certain fields). This allows the user to set a title for each language supported by the application. 
+More specifically, the configuration window appears like this:
+
+![nodes config - general](_images/node_conf_general.JPG)
+
+It contains different tabs, each one configuring specific settings related to the node itself.
+Getting a closer look to each tab, it is possible to notice that:
+
+- in the ***“General”*** tab, the mandatory fields are the ID of the node, the TITLE and the AGENCY. The user can decide to check the ACTIVE box if the node is ready to be browsed otherwise it must be left unchecked (it might happen that a node is part of the hub but still under construction). The "Default" checkbox allows to set the node as default node of the application. “Slogan”, “Background image/video” and “Logo” are all components of the node.
+
+- In the ***“Information”*** tab, the user can give a brief description of the node which will appear once it will be selected.
+
+    ![nodes config - info](_images/node_conf_information.JPG)
+
+- The ***“Endpoint”*** tab specifies the configurations needed in order to manage the system’s capability to connect and query the SDMX web service. 
+
+    ![nodes config - endpoint](_images/node_conf_endpoint.JPG)
+
+    This functionality allows the system to correctly query the data and also to recover any SDMX artefacts useful to the application (for example the category scheme and the categorizations useful for the Node Catalog). 
+    It is possible to set a HTTP Authentication and a Proxy, check the specific box to support POST filters and also the possibility to enable a SOAP endpoint. 
+    User can also select the method to access the codes of the dataflow dimensions when defining criteria. There are five possibile choices regarding the criteria selection mode:
+	- *ALL_FULL*: in this case all dimensions' items are simultaneously loaded (even those that are not contained in the data) and for each dimension the number of elements will be present.
+	- *ALL_PARTIAL*: in this case only dimensions' items contained in the data are simultaneously loaded and for each dimension the number of elements will be present.
+	- *STEP_BY_STEP_FULL*: in this case all dimensions' items are loaded (even those that are not contained in the data) while moving from one tab's dimension to another. For each dimension the number of elements will not be present at the beginning.
+	- *STEP_BY_STEP_PARTIAL*: in this case case only dimensions' items contained in the data are loaded while moving from one tab's dimension to another. For each dimension the number of elements will not be present at the beginning.
+	- *STEP_BY_STEP_DYNAMIC*: in this case case only dimensions' items contained in the data are loaded while moving from one tab's dimension to another. Furthermore, choices made in a tab affect next selections acting as filters. For each dimension the number of elements will not be present at the beginning.
+
+    ![nodes config - filter](_images/node_conf_filter.JPG)
+
+    If criteria selection mode is: *STEP_BY_STEP_DYNAMIC*, the user can choose the mode used for passing filters when changing dimension between:
+    - Pass filters in GET
+    - Pass filters in POST
+    - Enable SOAP Endpoint SDMX 2.0
+ 
+
+
+- The [***“Annotations”***](annotation_notdisplay) tab specifies the name of the components used to configure some specific visualization aspects of the node defined through the Annotation mechanism. 
+
+![nodes config - annotation](_images/node_conf_annotations.JPG)
+
+- The ***“View”*** tab specifies some other visualization aspects of the node and of all its components.
+    In particular it is possible to select configurations on how to :
+	- show uncategorized dataflows.
+	- Show dataflow not yet disseminated.
+	- Enable linked dataflows.
+	- Show only file dataflow.
+	- Show all the category levels or just stop to the first one. 
+	- Exclude particular category schemes from the main page.	
+	- Choose what kind of visualization the catalog navigation mode should have by default (CARD or LIST for example). 	
+	- Set the download file format.		
+	- Set the symbol used to separate the integer part from the fractional part of a number written in decimal form (decimal separator) and the number of digits to show after the decimal separator when visualizing data in table view.
+	- Insert territorial dimension IDs (if this param is set, the application understands when to activate maps).
+	- Choose last N periods of time (dynamic time-range) in order to set a default time period.
+	- Configure two fields (not mandatory): \
+      start day (dd/mm/yyyy, via datepicker) \
+      end day (dd/mm/yyyyy, via datepicker) \
+      which will be displayed by default in the absence of the actual time range on the dataflow, i.e. when the SDMX endpoint is unable to retrieve the time coverage of the data.
+	- Insert attributes' ids that will be hidden in the data visualization.
+	- Show SDMX query info option when visualizing data. \
+  \
+    When creating a new node, this tab will already have the following default values: \
+    **category levels visible**: *first* \
+    **decimal number**: *1* \
+    **decimal separator**: *comma* \
+    **navigation mode**: *list*
+
+    ![nodes config - view](_images/node_conf_view.JPG)
+
+- In the ***“Cache”*** tab, the user can manages cache. 
+    In particular it is possible to set cache validity (TTL - time to leave) for:
+
+	- Catalog cache: it concerns the cache of data exposed by a single node, it speeds up the search on catalog, node preview, etc.. \
+	The user can decide cache time duration (in seconds) for all Catalog elements.
+	
+	- Dataflows cache: it is related to queries on individual dataflows \
+	The user can decide cache time duration (in seconds) for all Dataflows.
+	
+    If time duration is not set means that cache never expires.	
+
+    ![nodes config - view](_images/node_conf_cache.JPG)	

@@ -1,0 +1,41 @@
+## Resolving Chrome downloading issues: integration of proxy to download files from HTTP Origin
+
+In case a dataflow has an annotation containing an attached file URL, the ability to do the download will be added in the Data Browser.
+
+In order to allow maximum flexibility and support for several different usage scenarios, the URL entered into that annotation by the user is never altered,
+ i.e. it arrives to the user's client exactly as it was entered into the annotation.
+This approach also guarantees the possibility of completely decoupling the file repositories from the Data Browser, 
+with particular reference to the fact that users who want to proceed to download the file will forward their HTTP requests directly to the server 
+where it resides, transparently to the server where the Data Browser is installed. 
+In other words, all the load resulting from these downloads is completely delegated to the server that hosts the files, 
+which may or may not be the same one that hosts the Data Browser.
+
+In case this mechanism is used in a Data Browser installed in HTTPS, but the resources reside on a server that does not use the HTTPS protocol, 
+the Chrome browser detects this download as "not secure" and blocks it. 
+On the contrary, on Microsoft Edge and Firefox this problem does not occur with the current versions and the download is allowed. 
+This security limitation was introduced by the Chrome browser in August 2020 and is documented at this link: [https://blog.chromium.org/2020/02/protecting-users-from-insecure.html](https://blog.chromium.org/2020/02/protecting-users-from-insecure.html)
+
+In order to overcome this problem, which does not depend on the application, it is possible to act at an infrastructural level by introducing a proxy on the server where the Data Browser is installed, 
+whose only purpose is to link the URLs of these files to those of the same HTTPS domain of the Data Browser. 
+Example: let's assume that a proxy is configured which can be reached at the url "https://www.databrowser_domain.com/proxy" and which, for security reasons, only manages the domain "unsecuredomain.com". 
+At this point it would be possible to modify the current annotations so that they do not point directly to "http://unsecuredomain.com/<filename>" but to "https://www.databrowser_domain.com/proxy? http://unsecuredomain.com/<filename>".
+In this way the download would refer to the same HTTPS domain as the application, so it would no longer be blocked by Chrome. 
+
+The use of this infrastructural solution would also allow to better manage the case in which the fileserver is not accessible from outside but only from the server of the Data Browser through appropriate permissions.
+
+Obviously, as with any other approach in which the URLs for the download refer to the application server and not to the original one, there are the following limits:
+
+- the download time needed by the user to download the file must be added to the time needed by the proxy to download it from the file server
+- the activity of download management weighs entirely on the application server, so in the case this is particularly important, all application performances can suffer, starting from a potential saturation of the band.
+
+However, we highlight how the proposed solution is in our opinion to be considered optimal compared to others because:
+
+- it operates exclusively on an infrastructural level, without impacting/complicating the application logic with potentially very complex functions that are logically not its own responsibility
+- it acts exclusively on the proxy configurations, for which various cases/scenarios can be managed with simplicity
+- since it doesn't foresee any configuration at the level of the whole application, it allows to manage every single file in a different way, 
+	i.e. it's possible to distribute the load deriving from the download operations of the files deciding for every single file if it has to pass from the application server using the proxy or 
+	it can point directly to an external URL. In other words, the limits indicated above are manageable for each single file, and you are not obliged to have them for the entire application.
+-  allows you to set on the proxy any control logic and download limitation. 
+
+As software for the proxy can be used any of those found on the network. As an example we indicate this one developed in .NET: [https://github.com/Esri/resource-proxy](https://github.com/Esri/resource-proxy).
+The same result could be obtained also using a reverese proxy.

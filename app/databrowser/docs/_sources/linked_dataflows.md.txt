@@ -1,8 +1,0 @@
-## Linked dataflows
-
-The application provides the possibility to include within the nodes also linked dataflows. \
-A linked dataflow is a dataflow defined in a node but linked to another dataflow which is contained in a totally different node. \
-The advantage of having a linked dataflow consists in the fact that it is not necessary to have all the base structures mandatory for a dataflow to be published on the node we are using but all we need
-is the link to the orginal node that contains it. \
-Nevertheless, the most important thing for all the mechanism to work is that the orginal node that contains the dataflow we want to link to, must be included in our hub named with its original ID.
-

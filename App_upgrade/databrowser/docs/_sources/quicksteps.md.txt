@@ -1,0 +1,13 @@
+## Quick steps
+
+This paragraph contains the synthetic summary of the steps needed to install and configure the application, considering that the prerequisites have been already satisfied.
+
+1. Download the software package ***databrowser_x.x.zip***
+2. Extract the two folders from the package(*databrowser* and *databrowserhub*) and copy them into the IIS root directory 
+3. Set the ISS configurations
+	- Assign to the IIS_IUSRS and IUSERS users read/write grants to the folder
+	- Create an IIS application pool for the web service "databrowserhub"
+4. Deploy the web service
+	- Create under the IIS Default Web Site a new application associated with the just created application pool **"databrowserhub"**
+5. Start the navigation
+	- Go to [http://localhost/databrowser](http://localhost/databrowser)

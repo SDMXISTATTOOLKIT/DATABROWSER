@@ -1,0 +1,11 @@
+### How to add a bookmark
+
+![Bookmark](_images/bookmark.png "Bookmark")
+
+When we have finished visualizing the data for a given dataflow, you can keep track of this navigation by adding a bookmark using the button at the bottom of the visualization itself.
+If, for example, you are viewing data from the "Population" dataflow, adding a bookmark will take that name.
+
+![Bookmark](_images/bookmark2.png "Bookmark")
+
+The bookmark will always be present even when other data are opened, so clicking on it will always take you back to the last view you made on "Population".
+Once the browser is closed the saved bookmarks are all deleted.

@@ -1,0 +1,36 @@
+### How to add a registered user
+
+A registered user is a common user that has an account which enables him to login the application but does not have permissions regarding management of any kind.
+He can create views, visualize them and delete them if necessary. \
+In order to create a new registered user, a super adminstrator user must enter the user setting menu by accessing the main menu of the page
+
+```eval_rst
+  .. |MM| image:: _images/Menu_principale_admin.JPG
+    :width: 300
+
+  .. |U| image:: _images/users.JPG
+    :width: 150
+
+  .. |CU| image:: _images/create_user.JPG
+    :width: 400
+
+  .. |NU| image:: _images/new_user.JPG
+    :width: 200
+
+|MM| => |U|
+
+and select the "Create user" button that will bring to a new window which defines the following mandatory and optional fields:
+
+- Email: mandatory. It represents the username necessary for logging in to the application and it cannot be changed.
+- Confirm email: mandatory. Field for email confirmation.
+- Active checkbox: if checked means that the user is active. The super administrator user can, in any time, deactivate a user.
+- Typology: mandatory. It defines if the new user is a citizen or a public authority.
+- First name: mandatory. User's first name.
+- Last name: mandatory. User's last name.
+- Organization: optional. This field is filled if the user is part of some organization.
+- Password: mandatory. In this field the new user sets his password.
+- Confirm password: mandatory. Field for password confirmation.
+
+|CU|
+```
+

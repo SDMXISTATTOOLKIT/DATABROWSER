@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+
+	<appSettings>
+		
+		<!-- Logger global parameters -->
+
+		<add key="serilog:minimum-level" value="Debug" />
+		<add key="serilog:minimum-level:override:Microsoft" value="Error" />
+		<add key="serilog:minimum-level:override:System" value="Error" />
+		<add key="serilog:minimum-level:override:Microsoft.EntityFrameworkCore.Database" value="Error" />
+		<add key="serilog:minimum-level:override:Microsoft.AspNetCore" value="Error" />		
+		<add key="serilog:enrich:FromLogContext" value="WithMachineName" />
+		<add key="serilog:destructure:ToMaximumDepth.maximumDestructuringDepth" value="4" />
+		<add key="serilog:destructure:ToMaximumStringLength.maximumStringLength" value="100" />
+		<add key="serilog:destructure:ToMaximumCollectionCount.maximumCollectionCount" value="10" />		
+		<add key="serilog:using:FilterExpressions" value="Serilog.Filters.Expressions" />
+
+		
+		<!-- Console Logger (only for developers) -->
+		
+		<add key="serilog:using:Console" value="Serilog.Sinks.Console" />
+		<add key="serilog:write-to:Console.theme" value="Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme::Code, Serilog.Sinks.Console"/>
+		<add key="serilog:write-to:Console.outputTemplate" value="[{Timestamp:HH:mm:ss.fff} {Application} {Level:u3}][{RequestId}]: {Message:lj}  {SourceContext} {NewLine}{Exception}"/>
+		<add key="serilog:write-to:Console.restrictedToMinimumLevel" value="Debug"/>
+
+		
+		<!-- Web Application Logger (DataBrowser.log) -->
+		
+		<add key="log:serilog:using:File" value="Serilog.Sinks.File" />
+		<add key="log:serilog:filter:ByIncludingOnly.expression" value="RequestId is not null and Length(RequestId) &gt; 0" />
+		<add key="log:serilog:write-to:File.path" value="C:\logs\DBROWSER\DataBrowser.log" />
+		<add key="log:serilog:write-to:File.restrictedToMinimumLevel" value="Error" />
+		<add key="log:serilog:write-to:File.formatter" value="Serilog.Formatting.Compact.CompactJsonFormatter, Serilog.Formatting.Compact" />
+		<add key="log:serilog:write-to:File.outputTemplate" value="[{Timestamp:HH:mm:ss.fff} {Application} {Level:u3}][{RequestId}]: {Message:lj}  {SourceContext} {NewLine}{Exception}" />
+		<add key="log:serilog:write-to:File.fileSizeLimitBytes" value="4000000" />
+		<add key="log:serilog:write-to:File.buffered" value="false" />
+		<add key="log:serilog:write-to:File.rollingInterval" value="Day" />
+		<add key="log:serilog:write-to:File.shared" value="false" />
+		<add key="log:serilog:write-to:File.retainedFileCountLimit" value="31" />
+		<add key="log:serilog:write-to:File.rollOnFileSizeLimit" value="true" />
+
+		
+		<!-- Scheduled worker (DataBrowser.Worker.log) -->
+		
+		<add key="worker:serilog:using:File" value="Serilog.Sinks.File" />
+		<add key="worker:serilog:filter:ByIncludingOnly.expression" value="RequestId is null or Length(RequestId) &lt;= 0" />
+		<add key="worker:serilog:write-to:File.path" value="C:\logs\DBROWSER\DataBrowser.Worker.log" />
+		<add key="worker:serilog:write-to:File.restrictedToMinimumLevel" value="Error" />
+		<add key="worker:serilog:write-to:File.formatter" value="Serilog.Formatting.Compact.CompactJsonFormatter, Serilog.Formatting.Compact" />
+		<add key="worker:serilog:write-to:File.outputTemplate" value="[{Timestamp:HH:mm:ss.fff} {Application} {Level:u3}][{RequestId}]: {Message:lj}  {SourceContext} {NewLine}{Exception}" />
+		<add key="worker:serilog:write-to:File.fileSizeLimitBytes" value="4000000" />
+		<add key="worker:serilog:write-to:File.buffered" value="false" />
+		<add key="worker:serilog:write-to:File.rollingInterval" value="Day" />
+		<add key="worker:serilog:write-to:File.shared" value="false" />
+		<add key="worker:serilog:write-to:File.retainedFileCountLimit" value="31" />
+		<add key="worker:serilog:write-to:File.rollOnFileSizeLimit" value="true" />
+
+	</appSettings>
+
+</configuration>

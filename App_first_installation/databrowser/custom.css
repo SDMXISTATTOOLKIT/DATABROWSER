@@ -1,0 +1,188 @@
+/*
+#admin-settings-btn, #other-settings-btn, #user-settings-btn, #language-btn,
+#dataset-save-btn, #dataset-times-log-btn, #dataset-share-btn, #dataset-attachments-btn, #dataset-export-btn,
+#dataset-info-btn, #dataset-attributes-btn {
+    display: none
+}*/
+
+/*
+    custom.css can be used to apply colors in the mui theme.
+    any color in the following "theme object" can be changed:
+    https://material-ui.com/customization/default-theme/#default-theme
+
+    just put a css rule in custom.css like this:
+    .theme__palette-error-main { color: #FF0000 }
+
+    each selector must start with ".theme__" and continue with the path in the "theme object"
+    the properties in the path must be separated by "-".
+    if the selector don't follow these rules, it will be discarded.
+    other rules different from color (e.g. fontSize) cannot be changed and will be discarded.
+
+    ----------------
+
+    ADVANCED STYLES: you can apply colors only for specific nodes or for accessible mode.
+
+    -----
+    NODES
+    -----
+
+    you can apply colors also for specific nodes, like this:
+    .theme__node__NODE_ID__palette-error-main { color: #FF0000 }
+
+    make sure NODE_ID is equal (case sensitive) to the id of the node and
+    make sure rules for specific nodes are written after general rules
+
+    e.g. this is correct, second rule will override first rule if NODE_ID is selected in the app:
+    .theme__palette-error-main { color: #FF0000 }
+    .theme__node__NODE_ID__palette-error-main { color: #FF0000 }
+
+    but THIS IS NOT CORRECT (second rule will always override first rule, even if NODE_ID is selected:
+    .theme__node__NODE_ID__palette-error-main { color: #FF0000 }
+    .theme__palette-error-main { color: #FF0000 }
+
+    -------------
+    ACCESSIBILITY
+    -------------
+
+    you can apply colors for accessibility (a11y) mode too, like this:
+    .a11y-theme__palette-primary-main { color: white }
+
+    and for specific nodes too:
+    .a11y-theme__node__NODE_ID__palette-primary-main { color: white }
+
+    make sure rules for accessibility are written after general rules
+*/
+
+/*
+    .theme__palette-primary-main {
+        color: #00295a
+    }
+
+    .theme__palette-primary-light {
+        color: #3b5187
+    }
+
+    .theme__palette-primary-dark {
+        color: #000030
+    }
+
+    .theme__palette-primary-contrastText {
+        background-color: #ffffff
+    }
+
+    .theme__palette-secondary-main {
+        color: #f8a81e
+    }
+
+    .theme__palette-secondary-light {
+        color: #ffd956
+    }
+
+    .theme__palette-secondary-dark {
+        color: #c07900
+    }
+
+    .theme__palette-secondary-contrastText {
+        color: #00295a
+    }
+*/
+
+/*
+    .download-btn--csv {
+        background-color: red !important;
+        color: white !important;
+    }
+*/
+
+/*
+#landing-page #node-selector {
+    display:none
+}
+
+#landing-page #explore-btn {
+    display:none
+}
+
+#landing-page #other-nodes-btn {
+    display:none
+}
+
+#landing-page #explore-section {
+    display:none
+}
+
+#landing-page #other-nodes-section {
+    display:none
+}
+*/
+
+.a11y-theme__palette-primary-main {
+    color: black
+}
+
+.a11y-theme__palette-primary-light {
+    color: black
+}
+
+.a11y-theme__palette-primary-dark {
+    color: black
+}
+
+.a11y-theme__palette-primary-contrastText {
+    background-color: white
+}
+
+.a11y-theme__palette-secondary-main {
+    color: black
+}
+
+.a11y-theme__palette-secondary-light {
+    color: black
+}
+
+.a11y-theme__palette-secondary-dark {
+    color: black
+}
+
+.a11y-theme__palette-secondary-contrastText {
+    color: white
+}
+
+.a11y-theme__palette-text-primary {
+    color: black
+}
+
+.a11y-theme__palette-background-default {
+    color: white
+}
+
+.a11y-theme__palette-background-paper {
+    color: white
+}
+
+.a11y .MuiAppBar-root .MuiTypography-colorSecondary {
+    color: white
+}
+
+@media only screen and (max-width: 1023px) {
+    #hub-name,
+    #language-btn,
+    #info-btn,
+    #a11y-btn {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1252px) {
+    #hub-name {
+        display: none;
+    }
+}
+
+.sanitized-html table {
+    border-collapse: collapse;
+}
+
+.sanitized-html table td {
+    border: 1px solid darkgray;
+}

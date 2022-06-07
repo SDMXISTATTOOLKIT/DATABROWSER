@@ -1,0 +1,15 @@
+### How to sign up to the website
+
+It is also possibile to create a new user by accessig the login link and by clicking on "SIGN UP"
+
+```eval_rst
+ .. image:: _images/Login.JPG
+    :scale: 70%
+```
+
+This opens a new window in which the new user defines his information. It is necessary to check the disclaimer box to continue the operation otherwise an error message will appear.
+
+```eval_rst
+ .. image:: _images/SignUp.JPG
+    :scale: 70%
+```

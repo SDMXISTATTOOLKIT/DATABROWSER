@@ -1,0 +1,6 @@
+# Application Upgrade
+
+To update the application, the user must follow the following steps:
+- stop the application pools
+- overwrite the already published databrowser and databrowserhub folders 
+- restart the application pools

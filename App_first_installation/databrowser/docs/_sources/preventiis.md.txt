@@ -1,0 +1,17 @@
+## Prevent IIS Tilde Enumeration
+
+The IIS Tilde vulnerability consists in the threat caused by the tilde character. It could happen that a remote hacker discloses files and folder names because of leakage of elements containing 
+sensitive data (such as credentials, configuration files, maintenance scripts, etc..) as a result of exploiting this vulnerability.
+However, some simple steps could defend againsts these attacks. \
+Instructions to prevent IIS Tilde Enumeration are as follows.
+
+On the server that hosts IIS, considering for example that installation is been made under the *wwwroot* folder:
+- open command prompt with administrator permissions
+- disable creation of file names in 8.3 format with the command:
+	- *fsutil 8dot3name set 1*
+- remove all the names in the 8.3 format present in folders and subfolders (/s) concerned. 
+	- *fsutil 8dot3name strip /s C:\inetpub\wwwroot*  (WARNING: don't run the command on the whole filesystem e.g.: C:\, you may have unpredictable side effects on already installed programs)
+- verify that all 8.3 filenames have been deleted
+	- *fsutil 8dot3name scan /s C:\inetpub\wwwroot*
+	
+scan and strip parameters generate a log file (the path is visible in the command output) in which is possible to check concerned files and possible problems (e.g. files not processed due to lock by other applications).

@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="None" class="no-js" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Browser 1.3.3 documentation | Configurations</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css">
+
+  <!-- Relations -->
+  <link rel="index" title="Index" href="index.html">
+  <link rel="top" title="Data Browser 1.3.3 documentation" href="index.html">
+  <link rel="up" title="Installation" href="installation.html">
+  <link rel="next" title="Application deployment" href="appdeploy.html">
+  <link rel="prev" title="Software package" href="softwarepkg.html">
+
+  <!-- No Index - keep if out of docs.italia.it -->
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+</head>
+
+<body class="docs-italia">
+  <script>
+	if (document.location.href.indexOf('?payload=') >= 0)
+		document.body.className += ' loading';
+</script>
+  <header class="container-fluid container-fluid--desktop px-0 header">
+  <div class="row p-4 px-lg-5 m-0 bg-primary--dark align-items-center">
+    <div class="row w-100">
+      <div class="logo--header">
+        <a href="https://www.istat.it/" tabindex="-1" aria-hidden="true" class="d-block">
+		  <img src="_static/logo.png" width="200" height="150"/>
+        </a>
+      </div>
+      <div class="col pl-3 pl-sm-4">
+        <h1 class="h1--header mb-1">
+          <!-- a href="/" class="site-title text-white" -->
+            Data Browser
+          <!-- /a -->
+        </h1>
+        <h2 class="text-white mb-0 h2--header">User manual.</h2>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="doc-header container-fluid container-fluid--desktop bg-white">
+  <div class="row py-3 px-4 px-lg-5 align-items-center flex-nowrap justify-content-between">
+    <div class="col-auto d-md-none d-flex align-items-center order-1">
+      <a href="#" class="btn p-2" role="button" id="searchbox-toggle" data-toggle="collapse" data-target="#searchbox" aria-controls="searchbox" aria-expanded="false" aria-label="Toggle searchbox">
+        <span class="docs-icon-search d-inline-block">
+          <span class="sr-only">Search in Document</span>
+        </span>
+      </a>
+    </div>
+    <div class="col-3 d-none d-md-flex pl-0">
+      
+  <div class="w-100" role="search">
+    <form class="mr-md-3" id="rtd-search-form" action="search.html" method="get">
+      <div class="input-group" role="search">
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+        <input type="text" class="p-2 text-grey form-control" style="" required="" id="cerca" name="q" placeholder="Search in Document...">
+				<span class="input-group-append">
+					<button type="submit" class="btn btn-default text-primary px-3 py-2" role="search">
+            <span class="docs-icon-search d-block my-auto">
+							<span class="sr-only">Search in Document</span>
+						</span>
+					</button>
+				</span>
+			</div>
+    </form>
+  </div>
+    </div>
+    <div class="col-auto d-none d-md-flex flex-grow-1 align-items-center order-1">
+      <div class="document-actions d-flex flex-column flex-md-row justify-content-around w-100 p-2 p-md-0 text-blue">
+  <div class="dropdown p-3 px-md-2 py-md-0 d-flex flex-wrap">
+    <a class="btn dropdown-toggle p-2 flex-grow-1 text-left" href="#" id="downloads-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="docs-icon-download align-middle"></span>
+      <span class="align-middle">Download</span>
+    </a>
+    <div class="dropdown-menu w-100" aria-labelledby="downloads-dropdown" aria-disabled="false">
+      <div class="link-list-wrapper">
+	    <a class="dropdown-item" href="_static/doc/DataBrowserManual_en.pdf" download>PDF</a>
+      </div>
+    </div>
+  </div>
+  <!-- Change language -->
+  <div class="dropdown p-3 px-md-2 py-md-0 d-flex flex-wrap">
+    <a class="btn dropdown-toggle p-2 flex-grow-1 text-left" href="#" id="downloads-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	  <i class="docs-icon-document docs__document-info__icon"></i>
+      <span class="align-middle">Language</span>
+    </a>
+    <div class="dropdown-menu w-100" aria-labelledby="downloads-dropdown" aria-disabled="false">
+      <div class="link-list-wrapper">
+        <ul class="link-list">
+          <li>
+		    <a class="dropdown-item" href="#" >English</a>
+            <span class="divider"></span>
+          </li>
+<!--
+          <li>
+		    <a class="dropdown-item" href="../en/index.html" >Italiano</a>
+            <span class="divider"></span>
+          </li>
+-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end change language -->
+</div>
+    </div>
+    
+    <div class="col-auto pr-0 d-md-none d-flex align-items-center justify-content-end order-1">
+      <a href="#" role="button" class="btn py-2 px-0" data-toggle="modal" data-target="#document-actions">
+        <span class="docs-icon-more"></span>
+        <span class="sr-only">Actions</span>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="progress-container">
+      <div class="progress-bar" id="scrollprogressBar"></div>
+    </div>
+  </div>
+</div>
+
+	<!--
+  Forum Italia comments templates
+-->
+
+<script id="forum-italia-comments" type="text/template">
+  <div class="block-comments" id="accordion-comments-{{ topicId }}" data-topic="{{ topicId }}">
+    <!-- Top header -->
+    <div class="block-comments__header d-flex border-top border-bottom border-width-2 pt-3 pb-3 align-items-center justify-content-between">
+      <h6 class="col-auto text-uppercase mb-0">{{ commentsCount }} Commenti</h6>
+      <button class="col-auto block-comments__toggle-btn rounded-circle border border-medium-blue border-width-2 collapsed" data-toggle="collapse" data-target="#comments-{{ topicId }}" aria-expanded="false">
+        <span class="docs-icon-plus"></span>
+        <span class="docs-icon-minus"></span>
+      </button>
+    </div>
+  </div>
+  <div class="block-comments__body collapse" data-parent="#accordion-comments-{{ topicId }}" id="comments-{{ topicId }}">
+    <!-- Input row -->
+    <div class="d-flex align-items-center mb-4 block-comments__input">
+      <div class="box-comment {{ canPost }}" data-topic="{{ topicId }}"></div>
+    </div>
+    <div class="row">
+      <div class="block-comments__container col">
+        <div class="row mt-4">
+          <ul class="block-comments__list col items mb-0" id="accordion-comment-item" data-topic="{{ topicId }}"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="block-comments__header d-flex border-bottom border-width-2 pt-3 pb-3 mb-4 align-items-center justify-content-end">
+      <button class="col-auto block-comments__toggle-btn rounded-circle border border-medium-blue border-width-2 collapsed" data-toggle="collapse" data-target="#comments-{{ topicId }}" aria-expanded="false">
+        <span class="docs-icon-plus"></span>
+        <span class="docs-icon-minus"></span>
+      </button>
+    </div>
+  </div>
+</script>
+
+<script id="forum-italia__comment" type="text/template">
+  <li id="comment-{{ post.id }}" class="row mb-4 block-comments__item {{ hidden }} {{ isNew }}"
+      data-topic="{{ post.topic_id }}" data-comment="{{ post.id }}">
+    <div id="reply-to-{{ post.id }}" class="block-comments__reply-anchor"></div>
+    <figure class="col-auto mb-0">
+      <img class="block-comments__img rounded-circle" src="{{ avatarUrl }}">
+    </figure>
+    <div class="col block-comments__content">
+      <div class="row align-items-center justify-content-between" id="comment-heading-1">
+        <div class="col-auto">
+          <span class="block-comments__name text-capitalize mb-0">{{ displayName }}</span>
+        </div>
+        <div class="col-auto">
+          <p class="d-inline-block mr-2 block-comments__date mb-0">{{ date }}</p>
+          <button class="block-comments__item-btn" data-toggle="collapse"
+                  data-target="#collapse-{{ post.id }}">
+            <i class="it-collapse"></i>
+            <i class="it-expand"></i>
+          </button>
+        </div>
+      </div>
+      <p class="text-uppercase block-comments__role">{{ publicUserField }}</p>
+      <div class="my-3">{{ replyLink }}</div>
+      <div id="collapse-{{ post.id }}" class="block-comments__paragraph pl-3 border-left collapse show"
+           aria-labelledby="comment-heading-1">
+        {{ post.cooked }}
+      </div>
+      <div class="block-comments__actions mb-2 mt-3">
+        {{ postActions }}
+      </div>
+    </div>
+  </li>
+</script>
+
+<script id="forum-italia__like-button" type="text/template">
+  <small>
+      <button id="{{ buttonAction }}-like-{{ post.id }}" type="button" class="btn btn-primary btn-sm mr-2 px-2 py-1">
+        {{ likeCount }}
+        <i class="it-favorite ml-1 mr-0"></i>
+      </button>
+      {{ likeDone }}
+    </small>
+</script>
+
+<script id="forum-italia__like-info" type="text/template">
+  <small>
+      <span id="like-{{ post.id }}" class="border rounded btn-sm mr-2 px-2 py-1">
+        {{ likeCount }}
+        <i class="it-favorite ml-1 mr-0"></i>
+      </span>
+      {{ likeDone }}
+    </small>
+</script>
+
+<script id="forum-italia__reply-link" type="text/template">
+  <div>
+    <small>In risposta al 
+      <a class="reply-to-post" href="#reply-to-{{ replyDest.id }}">
+        commento di {{ replyDest.name }}
+      </a>
+    </small>
+  </div>
+</script>
+
+<script id="forum__login" type="text/template">
+  <div class="box-comment__user-image box-comment__user-image--anon">
+    <i class="docs-icon-user"></i>
+  </div>
+  <div class="box-comment__login">
+    <div><button class="login-button btn-link p-0 border-0 align-baseline">Accedi al Forum</button> per commentare</div>
+  </div>
+</script>
+
+<script id="forum__comment" type="text/template">
+  <div class="form group">
+    <div class="box-comment__errors-box"></div>
+    <!-- Write -->
+    <div class="d-flex align-items-center mt-4 mb-4 block-comments__input box-comment__write">
+      <figure class="col-auto mb-0">
+        <img class="block-comments__img box-comment__figure rounded-circle" src="">
+          <figcaption>
+            <a href="#logout" class="block-comments__logout-link block-comments__logout-link--visible" data-toggle="modal" data-target="#logout-modal" title="Logout" alt="Logout">Logout</a>
+          </figcaption>
+      </figure>
+      <textarea class="form-control box-comment__body col ml-2 p-2" id="comments-input" placeholder="Scrivi qui un commento. Per formattare il testo puoi usare Markdown. Clicca sul bottone 'suggerimenti' per vedere alcuni esempi." rows="4"></textarea>
+    </div>
+    <!-- Buttons -->
+    <div class="box-comment__buttons">
+      <button type="button" class="btn btn-primary btn-sm box-comment__submit mr-2" disabled="true"><div>invia</div></button>
+      <button type="button" class="btn btn-sm btn-secondary new-comment__suggestions" data-container="body" data-toggle="popover" data-content="html">suggerimenti</button><span class="loading no-bg">&nbsp;</span>
+    </div>
+    <div class="box-comment__required">
+      <span>Scrivi almeno altri <span class="required-chars">20</span> caratteri</span>
+    </div>
+  </div>
+</script>
+
+<script id="forum-italia__missing_permission" type="text/template">
+	<div class="pl-2 block-comments__input missing_permission error error--{{ errorCode }} row">
+		<figure class="col-auto mb-0 mr-2">
+			<img class="block-comments__img new-comment__figure rounded-circle" src="">
+			<figcaption>
+				<a href="#logout" class="block-comments__logout-link block-comments__logout-link--visible" data-toggle="modal" data-target="#logout-modal" title="Logout" alt="Logout">Logout</a>
+			</figcaption>
+		</figure>
+
+		<div class="missing_permission__text col pt-2">{{ errorText }}</div>
+	</div>
+</script>
+
+<script id="forum__logout--modal" type="text/template">
+  <div class="modal logout-modal" id="logout-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Logout</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Dopo il logout non sarà possibile scrivere nuovi commenti. Sicuro di voler procedere?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" id="logout-modal__submit">Conferma</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="logout-modal__cancel">Annulla</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script id="forum-italia__markup__tooltip" type="text/template">
+  <div class="tooltip tooltip--active doc-tooltip box-comment__suggestions__tooltip" role="tooltip">
+    <div class="tooltip__wrap">
+      Markdown per la formattazione del testo:
+      <ul class="tooltip__content">
+        <li><b>Grassetto:</b> __testo__ (o **testo**)</li>
+        <li><i>Corsivo</i>: _testo_</li>
+        <li>Link: [Testo](http://example.com)</li>
+        <li>Citazione: &gt; Testo citazione</li>
+      </ul>
+    </div>
+  </div>
+</script>
+
+<script id="forum-italia__silenced" type="text/template">
+  <div class="error error__silenced">
+    Il tuo account è stato temporaneamente sospeso, scopri di più leggendo
+    <a href="{{ notificationsUrl }}" target="_blank">le tue notifiche</a> su Forum Italia.
+    <br>
+  </div>
+</script>
+
+<script id="forum-italia__closedTopic" type="text/template">
+  <div class="error error__closed">
+    Questa discussione è in sola lettura.
+    <br>
+  </div>
+</script>
+
+<script id="section_navigation__comments" type="text/template">
+  <li class="chapter-nav__item">
+      <span class="it-comment mr-2 align-middle"></span>
+      <a href="#forum-italia-comments-{{ topicId }}" class="chapter-link chapter-link--expand">
+          {{ postsCount }} commenti
+      </a>
+  </li>
+</script>
+
+
+<!--
+  markup_modifier templates
+-->
+
+<script id="markup_modifier__chapter-header" type="text/template"> <div class="chapter-header clearfix"><div class="title-wrap"> </script>
+
+<script id="markup_modifier__icon" type="text/template">
+	<span class="docs-icon-{{ i }}"></span>
+</script>
+
+<script id="markup_modifier__note-action" type="text/template">
+	<div class='note-action'>
+		<button type='button' class='note-close-btn'>×</button>
+		<button type='button' class='note-back-btn'><i class='it-arrow-up'></i> {{ text }} </button>
+	</div>
+</script>
+
+<script id="markup_modifier__admonition" type="text/template">
+	<div class='admonition__toggle-wrap'>
+		<button type='button' class='admonition__toggle-btn'>
+			<span class='admonition__toggle-show-more'>
+				{{ more }} <span class='docs-icon-plus'></span>
+			</span>
+			<span class='admonition__toggle-show-less'>
+				{{ less }} <span class='docs-icon-minus'></span>
+			</span>
+		</button>
+	</div>
+</script>
+
+
+<!--
+  glossary_page templates
+-->
+
+<script id="glossary__btn" type="text/template">
+	<button class='glossary-page__btn collapsed border-top border-grey-light border-width-2 pt-3 pb-3' data-toggle='collapse' data-target='#glossary-{{ id }}' aria-expanded='true' aria-controls='glossary-{{ id }}'>
+		<span class='docs-icon-plus mr-3'> </span>
+		<span class='docs-icon-minus mr-3'> </span>
+		{{ text }}
+	</button>
+</script>
+
+<script id="glossary__copy-link" type="text/template">
+	<div class='glossary-page__copy-link-wrap mt-3'>
+		<i class='it-link mr-2 align-middle'></i>
+		<button type='button' class='glossary-page__copy-link'> {{ copyLink }} </button>
+	</div>
+</script>
+
+
+<!--
+  searchbox_collapse templates
+-->
+
+<script id="searchbox-collapse" type="text/template">
+	<div class="row p-2"><div class="col"></div></div>
+</script>
+
+
+<!--
+  section_navigation templates
+-->
+
+<script id="section_navigation__nav" type="text/template">
+    <div class="chapter-nav">
+        <div class="chapter-nav__wrap">
+            <ul class="chapter-nav__list chapter-nav__list--visible">
+                <li class="chapter-nav__item">
+                    <span class="it-more-items mr-2 align-middle"></span>
+                    <button type="button" data-toggle="modal"
+                        class="chapter-link chapter-link--expand">{{ seeActions }}</button>
+                </li>
+            </ul>
+            <div class="{{ modalClass }} chapter-nav__list--hidden" tabindex="-1" role="dialog"
+                     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="{{ modalContainerClass }}">
+                    <div class="{{ modalContentClass }} chapter-nav__list-wrap">
+                        <div class="chapter-nav__title"> {{ title }} </div>
+                        <ul class="chapter-nav__list">
+                            <li class="chapter-nav__item">
+                                <i class="it-link mr-2 align-middle"></i>
+                                <button type="button" class="chapter-link">{{ copyLink }}</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+
+<!--
+  tooltip templates
+-->
+
+<script id="tooltip__main" type="text/template">
+	<div class='tooltip tooltip--active doc-tooltip' role='tooltip'>
+		<div class='tooltip__wrap'>
+			<button type='button' role='button' class='tooltip__close-btn' data-ref="{{ item.ref }}"></button>
+			<h2 class='tooltip__title'>{{ item.title }}</h2>
+			<p class='tooltip__content'>{{ item.body }}</p>
+		</div>
+	</div>
+</script>
+
+<script id="tooltip__glossary" type="text/template">
+	<div class='tooltip tooltip--active doc-tooltip' role='tooltip'>
+		<div class='tooltip__wrap'>
+			<button type='button' role='button' class='tooltip__close-btn' data-ref="{{ item.ref }}"></button>
+			<h2 class='tooltip__title'>{{ item.title }}</h2>
+			<p class='tooltip__content'>{{ trimmedSummary }}</p> {{ btnToGlossary }}
+		</div>
+	</div>
+</script>
+
+<script id="tooltip__note" type="text/template">
+	<div class='tooltip tooltip--active doc-tooltip doc-tooltip--note' role='tooltip'>
+		<div class='tooltip__wrap'>
+			<button type='button' role='button' class='tooltip__close-btn' data-ref="{{ item.ref }}"></button>
+			<h2 class='tooltip__title'>{{ item.title }}</h2>
+			<p class='tooltip__content'> {{ item.body }}</p>
+		</div>
+	</div>
+</script>
+
+
+  <div id="main" role="document">
+    <div class="container-fluid container-fluid--desktop main-container">
+      <div class="row">
+        <nav class="col--nav">
+          <section class="docs-menu">
+  <div id="desktop-menu" class="sidebar-nav">
+    <a class=""
+      aria-controls="desktop-menu" aria-label="exit navigation" title="exit navigation" href="#">
+      <span class="" aria-hidden="true"></span>
+    </a>
+
+    <button data-toggle="collapse" data-target="#content-index" aria-expanded="true" class="sidebar-btn p-3 sidebar-btn--desktop" type="button" aria-controls="content-index">
+      content index
+      <span class="it-collapse float-right"></span>
+      <span class="it-expand float-right"></span>
+    </button>
+    <div id="content-index" class="content-index--menu sidebar-list--wrapper sidebar-accordion-content collapse show">
+      <ul class="">
+        <li class="toctree-l1 ">
+          <a href='index.html'>Summary</a>
+        </li>
+      </ul>
+      
+      <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Acronym and Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="product_overview.html">Product overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="installation.html">Installation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="requisites.html">Pre-requisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preventiis.html">Prevent IIS Tilde Enumeration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="softwarepkg.html">Software package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appdeploy.html">Application deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="superadmin.html">Super Administrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software_update.html">Application Upgrade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quicksteps.html">Quick steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="personalization.html">Customizing Hub and nodes styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proxy.html">Resolving Chrome downloading issues: integration of proxy to download files from HTTP Origin</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="administration.html">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configapp.html">How to configure the application</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="configapp.html#general-settings">General settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="configapp.html#home-page-settings">Home page settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="configapp.html#accessible-version">Accessible version</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="hubmanagement.html">Hub management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="manageproviders.html">How to manage data providers (nodes)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="configureprovider.html">How to configure a data provider</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dataflowscache.html">How to configure Dataflows cache</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usermanagement.html">User Management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="application_roles.html">Application roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registered_user.html">How to add a registered user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sign_up.html">How to sign up to the website</a></li>
+<li class="toctree-l3"><a class="reference internal" href="node_admin_user.html">How to authorize a user as node administrator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="managepassw.html">Manage user's password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="enable_disable_user.html">Enable/Disable user</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="template.html">Template management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.html">Dashboard management</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="databrowsing.html">Data Browsing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browseproviders.html">How to browse different data providers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="browseaprov.html">How to browse a data provider</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="datacatalog.html">Data catalog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="textsearch.html">Textual search</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="visualizedata.html">How to visualize data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="criteria.html">How to manage data criteria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html">How to customize a table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html">How to customize a chart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="map.html">How to customize a map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="attributes.html">Attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="annotation_notdisplay.html">Annotations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="download.html">How to download data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookmark.html">How to add a bookmark</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="views.html">Views</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="view_descr.html">What is a view</a></li>
+<li class="toctree-l3"><a class="reference internal" href="save_view.html">How to save a view</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manage_view.html">How to manage views</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linked_dataflows.html">Linked dataflows and only file dataflows</a></li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+
+    
+
+    
+  </div>
+</section>
+          <!-- Toggle -->
+<div class="navbar-toggler--wrap navbar-toggler--wrap--bottom p-3">
+  <div class="navbar-toggler navbar-toggler--open p-0 border-0 ml-auto">
+    <div class="navbar-toggler-bottom__chapter align-middle text-truncate">
+      <span class="it-list mr-2"></span>Configurations
+    </div>
+  </div>
+</div>
+
+<div class="sidebar-tabs">
+
+  <!-- Back button. -->
+  <div class="row">
+    <div class="col">
+      <button class="navbar-toggler navbar-toggler--back border-0 ml-auto" type="button" data-toggle="offcanvas">
+        <span class="it-arrow-left align-middle"></span>
+        <span class="navbar-toggler__chapter align-middle ml-2">
+          indices and glossary
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Tab -->
+  <ul class="row ml-3 mr-3 nav nav-tabs" role="tablist">
+    <li class="col text-center active">
+      <a id="content-index-mobile-tab" data-toggle="tab" href="#content-index-mobile" aria-controls="content-index-mobile" role="tab" aria-selected="true" class="sidebar-btn p-2 sidebar-btn--mobile active show">
+        contents
+      </a>
+    </li>
+    <li class="col text-center">
+      <a id="figures-index-mobile-tab" data-toggle="tab" href="#figures-index-mobile" aria-controls="figures-index-mobile" role="tab" aria-selected="false" class="col sidebar-btn p-2 sidebar-btn--mobile">
+        figures
+      </a>
+    </li>
+    <li class="col text-center">
+      <a id="table-index-mobile-tab" data-toggle="tab" href="#table-index-mobile" aria-controls="table-index-mobile" role="tab" aria-selected="false" class="col sidebar-btn p-2 sidebar-btn--mobile">
+        tables
+      </a>
+    </li>
+    <li class="col text-center">
+      <a id="glossary-index-mobile-tab" data-toggle="tab" href="#glossary-index-mobile" aria-controls="glossary-index-mobile" role="tab" aria-selected="false" class="col sidebar-btn p-2 sidebar-btn--mobile">
+        glossary
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<!-- Off canvas -->
+<section class="docs-offcanvas-menu" id="sidebar-nav">
+  <div class="tab-content sidebar-nav">
+
+      <div id="content-index-mobile" class="content-index--menu tab-pane sidebar-list--wrapper fade show active" role="tabpanel" aria-labelledby="content-index-mobile-tab">
+        <ul class="">
+          <li class="toctree-l1 ">
+            <a href='index.html'>Summary</a>
+          </li>
+        </ul>
+        
+        <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Acronym and Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="product_overview.html">Product overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="installation.html">Installation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="requisites.html">Pre-requisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preventiis.html">Prevent IIS Tilde Enumeration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="softwarepkg.html">Software package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appdeploy.html">Application deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="superadmin.html">Super Administrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software_update.html">Application Upgrade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quicksteps.html">Quick steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="personalization.html">Customizing Hub and nodes styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proxy.html">Resolving Chrome downloading issues: integration of proxy to download files from HTTP Origin</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="administration.html">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configapp.html">How to configure the application</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="configapp.html#general-settings">General settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="configapp.html#home-page-settings">Home page settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="configapp.html#accessible-version">Accessible version</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="hubmanagement.html">Hub management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="manageproviders.html">How to manage data providers (nodes)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="configureprovider.html">How to configure a data provider</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dataflowscache.html">How to configure Dataflows cache</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usermanagement.html">User Management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="application_roles.html">Application roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="registered_user.html">How to add a registered user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sign_up.html">How to sign up to the website</a></li>
+<li class="toctree-l3"><a class="reference internal" href="node_admin_user.html">How to authorize a user as node administrator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="managepassw.html">Manage user's password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="enable_disable_user.html">Enable/Disable user</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="template.html">Template management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.html">Dashboard management</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="databrowsing.html">Data Browsing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browseproviders.html">How to browse different data providers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="browseaprov.html">How to browse a data provider</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="datacatalog.html">Data catalog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="textsearch.html">Textual search</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="visualizedata.html">How to visualize data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="criteria.html">How to manage data criteria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="table.html">How to customize a table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart.html">How to customize a chart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="map.html">How to customize a map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="attributes.html">Attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="annotation_notdisplay.html">Annotations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="download.html">How to download data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookmark.html">How to add a bookmark</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="views.html">Views</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="view_descr.html">What is a view</a></li>
+<li class="toctree-l3"><a class="reference internal" href="save_view.html">How to save a view</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manage_view.html">How to manage views</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linked_dataflows.html">Linked dataflows and only file dataflows</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+
+      <div id="figures-index-mobile" class="figures-index--menu tab-pane sidebar-list--wrapper fade" role="tabpanel" aria-labelledby="figures-index-mobile-tab">
+        None
+      </div>
+
+      <div id="table-index-mobile" class="table-index--menu tab-pane sidebar-list--wrapper fade" role="tabpanel" aria-labelledby="table-index-mobile-tab">
+        None
+      </div>
+
+      <div id="glossary-index-mobile" class="glossary-mobile--menu tab-pane sidebar-list--wrapper fade" role="tabpanel" aria-labelledby="glossary-index-mobile-tab">
+        None
+      </div>
+
+  </div>
+</section>
+        </nav>
+        <div id="doc-content" class="col-content">
+          
+            <div class="footer-buttons footer-buttons--prev" role="navigation" aria-label="footer navigation">
+                <a href="softwarepkg.html" class="" title="Software package" accesskey="p" rel="prev"> Back to Software package</a>
+            </div>
+          
+          
+  <div class="section" id="configurations">
+<h1>Configurations<a class="headerlink" href="#configurations" title="Permalink to this headline">¶</a></h1>
+<p>The client application is already configured to communicate to the web service listening on <a class="reference external" href="http://localhost/databrowserhub/">http://localhost/databrowserhub/</a>.
+The endpoint address can be set in the path [<strong>ROOT_IIS</strong>]\databrowser\config.json</p>
+<p>The <em>json</em> file appsettings.json, included in the databrowserhub folder, contains all the information regarding paths and settings of the application.
+Let’s take a closer look to all the possibile configurations.</p>
+<p><em><strong>Storage Directory</strong></em></p>
+<p>It is possible to configure the path of the base directory dedicated to data (databases and cache files (json-stat format));
+this will potentially allow 2 installations of Data Browser, one dedicated to front-end and one dedicated to cached data update, that share database and cache files.</p>
+<p><img alt="Structure image" src="_images/storage_dir.JPG" /></p>
+<p>This configuration is optional: if no base directory for storage is set, the software will automatically create a directory in the installation root directory.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;StorageDirectory&quot;</span><span class="p">:</span> <span class="s2">&quot;C:/StorageDirectory&quot;</span>
+</pre></div>
+</div>
+<p><em><strong>DataflowDataCache</strong></em></p>
+<p>In this part of the configuration, the user defines all settings regarding the storage of the cache files (json-stat format) for dataflow data.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;DataflowDataCache&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;NoSql&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;ConnectionString&quot;</span><span class="p">:</span> <span class="s2">&quot;Data Source=DB/DataflowDataCache.sqlite;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;IsEnable&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+  <span class="s2">&quot;SaveDataOnFile&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+  <span class="s2">&quot;SavedDataFilePath&quot;</span><span class="p">:</span> <span class="s2">&quot;_DataflowDataFiles&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Expiration&quot;</span><span class="p">:</span> <span class="mi">604800</span> <span class="o">//</span><span class="n">Second</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>Specifically:</p>
+<ul class="simple">
+<li><p><em>Type</em> is the server storage’s type (supports only “NoSql”).</p></li>
+<li><p><em>ConnectionString</em> specifies the path of the sqlite database.</p></li>
+<li><p><em>IsEnable (true/false)</em> indicates if the Data Browser can use (or not use) the cache.</p></li>
+<li><p><em>SaveDataOnFile</em> specifies if the jsonstat will be saved in a separated file.</p></li>
+<li><p><em>Expiration</em> indicates the default value, in seconds, for the validity of the jsonstat in cache. If value is 0 (zero), cache is never generated. If the value is -1 cache never expires. <br />At application level, it is possible to disable cache by setting the flag IsEnable = false. By default Expiration is always set to -1</p></li>
+</ul>
+<p><em><strong>CatalogCache</strong></em></p>
+<p>In this part of the configuration, the user defines expiration for catalogs.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;CatalogCache&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;Expiration&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span>
+  <span class="p">},</span>
+</pre></div>
+</div>
+<p>It indicates the default value, in seconds, for the validity of the jsonstat in cache. If value is 0 (zero), cache is never generated. If the value is -1 cache never expires. <br />By default Expiration is always set to -1.</p>
+<p><em><strong>Database</strong></em></p>
+<p>In this part of the configuration, the user defines all settings necessary for the storage of information regarding the Data Browser (nodes, dashboards, views, templates, users and so on).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Database&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;DbType&quot;</span><span class="p">:</span> <span class="s2">&quot;SQLite&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;ConnectionString&quot;</span><span class="p">:</span> <span class="s2">&quot;Data Source=DB/DataBrowserDB.sqlite;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;UseMigrationScript&quot;</span><span class="p">:</span> <span class="n">true</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>Specifically:</p>
+<ul class="simple">
+<li><p><em>DBType</em> is the server storage’s type.</p></li>
+<li><p><em>ConnectionString</em> is the path of the sqlite database concerning the storage directory.</p></li>
+<li><p><em>UseMigrationScript true/false</em> indicates if the new version of the software can automatically update the used database (recommended value is true).</p></li>
+</ul>
+<p><em><strong>Geometry Database</strong></em></p>
+<p>In this part of the configuration, the user defines the path of the database needed for the default geometries. <br />In the package provided, for example purposes, there are geographical data referring to Eurostat NUTS and ISTAT Italian municipalities.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;GeometryDatabase&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;DbType&quot;</span><span class="p">:</span> <span class="s2">&quot;SQLite&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;ConnectionString&quot;</span><span class="p">:</span> <span class="s2">&quot;Data Source=DB/Geometry.sqlite;&quot;</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>It is also possible to customize the geometries that overwrite the default configuration, simply by adding in the same directory some databases in the same format as “GeometryDatabase”,
+whose name must respect the following format: Geometry_Node_{NodeID}.sqlite</p>
+<p>The geographical database in sqlite is structured through a dedicated database, containing the table “Geometry” with the following fields:</p>
+<ul>
+<li><p><em>UniqueId</em>: unique numeric identifier (mandatory)</p></li>
+<li><p><em>Id</em>: unique identifier, used to make the join with codelist codes (mandatory)</p></li>
+<li><p><em>Label</em>: territory label; this information is optional and not used by the application</p></li>
+<li><p><em>Country</em>: country identifier; this information is optional and not used by the application</p></li>
+<li><p><em>NutsLevel</em>: NUTS level; this level is used by the application. It is a string which can be translated by the client, whose key must be in the format “nutsLevel{NutsLevel}”. Here a possible example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	<span class="o">.</span>
+	<span class="o">.</span>
+	<span class="o">.</span>
+<span class="s2">&quot;nutsLevel0&quot;</span><span class="p">:</span> <span class="s2">&quot;Country&quot;</span><span class="p">,</span>
+<span class="s2">&quot;nutsLevel1&quot;</span><span class="p">:</span> <span class="s2">&quot;Territorial divisions&quot;</span><span class="p">,</span>
+<span class="s2">&quot;nutsLevel2&quot;</span><span class="p">:</span> <span class="s2">&quot;Regions&quot;</span><span class="p">,</span>
+<span class="s2">&quot;nutsLevel3&quot;</span><span class="p">:</span> <span class="s2">&quot;Province&quot;</span><span class="p">,</span>
+<span class="s2">&quot;nutsLevel4&quot;</span><span class="p">:</span> <span class="s2">&quot;Municipality&quot;</span><span class="p">,</span>
+	<span class="o">.</span>
+	<span class="o">.</span>
+	<span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p><em>Source</em>: data source; this information is optional and not used by the application</p></li>
+<li><p><em>WKT</em>: territory geometry in WKT format; for more details about the format see: <a class="reference external" href="https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry">https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry</a></p></li>
+<li><p><em>AlternativeIds</em>: alternative identifiers for the current territory. In case the same territory is present in the codelist with different identifiers, in order to avoid adding more rows with the same geometry, in this field it is possible to insert the concatenation of the identifiers so that the system can receive them.</p></li>
+</ul>
+<p>If the user needs to specify more than one field, the “pipe” | separator must be inserted between the values.</p>
+<p><em><strong>CORS policies</strong></em></p>
+<p>In this part of the configuration, the user decides if CORS policies must be enabled or not (for more information on CORS check <a class="reference external" href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">https://en.wikipedia.org/wiki/Cross-origin_resource_sharing</a>).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;General&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;CORS&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;Enable&quot;</span><span class="p">:</span> <span class="n">true</span>
+  <span class="p">},</span>
+</pre></div>
+</div>
+<p><em><strong>External and internal rules</strong></em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;EndPointResponseLogForDebug&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>If true and log level is “debug”, all responses from NSI will be saved on log file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;InternalRestUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>Specifies the URL used for calling the DataBrowserAPI from the installation server.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;ExternalRestUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;http://localhost/databrowser/api/&quot;</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>Specifies the URL used for calling the DataBrowserAPI from outside the installation server.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;ExternalClientUrl&quot;</span><span class="p">:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="o">/</span><span class="n">databrowser</span>
+</pre></div>
+</div>
+<p>Specifies the URL used for calling the Data Browser frontend from outside the installation server.</p>
+<p><em><strong>Authentication</strong></em></p>
+<p>Some functionalities, exposed via API, are accessible by all types of users (anonymous and authenticated), others, on the other hand, are subject to profiling.
+In this part of the configuration, settings regarding login for authenticated users are defined.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Authentication&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;IsActive&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+  <span class="s2">&quot;Key&quot;</span><span class="p">:</span> <span class="s2">&quot;8CF07358F9BB4CA98C0EE4D26A97858C&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Issuer&quot;</span><span class="p">:</span> <span class="s2">&quot;DataBrowserIssuerApi&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Audience&quot;</span><span class="p">:</span> <span class="s2">&quot;DataBrowserApiUser&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;JwtTokenLifeTime&quot;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="o">//</span><span class="n">Minute</span>
+  <span class="s2">&quot;EnableRefreshToken&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+  <span class="s2">&quot;EnableAuditLogin&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+  <span class="s2">&quot;TryLoginMax&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+  <span class="s2">&quot;TryLoginTime&quot;</span><span class="p">:</span> <span class="mi">60</span><span class="p">,</span>
+  <span class="s2">&quot;DelayLogin&quot;</span><span class="p">:</span> <span class="mi">3000</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>Specifically:</p>
+<ul class="simple">
+<li><p><em>IsActive</em> if set to false, all APIs will be accessible from anonymous users.</p></li>
+<li><p><em>Key</em> represents the symmetric security key which is used for the generation of the hash token needed for login. The usage of the key is necessary for security encryption.</p></li>
+<li><p><em>Issuer</em> identifies the principal that issued the token.</p></li>
+<li><p><em>Audience</em> identifies the recipients that the token is intended for. If the principal processing the claim does not identify itself with a value in the “audience” claim when this claim is present, then the JWT MUST be rejected.</p></li>
+<li><p><em>JwtTokenLifeTime</em> specifies the time to live of the generated token.</p></li>
+<li><p><em>EnableRefreshToken</em> tells the system to regenerate a new token from cookie instead of recalling token with user and password.</p></li>
+<li><p><em>EnableAuditLogin</em> saves all attempts to login by all user on database. Information are saved in the AspNetUsersAudit table of the applicative database.</p></li>
+<li><p><em>TryLoginMax</em> sets the maximum number of login before activating the system of delay response.</p></li>
+<li><p><em>TryLoginTime</em> sets time (minutes) in which incorrect logins are considered.</p></li>
+<li><p><em>DelayLogin</em> (ms) specifes the time of delay of login response (time is incremented by this value for each invalid login).</p></li>
+</ul>
+<p><em><strong>Refresh cookie options</strong></em></p>
+<p>In this part of the configuration, the user defines the cookie’s settings to refresh the token.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;RefreshCookieOptions&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;HttpOnly&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+  <span class="s2">&quot;SameSite&quot;</span><span class="p">:</span> <span class="s2">&quot;Lax&quot;</span><span class="p">,</span> <span class="o">//</span><span class="n">null</span><span class="p">,</span> <span class="s2">&quot;Unspecified&quot;</span><span class="p">,</span> <span class="s2">&quot;None&quot;</span><span class="p">,</span> <span class="s2">&quot;Lax&quot;</span><span class="p">,</span> <span class="s2">&quot;Strict&quot;</span>
+  <span class="s2">&quot;RefreshTokenLifeTime&quot;</span><span class="p">:</span> <span class="mi">14400</span> <span class="o">//</span><span class="n">Minute</span>
+</pre></div>
+</div>
+<p>Specifically:</p>
+<ul class="simple">
+<li><p><em>HttpOnly</em> is recommended to be always set to true.</p></li>
+<li><p><em>SameSite: Lax</em> is recommended. If it is necessary to use crossdomain cookie, set it to “None” and use an Https connection. For all possibile values of the SameSite parameter, check <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite</a></p></li>
+<li><p><em>RefreshTokenLifeTime</em> defines validation time (in minutes) of the cookie.</p></li>
+</ul>
+<p><em><strong>User policy for password</strong></em></p>
+<p>In this part of the configuration, the user defines settings for password policy and mail in order to enable the user to create or change password.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;UserPolicy&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;PasswordRequiredLength&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+  <span class="s2">&quot;PasswordRequireNonAlphanumeric&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+  <span class="s2">&quot;PasswordRequireLowercase&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+  <span class="s2">&quot;PasswordRequireUppercase&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+  <span class="s2">&quot;PasswordRequireDigit&quot;</span><span class="p">:</span> <span class="n">true</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>For the creation/change password configuration, it is necessary to set SMTP information important for email exchange from DataBrowserAPI.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Mail&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;Smtp&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;Host&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Port&quot;</span><span class="p">:</span> <span class="mi">1234</span><span class="p">,</span>
+    <span class="s2">&quot;Secure&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+    <span class="s2">&quot;Username&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Password&quot;</span><span class="p">:</span> <span class="s2">&quot;pass&quot;</span>
+<span class="p">},</span>
+<span class="s2">&quot;DefaultMail&quot;</span><span class="p">:</span> <span class="s2">&quot;info@databrowser&quot;</span><span class="p">,</span>
+<span class="s2">&quot;Templates&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;ResetPassword&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;Sender&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Subject&quot;</span><span class="p">:</span> <span class="s2">&quot;Recovery Password&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Message&quot;</span><span class="p">:</span> <span class="s2">&quot;config/Template/recoveryPassword.html&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In particular:</p>
+<ul class="simple">
+<li><p><em>Mail</em> contains the information needed to configure the SMTP server for email exchange in case of recovery/change password necessity. In particular, the “Secure” field specifies if there is a SSL protocol or not.</p></li>
+<li><p><em>DefaultMail</em> is the default sender’s email address.</p></li>
+<li><p><em>Template</em> contains all html templates used for sending email. The only available template is ResetPassword.
+In this section, “Subject” is the subject of the email sent to reset the password. “Message” is the body of the email sent in html format.
+Usually the path to the html is specified. In this case the folder must be inside of DataBrowserAPI folder.
+This message can be overwritten by UserLang used from request. If the folder contains the config/Template/recoveryPassword.{UserLang}.html, that will be used as file for the message.
+The file is in HTML/CSS format and it can be modified as needed from the one delivered in the installation package.</p></li>
+</ul>
+<p><em><strong>Swagger</strong></em></p>
+<p>In case this option is set to true the user can see the requests defined in Data Browser and that can be sent to the application.
+If this option is missing or set to false swagger is disabled.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Swagger&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+</pre></div>
+</div>
+<p><em><strong>Special cache management</strong></em></p>
+<p>When talking about <em>cache</em> we refer to data stored so that future requests for that data can be served faster; the data stored in a cache might be the result of an earlier computation or a copy of data stored elsewhere. In this application, cache is very important especially when considering filterable dashboards that hold territorial dimensions and allow users to query results by changing these dimensions. For this reason timing is very important and a key component for a responsive and functional application. <br />In order to manage these requests, we consider services for handling cache regeneration depending on whether we are considering filterable or non-filterable dashboards (see section <a class="reference internal" href="dashboard.html"><span class="doc">Dashboards</span></a> for more information). <br />In particular, in the appsettings.json file a scheduler is defined in which a timer is set to specify the interval to check if there is any work to do (usually five minutes is the recommended interval 00:05:00).
+This scheduler picks the four files present in the config folder (config\dashboarddatacachegenerator.json, config\dataflowdatacachegenerator.json, config\cataloginmemorycachegenerator.json, config\templatecachegenerator.json) and launchs services.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Scheduler&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;IsEnable&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+  <span class="s2">&quot;Timer&quot;</span><span class="p">:</span> <span class="s2">&quot;00:05:00&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In particular:</p>
+<p><em><strong>DashboardDataCacheGenerator</strong></em>  refreshes all dataflows assigned to static not-filterable views in a dashboard.</p>
+<p>The service settings are specified in file: config\dashboarddatacachegenerator.json which contains the following lines:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;DashboardDataCacheGenerator&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;IsEnable&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+    <span class="s2">&quot;StartTime&quot;</span><span class="p">:</span> <span class="s2">&quot;20:30:00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Days&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In particular:</p>
+<ul class="simple">
+<li><p><em>IsEnable</em> is true if the service is enabled.</p></li>
+<li><p><em>StartTime</em> defines the starting time.</p></li>
+<li><p><em>Days</em> ndicates the day the worker runs (0 = Sunday and 6 = Monday).</p></li>
+</ul>
+<p><em><strong>CatalogInMemoryCacheGenerator</strong></em>  refreshes cache’s catalog for all active nodes.</p>
+<p>The service settings are specified in file: config\cataloginmemorycachegenerator.json which contains the following lines:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;CatalogInMemoryCacheGenerator&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;IsEnable&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+    <span class="s2">&quot;StartTime&quot;</span><span class="p">:</span> <span class="s2">&quot;10:15:00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Days&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span> <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In particular:</p>
+<ul class="simple">
+<li><p><em>IsEnable</em> is true if the service is enabled.</p></li>
+<li><p><em>StartTime</em> defines the starting time.</p></li>
+<li><p><em>Days</em> ndicates the day the worker runs (0 = Sunday and 6 = Monday).</p></li>
+</ul>
+<p><em><strong>TemplateCacheGenerator</strong></em>  regenerate the cache on the data for all templates present.</p>
+<p>The service settings are specified in file: config\templatecachegenerator.json which contains the following lines:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;TemplateCacheGenerator&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;IsEnable&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+    <span class="s2">&quot;StartTime&quot;</span><span class="p">:</span> <span class="s2">&quot;13:20:00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Days&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span> <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In particular:</p>
+<ul class="simple">
+<li><p><em>IsEnable</em> is true if the service is enabled.</p></li>
+<li><p><em>StartTime</em> defines the starting time.</p></li>
+<li><p><em>Days</em> ndicates the day the worker runs (0 = Sunday and 6 = Monday).</p></li>
+</ul>
+<p><em><strong>DataflowDataCacheGenerator</strong></em> refreshes all dataflows configured in the DataflowDataCache section config.</p>
+<p>The service settings are specified in file: config\dataflowdatacachegenerator.json which contains the following lines:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;DataflowDataCacheGenerator&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;IsEnable&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+    <span class="s2">&quot;StartTimer&quot;</span><span class="p">:</span> <span class="s2">&quot;20:30:00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Days&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+    <span class="s2">&quot;DataflowsRefresh&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="s2">&quot;Id&quot;</span><span class="p">:</span> <span class="s2">&quot;Agency+Id+Version&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Dimensions&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;DimensionId&quot;</span> <span class="p">],</span>
+        <span class="s2">&quot;NodeCode&quot;</span><span class="p">:</span> <span class="s2">&quot;NodeId&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;GruopByNumber&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s2">&quot;GroupSize&quot;</span><span class="p">:</span> <span class="mi">20</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In particular:</p>
+<ul class="simple">
+<li><p><em>DataflowsRefresh</em> is an array that contains the list of all dataflows that need to be refreshed in cache.</p></li>
+<li><p><em>Dimensions</em> can have only one value and defines the dimension’s ID to refresh.</p></li>
+<li><p><em>NodeCode</em> defines the node’s ID that contains the dataflowid to refresh.</p></li>
+<li><p><em>GroupByNumber</em> contains the configuration for grouping the number of the items of the dimensions’ codelist to get the data that needs to be inserted in cache.</p></li>
+<li><p><em>GroupSize</em> defines the number of codes that will be send for each request to the endpoint.</p></li>
+</ul>
+<p><em><strong>Logconfig</strong></em></p>
+<p>In order to configure logs it will be sufficient to set the parameters in the file “datarowserhub/config/base/logconfig.xml”.
+This configuration allows the user to distinguish web application logs from those of the scheduled services. Possible log’s level that can be set are: Debug, Information, Warning, Error. <br />Here an example of part of a log configuration file:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="nt">&lt;configuration&gt;</span>
+  <span class="nt">&lt;appSettings&gt;</span>
+	.
+	.
+	.
+	
+	<span class="c">&lt;!-- Web Application Logger (DataBrowser.log) --&gt;</span>
+	
+	<span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;log:serilog:using:File&quot;</span> 
+	     <span class="na">value=</span><span class="s">&quot;Serilog.Sinks.File&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;log:serilog:filter:ByIncludingOnly.expression&quot;</span> 
+	     <span class="na">value=</span><span class="s">&quot;RequestId is not null and Length(RequestId) </span>
+<span class="s">		 &amp;gt; 0&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;log:serilog:write-to:File.path&quot;</span> 
+	     <span class="na">value=</span><span class="s">&quot;DataBrowser.log&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;log:serilog:write-to:File.restrictedToMinimumLevel&quot;</span> 
+	     <span class="na">value=</span><span class="s">&quot;Error&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;log:serilog:write-to:File.formatter&quot;</span> 
+	     <span class="na">value=</span><span class="s">&quot;Serilog.Formatting.Compact.CompactJsonFormatter, </span>
+<span class="s">		 Serilog.Formatting.Compact&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;log:serilog:write-to:File.outputTemplate&quot;</span> 
+	     <span class="na">value=</span><span class="s">&quot;[{Timestamp:HH:mm:ss.fff} </span>
+<span class="s">		 {Application} {Level:u3}]</span>
+<span class="s">		 [{RequestId}]: {Message:lj}  </span>
+<span class="s">		 {SourceContext} {NewLine}{Exception}&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;log:serilog:write-to:File.fileSizeLimitBytes&quot;</span> 
+	     <span class="na">value=</span><span class="s">&quot;4000000&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;log:serilog:write-to:File.buffered&quot;</span> 
+	     <span class="na">value=</span><span class="s">&quot;false&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;log:serilog:write-to:File.rollingInterval&quot;</span> 
+	     <span class="na">value=</span><span class="s">&quot;Day&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;log:serilog:write-to:File.shared&quot;</span> 
+	     <span class="na">value=</span><span class="s">&quot;false&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;log:serilog:write-to:File.retainedFileCountLimit&quot;</span> 
+	     <span class="na">value=</span><span class="s">&quot;31&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;add</span> <span class="na">key=</span><span class="s">&quot;log:serilog:write-to:File.rollOnFileSizeLimit&quot;</span> 
+	     <span class="na">value=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+	.
+	.
+	.
+	
+  <span class="nt">&lt;/appSettings&gt;</span>
+
+<span class="nt">&lt;/configuration&gt;</span>
+</pre></div>
+</div>
+<p><em><strong>Export Excel</strong></em></p>
+<p>In this part of the configuration, the user can define all the settings required for the correct and useful functioning of the export to Excel for multidimensional tables.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Export&quot;</span><span class="p">:</span> <span class="p">{</span>
+<span class="s2">&quot;MaxExcelSheets&quot;</span><span class="p">:</span> <span class="mi">50</span>
+<span class="s2">&quot;MaxColsPerSheet&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+<span class="s2">&quot;MaxRowsPerSheet&quot;</span><span class="p">:</span> <span class="mi">1000</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>Specifically:</p>
+<ul class="simple">
+<li><p><em>MaxExcelSheets</em> is the maximum number of sheets to be created.</p></li>
+<li><p><em>MaxColsPerSheet</em> specifies the maximum number of columns per sheet.</p></li>
+<li><p><em>MaxRowsPerSheet</em> specifies the maximum number of rows per sheet.</p></li>
+</ul>
+<p>Having to manage the occupation of resources on the server and waiting times for the end user, these configurations make it possible to limit the number of objects that can be exported by the user. <br />The limitations set are by default but can be modified according to specific needs.</p>
+</div>
+
+
+          
+            <div class="footer-buttons footer-buttons--next" role="navigation" aria-label="footer navigation">
+                  <a href="appdeploy.html" class="" title="Application deployment" accesskey="n" rel="next">Application deployment</a>
+              </div>
+            
+          </div>
+
+        </div>
+      </div>
+  </div>
+  <script type="text/javascript">
+var t = {
+  this : "en",
+  locale : "en_US",
+  about_these_documents : "About these Documents",
+  active_lang : "current language",
+  cookiebar_accept : "Accept",
+  cookiebar_msg : "We are using cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site you are agreeing to our use of cookies.",
+  cookiebar_privacy_policy : "Cookie policy",
+  copyright : "Copyright",
+  documents : "Documents",
+  download : "Download",
+  footer_link_privacy_policy : "Privacy policy",
+  footer_link_cookies : "Cookie policy",
+  footer_link_legal_notes : "Legal notes",
+  go_to : "Go to",
+  index : "Index",
+  last_updated : "Last updated",
+  most_viewed_this_month : "Most viewed this month",
+  navigation_menu_label : "Navigation menu",
+  navigation_menu_esc : "exit navigation",
+  search : "Search",
+  search_form_label : "Search in Document",
+  search_form_off : "exit search form",
+  search_form_on : "enter search form",
+  search_form_start : "start searching",
+  search_results : "Search Results",
+  search_no_results : "Your search did not match any documents. Please make sure that all words are spelled correctly.",
+  site_subtitle : "User manual.",
+  site_title : "Data Browser",
+  share_msg : "share",
+  skiplinks_goto_content : "go to content",
+  skiplinks_goto_navigation : "go to site navigation",
+  toggle_menu_label : "go to navigation",
+  version : "version",
+  compare : "Compare",
+  copy_link : "copy link",
+  copied_link : "copied link",
+  see_actions : "see actions",
+  other_actions : "other actions",
+  comments : "comments",
+  language : "Language",
+  back_to : "Back to",
+  back_to_text : "back to the text",
+  glossary_empty : "information not found",
+  glossary : "glossary",
+  go_to_glossary : "vai al glossario",
+  deepening : "deepening",
+  example : "example",
+  must : "must",
+  must_not : "must not",
+  should : "should",
+  should_not : "should not",
+  may : "may",
+  use : "use",
+  use_not : "don't use",
+  consultation : "consultation",
+  show_more : "show more",
+  show_less : "show less",
+  content_index : "content index",
+  table_index : "table index",
+  figures_index : "index of figures",
+  figures : "figures",
+  tables : "tables",
+  contents : "contents",
+  in_consultation : "in consultation",
+  indices_and_glossary : "indices and glossary",
+  note : "note",
+  no_description : "no description",
+  no_content : "no sections",
+  no_glossary : "no glossary",
+  no_figures : "no figures",
+  no_tables : "no tables",
+  summary : "summary",
+  project : "Project",
+  administration : "Administration",
+  info : "About this document",
+  related : "Related documents",
+  actions : "Actions",
+  tags : "Tags",
+  view_source : "Source",
+  previous : "previous",
+  next : "next",
+  in_collaboration_with : "in collaboration with",
+  follow_us : "follow us on",
+  header_link_trasformazione : "Piano Triennale",
+  header_link_piattaforme : "Platforms",
+  header_link_software : "Software",
+  header_link_api : "API",
+  header_link_community : "Communities",
+  header_link_developers : "Developers",
+  header_link_design : "Designers",
+  header_link_tools : "Tools",
+  header_link_forum : "Forum",
+  header_link_docs : "Docs",
+  header_link_github : "GitHub",
+  header_link_projects : "Projects",
+  header_link_documents : "Documents",
+  header_link_administrations : "Administrations",
+  header_link_whatis : "What is",
+}
+</script>
+  <a href="#" aria-hidden="true" data-attribute="return-to-top" class="return-to-top">
+  <i class="it-collapse"></i>
+</a>
+  
+  <script type="text/javascript">
+var PRODUCTION_DOMAIN = 'localhost';
+var DOCSITALIA_DATA = {
+  publisher_slug: 'organizzazione-demo',
+  publisher_project_slug: 'progetto-demo'
+}
+
+LOCAL = true;
+READTHEDOCS_DATA = {
+  project: 'demo-document',
+  version: 'bozza',
+  language: 'it',
+  api_host: '//' + PRODUCTION_DOMAIN
+}
+
+var DOCUMENTATION_OPTIONS = {
+    URL_ROOT: './',
+    VERSION: '1.3.3',
+    LANGUAGE: 'None',
+    COLLAPSE_INDEX: false,
+    FILE_SUFFIX: '.html',
+	LINK_SUFFIX: '.html',
+    HAS_SOURCE: true,
+    SOURCELINK_SUFFIX: '.txt'
+};
+</script>
+<script src="_static/js/theme.js"></script>
+<script type="text/javascript" src="_static/underscore.js"></script>
+<script type="text/javascript" src="_static/doctools.js"></script>
+<script type="text/javascript" src="_static/language_data.js"></script>
+  
+  <script type="text/javascript">
+  <!-- Google analytics -->
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  $(document).ready(function() {
+    var sendGaPageview = function() {
+      ga('create', '', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+      
+    };
+    if ($.fn['cookiebar'].Constructor._getCookieEU()) {
+      sendGaPageview();
+    } else {
+      $(document).on('close.bs.cookiebar', sendGaPageview);
+    }
+  });
+  <!-- End Google analytics -->
+  <!-- Matomo -->
+  /*
+  var _paq = _paq || [];
+  _paq.push(['setSiteId', '']);
+  (function () {
+    var u = '//italia.piwikpro.com/';
+    _paq.push(['setTrackerUrl', u + 'piwik.php']);
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
+  })();
+
+  $(document).ready(function() {
+    var sendMatomoPageview = function() {
+      _paq.push(['setDocumentTitle', document.domain + '/' + document.title]);
+      _paq.push(['enableLinkTracking']);
+      _paq.push(['setDoNotTrack', 1]);
+      _paq.push(['trackPageView']);
+    };
+    if ($.fn['cookiebar'].Constructor._getCookieEU()) {
+      sendMatomoPageview();
+    } else {
+      $(document).on('close.bs.cookiebar', sendMatomoPageview);
+    }
+  });*/
+  <!-- End Matomo -->
+</script>
+  
+  <div class="modal fade modal-sm-full" id="document-info" tabindex="-1" role="dialog" aria-labelledby="document-title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content rounded">
+      <div class="modal-header">
+        <h4 class="modal-title" id="document-title">Titolo del documento non impostato</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p></p>
+        <p class="text-sans-serif">
+          <i class="docs-icon-project font-weight-bold"></i>
+          <span class="font-weight-bold ml-1 align-middle">Project:</span>
+          <a href="/organizzazione-demo/progetto-demo" class="align-middle">
+            Progetto demo
+          </a>
+        </p>
+        <p class="text-sans-serif">
+          <i class="docs-icon-publisher font-weight-bold"></i>
+          <span class="font-weight-bold ml-1 align-middle">Administration:</span>
+          <a href="/organizzazione-demo/" class="align-middle">
+            Organizzazione demo
+          </a>
+        </p>
+        <div class="d-flex text-sans-serif my-4">
+          <div class="d-flex font-weight-bold align-items-center"><span class="mr-2">Tags:</span></div>
+          <div class="d-flex flex-wrap">
+            
+            <span class="border border-primary rounded m-1 py-1 px-2 tag"><a href="#">demo</a></span>
+            
+            <span class="border border-primary rounded m-1 py-1 px-2 tag"><a href="#">docs italia</a></span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="document-actions" aria-hidden="true">
+  <div class="modal-dialog mt-5" role="document">
+     <div class="modal-content rounded">
+        <div class="modal-body p-1">
+          <div class="document-actions d-flex flex-column flex-md-row justify-content-around w-100 p-2 p-md-0 text-blue">
+  <div class="dropdown p-3 px-md-2 py-md-0 d-flex flex-wrap">
+    <a class="btn dropdown-toggle p-2 flex-grow-1 text-left" href="#" id="downloads-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="docs-icon-download align-middle"></span>
+      <span class="align-middle">Download</span>
+    </a>
+    <div class="dropdown-menu w-100" aria-labelledby="downloads-dropdown" aria-disabled="false">
+      <div class="link-list-wrapper">
+	    <a class="dropdown-item" href="_static/doc/DataBrowserManual_en.pdf" download>PDF</a>
+      </div>
+    </div>
+  </div>
+  <!-- Change language -->
+  <div class="dropdown p-3 px-md-2 py-md-0 d-flex flex-wrap">
+    <a class="btn dropdown-toggle p-2 flex-grow-1 text-left" href="#" id="downloads-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	  <i class="docs-icon-document docs__document-info__icon"></i>
+      <span class="align-middle">Language</span>
+    </a>
+    <div class="dropdown-menu w-100" aria-labelledby="downloads-dropdown" aria-disabled="false">
+      <div class="link-list-wrapper">
+        <ul class="link-list">
+          <li>
+		    <a class="dropdown-item" href="#" >English</a>
+            <span class="divider"></span>
+          </li>
+<!--
+          <li>
+		    <a class="dropdown-item" href="../en/index.html" >Italiano</a>
+            <span class="divider"></span>
+          </li>
+-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end change language -->
+</div>
+        </div>
+     </div>
+  </div>
+</div>
+
+  
+</body>
+</html>

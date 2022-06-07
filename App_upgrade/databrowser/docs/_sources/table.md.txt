@@ -1,0 +1,32 @@
+### How to customize a table
+
+By clicking on the **Pivoting** button opens a page where users can change the layout choosing which dimensions will be shown in rows, in columns, in sections or used to filter data.
+
+![layout](_images/layout.JPG)
+
+The layout page interface changes  according to the type of active visualization selected among Table, Chart and Map.
+If the active visualization is Table, information will be shown in a multidimensional table with the dimensions arranged on the axes according to layout settings, in descending order of priority.
+When the user chooses  how to arrange dimensions among axes, sections and filters,  a preview of  the resulting table will be shown on the right of the layout page.
+Filters are shown on the top of the multidimensional table: if a dimension has only one value (fixed data) it will be automatically included in filters. Dimensions in rows and columns will be shown according to the order set in the layout pane.
+Choosing to show a dimension as row_section means "breaking" the table into many subtables for all the different values of that dimension.
+Some layout configuration examples.
+
+Example #1:
+
+![table layout](_images/layout1.JPG) => ![tab layout](_images/tableLayout1.JPG)
+
+Example #2:
+
+![table layout2](_images/Layout2.JPG) => ![tab layout 2](_images/TableLayout2.JPG)
+
+```eval_rst
+ .. |I| image:: _images/i-icon.PNG
+    :width: 15
+
+Data can have an information icon |I| next to the title to show any notes associated with data. Notes can be also associated to dimensions and even to a single cell.
+```
+
+For more information see section [Attributes](attributes.md)
+
+It will also be possible to access the reference metadata of the dataflow through a special button located in the bar on the left.
+

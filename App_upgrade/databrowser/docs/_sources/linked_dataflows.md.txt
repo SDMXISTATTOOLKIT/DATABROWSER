@@ -1,0 +1,17 @@
+## Linked dataflows and only file dataflows
+
+The application provides the possibility to include within the nodes also linked dataflows. \
+A linked dataflow is a dataflow defined in a node but linked to another dataflow which is contained in a totally different node. \
+The advantage of having a linked dataflow consists in the fact that it is not necessary to have all the base structures mandatory for a dataflow to be published on the node we are using but all we need
+is the link to the orginal node that contains it. \
+Nevertheless, the most important thing for all the mechanism to work is that the orginal node that contains the dataflow we want to link to, must be included in our hub named with its original ID. \
+Another feature that we can find in our platform, consists in the opportunity of having only file linked dataflows which are dataflows without data but just with attachments.
+In this case the annotation *DataflowCatalogType* must be set in the configuration node (as well as in the meta and data manager side) and also the checkbox *Show only file dataflow* must be checked in the view tab.
+This is an example of how an only file data appears in the Data Browser:
+
+![Only file](_images/only_file.JPG)
+
+In this case only attachments are downloadable but not the data itself.
+
+
+

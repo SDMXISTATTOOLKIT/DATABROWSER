@@ -1,0 +1,15 @@
+### Application roles
+
+There are four types of possible users allowed in this application:
+
+1. **Super administrator**: he is the only one that can access all configuration sections of the application, manage nodes and, most importantly, manage users and roles. \
+He can configure the dashboards that can be shown in the Application's home page. \
+Of course, the super administrator will have the same permissions of the node administrator and the registered user. (See [How to add a super administrator](superadmin) paragraph for more details)
+2. **Node administrator**: he can create templates and dashboards for the nodes he owns and manages, accessing their specific sections. He can configure the node's home page and, in particular, which dashboard show in it. \
+However, it is possible that the node administrator does not have all permissions regarding templates management, cache management and so on. The super administrator sets permissions for the node administrator by checking one or all the options present in the node configuration section. (See [How to add a node administrator](node_admin_user) paragraph) \
+Permission options relate to:
+    - *Cache management*
+    - *Template management*
+    - *Configuration management*
+3. **Registered user**: he has its own account but does not have management permissions. He can visualize and download files of all nodes. He can create, visualize or remove views on the dataflows he can access. (See [How to add a registered user](registered_user) paragraph for more information)
+4. **Anonymous user**: does not have his own account and he has read-only permissions on nodes.

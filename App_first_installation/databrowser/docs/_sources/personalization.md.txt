@@ -1,0 +1,248 @@
+## Customizing Hub and nodes styles
+
+In the client folder, when starting configuration of the application, it is also possible to set a personalization of the styles of the application itself or a single node inside the application.
+User can perform this operation by changing the custom.css file inside the DataBrowserHubClient folder. \
+The following sections show examples on how to customize parts of the application modifing the css file.
+
+**ENTIRE HUB PERSONALIZATION**
+
+It is possible to customize colors for principal structures (Header banner background, principal application buttons, text color in databrowsing windows) and/or for secondary structures (background color in buttons in hub's main page, rendering messages when opening files or applying configurations, loading bars). \
+Example:
+
+```css
+/*Color for principal structures which include:
+  - Header banner background color
+  - principal application buttons (in data visualization and windows)
+  - text color in databrowsing windows (criteria, layout, ...)*/
+
+.theme__palette-primary-main {
+	color: #00295a
+}
+
+.theme__palette-primary-light {
+	color: #3b5187
+}
+
+.theme__palette-primary-dark {
+	color: #000030
+}
+
+/*Contrast text color for structures 
+having palette-primary background color*/
+
+.theme__palette-primary-contrastText {
+	background-color: #ffffff
+}
+
+/*
+Secondary structures colors which include: 
+  - background color in buttons in hub's main page
+  - rendering messages when opening files or applying configurations
+  - loading bars
+*/
+
+.theme__palette-secondary-main {
+	color: #f8a81e
+}
+
+.theme__palette-secondary-light {
+	color: #ffd956
+}
+
+.theme__palette-secondary-dark {
+	color: #c07900
+}
+
+/*Contrast text color for structures having palette-secondary 
+background color (information-nodes-dashboards buttons)*/
+.theme__palette-secondary-contrastText {
+	color: #00295a
+}
+```
+
+**SINGLE NODE PERSONALIZATION**
+
+The following css code sets style's personalization to a node which ID is "CUSTOM". In particular considers the main and secondary colors of the structures.
+As in the previous section, structure customized are always the same but in this case, changes are applied only to a specific node. So new colors impact the Header banner background color,
+the principal application buttons, the text color in databrowsing windows for the main structures, and background color in buttons in node's main page, rendering messages when opening files or applying configurations,
+loading bars on the secondary structures.
+
+```css
+/*Color for principal structures which include:
+	- Header banner background color
+	- principal application buttons (in data visualization and windows)
+	- text color in databrowsing windows (criteria, layout, ...)*/
+
+.theme__node__CUSTOM__palette-primary-main {
+	color: #bf360c
+}
+
+.theme__node__CUSTOM__palette-primary-light {
+	color: #f9683a
+}
+
+.theme__node__CUSTOM__palette-primary-dark {
+	color: #870000
+}
+
+/*	Contrast text color for structures 
+having palette-primary background color*/
+
+.theme__node__CUSTOM__palette-primary-contrastText {
+	background-color: #ffffff
+}
+
+/*
+Secondary structures colors which include: 
+	- background color in buttons in node's main page
+	- rendering messages when opening files or applying configurations
+	- loading bars
+*/
+
+.theme__node__CUSTOM__palette-secondary-main {
+	color: #7cb342
+}
+
+.theme__node__CUSTOM__palette-secondary-light {
+	color: #aee571
+}
+
+.theme__node__CUSTOM__palette-secondary-dark {
+	color: #4b830d
+}
+
+
+Contrast text color for structures having palette-secondary 
+background color (information-nodes-dashboards buttons)
+.theme__node__CUSTOM__palette-secondary-contrastText {
+	color: #000000
+}
+```
+
+It is also possible to set custom colors to tables of a specific node. In the next code example, colors of borders and background of cells are modified for the node with ID "CUSTOM". Every line of code
+ modifies a specific part of the table (borders, rows and columns).
+
+```css
+/*****EXTERNAL TABLE BORDER (red border) ************/
+/* Top border first row of the table */
+#node__CUSTOM thead tr:first-child th.c{
+	border-top-color: #da0d14 !important;
+}
+
+/* Left border first column of the table (head section) */
+
+#node__CUSTOM thead tr th.c.cfm.ch.cl0{
+	border-left-color: #da0d14 !important;
+}
+
+/* Left border first column of the table (body section) */
+
+#node__CUSTOM tbody tr th.c.cfm.csh.cl0{
+	border-left-color: #da0d14 !important;
+}
+
+/* Right border last column of the table */
+
+#node__CUSTOM .c.c-rb{
+	border-left-color: #da0d14 !important;
+}
+
+/* Top border of the last row (not visible with data) of the table */
+
+#node__CUSTOM .c.c-bb{
+	border-top-color: #da0d14 !important;
+}
+
+
+/***** END EXTERNAL TABLE BORDER ****************/
+
+/***** TABLE'S BODY ROW BACKGROUND *************/
+
+/* Alternating rows color (grey even and white odd)*/
+#node__CUSTOM tbody tr:nth-child(even) td.c.cfm{
+	background-color: #dcdcdc !important;
+}
+
+
+/******* END TABLE'S BODY ROW BACKGROUND *********/	
+
+/******* TABLE'S LAYOUT **************/
+
+/*Background color and text color 
+for dimensions set in rows (dimensions' titles)*/
+
+#node__CUSTOM thead tr[data-row-key="hh"] th.c.cfm.ch{
+	background: #fff !important;
+	color: #000000;
+	text-decoration: underline;
+}
+
+/*Background color for dimensions set in rows 
+(cells componing rows with no titles)*/
+
+#node__CUSTOM thead tr[data-row-key="hh"] th.c.cfm.csh{
+	background: #fff !important;
+}
+
+/*Background color and text color 
+for dimensions set in sections */
+
+#node__CUSTOM tbody th.c.cfm.cs{
+	background-color: #da0d14 !important;
+	color: #ffffff;
+}
+
+/*Background color and text color for dimensions 
+set in columns (dimensions' titles)*/
+
+#node__CUSTOM .c.cfm.ch{
+	background: #aaa !important;
+	color: #000000;
+	text-decoration: underline;
+}
+
+/*Background color and text color for dimensions 
+set in columns (dimensions' single items)*/
+
+#node__CUSTOM thead th.c.cfm.csh{
+	background: #aaa !important;
+	color: #ffffff;
+}
+```
+
+Last but not least, user can also change the map colors in the application or just in a specific node. In case of node customization, remember to always write the node's ID (like in the example "CUSTOM").
+
+```css
+.map__start-color {
+    color: white;
+}
+.map__end-color {
+    color: black;
+}
+.map__node__CUSTOM__start-color {
+    color: orange;
+}
+.map__node__CUSTOM__end-color {
+    color: red;
+}
+```
+
+Another important functionality contained in the Data Browser application is the web accessibily. It is also possible to configure a personalized style of the page when this functionality is enabled.
+
+```css
+/*
+-------------
+ACCESSIBILITY
+-------------
+
+you can apply colors for accessibility (a11y) mode too, like this:*/
+.a11y-theme__palette-primary-main { color: white }
+
+/*and for specific nodes too:*/
+.a11y-theme__node__NODE_ID__palette-primary-main { color: white }
+```
+
+
+**FOOTER PERSONALIZATION**
+
+It is possible to personalize the footer, modifying the file present in the client installation in the directory: "databrowser/footer/index.html".

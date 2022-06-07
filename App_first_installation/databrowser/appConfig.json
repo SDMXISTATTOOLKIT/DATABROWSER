@@ -1,0 +1,20 @@
+{
+	"user": {
+		"typeOptions": [
+			{
+				"id": "citizen",
+				"label": {
+					"it": "Cittadino",
+					"en": "Citizen"
+				}
+			},
+			{
+				"id": "authority",
+				"label": {
+					"it": "Ente",
+					"en": "Public Authority"
+				}
+			}
+		]
+	}
+}

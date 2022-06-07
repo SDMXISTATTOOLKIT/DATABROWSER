@@ -1,3 +1,0 @@
-Org.Sdmxsource.Sdmx.Api.Exception.SdmxSemmanticException: Data Structure 'urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ILO:ILMS_ALL_MFL_NWAP_SEX_EDU_NB(1.0)' does not contain component with id: LASTNOBSERVATIONS
-Org.Sdmxsource.Sdmx.Api.Exception.SdmxSemmanticException: Data Structure 'urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ILO:YI_ALL_EMP_TEMP_SEX_EC2_NB(1.0)' does not contain component with id: LASTNOBSERVATIONS
-Org.Sdmxsource.Sdmx.Api.Exception.SdmxSemmanticException: Data Structure 'urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ILO:STI_ALL_GED_PEPR_SEX_HHT_CHL_RT(1.0)' does not contain component with id: LASTNOBSERVATIONS

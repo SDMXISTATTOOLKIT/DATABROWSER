@@ -1,0 +1,42 @@
+### How to download data
+
+```eval_rst
+ .. |D| image:: _images/download_icon.png
+    :width: 15
+
+The download of a dataflow in the different formats can be activated through a down arrow icon |D| on the top right corner of the page.
+```
+
+The formats available for each node are defined in the node configuration and will be a subset of the overall formats supported by the application, which are:
+
+- SDMX Standard
+- SDMX - Generic 2.1*
+- SDMX - Generic 2.0*
+- SDMX - Compact 2.0*
+- SDMX - Structure Specific 2.1*
+- Custom CSV
+- SDMX-CSV*
+- SDMX-JSON*
+- RDF
+- JSON-STAT
+- PC-AXIS
+- HTML (table only)
+- JPEG (only for graph and map)**
+- Excel (table only): a popup will allow the user to select the desired export: 
+
+  ![download_format](_images/Excel.png)
+
+  if the user chooses "current visualization" he will get in return an excel sheet containing exactly what the table is showing at the moment. On the other hand, by choosing "full data", 
+  the system will create a sheet for each combination of filters. \
+  For example, if we consider Dataflow:
+
+  ![download_format](_images/excel_current0.png)
+
+  the user can download the following current visualisation:
+
+  ![download_format](_images/excel_current.png)
+
+*only available for REST nodes \
+**to enable image downloading, the user just needs to insert "image" in the *Download file formats* field in the node configuration's view tab.
+
+![download_format](_images/download_format.JPG)

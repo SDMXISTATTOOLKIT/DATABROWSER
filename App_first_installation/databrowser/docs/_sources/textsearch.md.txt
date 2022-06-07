@@ -1,0 +1,28 @@
+### Textual search
+
+It is possible to find specific data by textual search.
+Even if the user doesn’t know the exact name of the data, he can type some text in an input box and the system will search for all data containing the typed text in titles, descriptions or keywords. 
+The application will complete text for data titles; all data belonging to the search will appear to the result set.
+Search text can be inserted by clicking the magnifying glass on the top bar menu:
+
+![search from menu](_images/Search.JPG)
+
+In *future releases* it will be possibile to also search by using the search input text box on the top left of the page where all data belonging to a category or a subcategory is displayed.
+
+When the searched data appears, the user can click on the title and the default visualization will open.
+
+**KEYWORDS**
+
+Keywords are specific words linked to the content of the data which are included in the uploaded dataset in a node. It is no mandatory to have keywords, so they might not be present in all data contained in a node. \
+You can search data using keywords but they are not listed in the pane that describes the specific data.
+
+User can search for keywords by clicking the magnifying glass on the top-right of the page, and all related datasets containing that specific word will appear in the page.
+
+**FILTERING FOR CATEGORY**
+
+In case there is more than one category scheme involved in the research results, two levels of category (category scheme at first level and at second level) will be shown. If there is only one category scheme, results will be filtered only for the first level categories of the only category scheme. \
+Shown categories, will be the ones for which there is at least one research result between its children.
+
+![filter_category](_images/filter_category_level.JPG)
+
+

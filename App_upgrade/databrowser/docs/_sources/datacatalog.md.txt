@@ -1,0 +1,51 @@
+### Data catalog
+
+```eval_rst
+ .. |I| image:: _images/i-icon.PNG
+    :width: 15
+
+ .. |B| image:: _images/burgerbutton.JPG
+    :width: 15
+
+All data contained in a node is grouped by categories organized in a catalog. The catalog of a node can be displayed by clicking on the burger button on the top left |B|.
+Categories have an hierarchical structure: a category can contain one or more subcategories; a subcategory may in turn contain other subcategories, and so on.
+It is possible to expand or collapse a category or a subcategory by clicking on it.
+
+    +-----------------------------------+------------------------------------------+ 
+    | Initial view                      | Expanded view                            | 
+    +===================================+==========================================+
+    |                                   |                                          |
+    |                                   |                                          |
+    | .. image:: _images/cat1.png       | .. image:: _images/cat2.png              |
+    +-----------------------------------+------------------------------------------+
+
+All categories belong to a category scheme and one node can have more than one category scheme; in this case the same data can belong to more than one category in different category schemes. 
+Moreover the same data can belong to different categories in the same category scheme. 
+If a node has just one category scheme, it isn’t shown in the tree visualization of the catalog.
+If there are more than one category scheme in the node, only the root nodes (i.e. category scheme names) will be shown without showing the categories.
+
+    +-----------------------------------+-------------------------------------------+ 
+    | Initial view                      | Expanded view                             | 
+    +===================================+===========================================+
+    |                                   |                                           |
+    |                                   |                                           |
+    | .. image:: _images/cat3.png       |  .. image:: _images/cat4.png              |
+    +-----------------------------------+-------------------------------------------+
+
+By clicking the information icon |I| next to a category, it is possible to see notes associated with the category. By clicking the **m** icon, instead, the user can see metadata as well.
+The leaves of the catalog are nodes of Data type. By selecting this kind of node on the right side of the panel, all the data belonging to the selected navigation path will be shown.
+Once data is shown, the user can decide to display the list of data in two different modes: by rows or by cards changing the icon on the top right. 
+
+For each data the user can see the title and the description. By clicking on the information icon |I| next to the data it is possible to see notes associated with that data and by clicking on the **m** icon the user can see metadata as well.
+By clicking on the data title, results can be visualized in tabular, graphic and geographic format. Attachments might be present in the data visualization list, this means that data attachaments are available regarding that information.
+Depending on its native format, not all data can be displayed.
+```
+Example of list of data for a specific category:
+
+![data_list](_images/datalist.PNG)
+
+
+
+
+
+

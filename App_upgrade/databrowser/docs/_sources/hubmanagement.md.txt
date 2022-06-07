@@ -1,0 +1,7 @@
+## Hub management
+
+In this section we explore basic operations of managing and configurating nodes.
+
+* [How to manage data providers (nodes)](manageproviders.md)
+* [How to configure a data provider](configureprovider.md)
+* [How to configure Dataflows cache](dataflowscache.md)

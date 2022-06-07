@@ -1,0 +1,38 @@
+### Attributes
+
+Data can have four attribute types:
+- Dataset attributes
+- Group attributes
+- DimensionGroup attributes
+- Observation attributes
+
+The user can see attributes in the same window where data is visualized.
+
+When an attribute is present, the application generally shows an asterisk. On mouse over the cell containing the attribute, a tooltip shows the attribute(s) and its value(s) and the user can copy it; a tooltip can contain more than one attribute.
+
+For encoded attributes, if the code id is short it will be shown together with the asterisk.
+
+![attributes1](_images/attributes1.JPG)
+
+The user can see attributes at dataset level by clicking the asterisk between brackets - **(*)** -  next to the title (Dataset level). 
+If the dataset has attributes for more than one dimension (Group/DimensionGroup attributes) they will also be shown by clicking the same icon (Series level).
+
+![attributes2](_images/attributes2.JPG)
+
+
+
+![attributes3](_images/attributes3.JPG)
+
+If the dataset has dimension level attributes an asterisk will be present for each value of the dimension, 
+if the the dimension has just one value the attribute is visible in the subtitle. 
+
+![attributes4](_images/attributes4.JPG)
+
+If data has observation level attributes an asterisk will be present in the corresponding cell. 
+
+![attributes5](_images/attributes5.JPG)
+
+If the user chooses Chart as display mode, the attributes are also displayed.
+The attributes at observation level are visible as tooltips by clicking on chart elements, the attributes at dimension or table level follow the same logic described for the tabular view. 
+
+![attributes-graph](_images/attributes_graph.JPG)

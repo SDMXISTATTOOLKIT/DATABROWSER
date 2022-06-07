@@ -1,0 +1,4 @@
+### Super Administrator
+
+Superadmin user is generated automatically when the database is created and initialized during installation with username: admin@databrowser.com and empty password.
+It is strongly recommended, but not mandatory, to change the password at first login by following the instructions in the paragraph "Manage user password".

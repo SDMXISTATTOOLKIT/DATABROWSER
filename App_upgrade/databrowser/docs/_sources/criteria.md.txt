@@ -1,0 +1,44 @@
+### How to manage data criteria
+
+By clicking on the **Criteria** button in the visualization window, a page opens where users can manage what information will be shown in data visualization. 
+For each dimension the system will show available values in a hierarchical way (if a hierarchy is defined) and the user can select the values to filter. 
+By clicking on **Apply** the system will retrieve data according to the filters set, and just the result set will be shown to the end users.
+The set query must return at most the maximum number of observations (configurable at single node level), beyond which the user will be asked to set more restrictive conditions.
+
+Example #1:
+
+![criteria](_images/criteria1.PNG)
+
+Example #2:
+
+![other criteria](_images/criteria2.PNG)
+
+A particular focus can be set on the visualization of **time_period**, especially on its ordering and how it is managed. If data has multiple frequencies such as:
+
+```eval_rst
+ .. image:: _images/multifreq1.PNG
+    :scale: 80 %
+    :alt: multi_freq
+```
+
+the output table as default, will return the time_period ordered in a "hierarchical" way. Considering the previous example, starting from the the first month available, in order, quarters, semesters and year will follow, as shown in this image:
+
+```eval_rst
+ .. image:: _images/multifreq2.PNG
+    :scale: 80 %
+    :alt: multi_freq2
+```
+
+It is also possible to select the range for time_period choosing between the minimun and the maximum date present in the data table.
+
+![time period range](_images/timeperiod_range.PNG)
+
+Or in some cases, if time can be separated in periods, user can choose the period to visualize
+
+![n period](_images/n_periods.JPG)
+
+If a default is defined in node configuration or in dataflow annotation the text box will be set with this value.
+
+The authenticated user can select "Full range" to not apply filters on the time dimension. This option is useful if a view is present and data is update with new periods.
+If "Full range" has been chosen to build the view this will be updated with new periods otherwise the view will have just periods selected as custom range or last periods. 
+The "Full range" option is not available for anonymous users as they cannot build views.

@@ -1,0 +1,910 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WSHUB</name>
+    </assembly>
+    <members>
+        <member name="T:WSHUB.Controllers.CacheController">
+            <summary>
+            Cache Controller
+            </summary>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.#ctor(Microsoft.Extensions.Logging.ILogger{WSHUB.Controllers.GenericController},DataBrowser.Interfaces.IRequestContext,DataBrowser.Services.Interfaces.IMediatorService,DataBrowser.Interfaces.Cache.IDatabrowserMemoryCache,DataBrowser.Interfaces.Cache.IDatabrowserCatalogCache,DataBrowser.Interfaces.Cache.IDataflowDataCache,Microsoft.Extensions.Logging.ILoggerFactory,System.IServiceProvider,Microsoft.Extensions.Options.IOptionsSnapshot{DataBrowser.Interfaces.Configuration.DataflowDataCacheConfig})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="logger"></param>
+            <param name="requestContext"></param>
+            <param name="mediatorService"></param>
+            <param name="dataBrowserMemoryCache"></param>
+            <param name="dataBrowserCatalogCache"></param>
+            <param name="dataflowDataCache"></param>
+            <param name="loggerFactory"></param>
+            <param name="serviceProvider"></param>
+            <param name="dataCacheConfig"></param>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.ClearCatalogCache">
+            <summary>
+            Clear catalog and memory cache
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.ClearCacheNodeCatalogTree(System.Int32)">
+            <summary>
+            Clear memory and catalog cache for tree by node Id.
+            </summary>
+            <param name="nodeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.ClearCacheNodeCatalogTreeFromNodeCode(DataBrowser.Domain.Interfaces.Repositories.IRepository{DataBrowser.Domain.Entities.Nodes.Node},DataBrowser.Interfaces.Authentication.IFilterNode,System.String)">
+            <summary>
+            Clear memory cache and catalog tree by node Code.
+            </summary>
+            <param name="repository"></param>
+            <param name="filterNode"></param>
+            <param name="nodeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.ClearDataCacheByNodeId">
+            <summary>
+             Clear all dataflow  cache by node Id.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.ClearDataCacheByNodeCode(DataBrowser.Domain.Interfaces.Repositories.IRepository{DataBrowser.Domain.Entities.Nodes.Node},DataBrowser.Interfaces.Authentication.IFilterNode,System.String)">
+            <summary>
+             Clear all dataflow  cache by node code.
+            </summary>
+            <param name="repository"></param>
+            <param name="filterNode"></param>
+            <param name="nodeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.ClearDataflowDataCache(System.Guid)">
+            <summary>
+            Clear dataflow  cache by cacheInfo Id and node Id.
+            </summary>
+            <param name="cacheInfoId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.GetAllDataflowDataCacheInfoNode(System.Int32)">
+            <summary>
+            Get dataflow cache by node Id.
+            </summary>
+            <param name="nodeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.ChangeTTLDataflowDataCache(System.Int32,System.Guid,WSHUB.Models.Request.UpdateDataflowDataCacheInfoRequest)">
+            <summary>
+            Change ttl value from dataflow  cache by node Id.
+            </summary>
+            <param name="nodeId"></param>
+            <param name="cacheInfoId"></param>
+            <param name="updateDataflowDataCacheInfoRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.CreateDataflowDataCacheInfo(System.Int32,DataBrowser.Interfaces.Dto.DataflowDataCacheInfo)">
+            <summary>
+            Create dataflow cache for the node.
+            </summary>
+            <param name="nodeId"></param>
+            <param name="dataflowDataCacheInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.CacheExport(System.Int32)">
+            <summary>
+            Export CSV file of dataflow  cache by node Id.
+            </summary>
+            <param name="nodeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.RefreshAll(DataBrowser.Interfaces.Workers.IDataflowDataCacheGenerator)">
+            <summary>
+            Refresh all dataflow  cache.
+            </summary>
+            <param name="dataflowDataCacheGenerator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.ClearSingleDataflowCacheFromCode(DataBrowser.Domain.Interfaces.Repositories.IRepository{DataBrowser.Domain.Entities.Nodes.Node},DataBrowser.Interfaces.Authentication.IFilterNode,System.String,System.String)">
+            <summary>
+            Clear dataflow  cache by node Code and dataflow Id
+            </summary>
+            <param name="repository"></param>
+            <param name="filterNode"></param>
+            <param name="nodeCode"></param>
+            <param name="dataflowUri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.CacheController.ClearSingleDataflowCacheFromId(DataBrowser.Domain.Interfaces.Repositories.IRepository{DataBrowser.Domain.Entities.Nodes.Node},DataBrowser.Interfaces.Authentication.IFilterNode,System.Int32,System.String)">
+            <summary>
+            Clear dataflow  cache by node Id and dataflow Id
+            </summary>
+            <param name="repository"></param>
+            <param name="filterNode"></param>
+            <param name="nodeId"></param>
+            <param name="dataflowId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.CreateDashboard(WSHUB.Models.Request.DashboardCreateModelView)">
+            <summary>
+                Create new dashboard.
+            </summary>
+            <response code="201">Create Dashboard</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>int</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.EditDashboard(System.Int32,WSHUB.Models.Request.DashboardCreateModelView)">
+            <summary>
+                Edit an existing dashboard by dashboard Id.
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.GetDashboards">
+            <summary>
+                Get all dashboards.
+            </summary>
+            <response code="201">Get all Dashboards</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>List of Dashboard </returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.GetDashboard(System.Int32)">
+            <summary>
+                Get dashboard by dashboard Id.
+            </summary>
+            <param name="dashboardId"> the Dashboard id</param>
+            <response code="201">Get Dashboard</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>Dashboard</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.GetDashboardsAssignedToHub">
+            <summary>
+                Get all hub dashboards.
+            </summary>
+            <response code="201">Hub Dashboards</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>int</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.GetDashboardsAssignedToNode(System.Int32)">
+            <summary>
+                Get all node dashboards by node Id.
+            </summary>
+            <response code="201">Node Dashboards</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>int</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.DeleteAllDashboardViews(System.Int32)">
+            <summary>
+                Delete dashboard views by dashboard Id.
+            </summary>
+            <response code="204">Resource deleted.</response>
+            <response code="404">Node not found.</response>
+            <response code="500">Error.</response>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.DeleteDashboard(System.Int32)">
+            <summary>
+                Delete dashboard by dashboard Id.
+            </summary>
+            <response code="204">Resource deleted.</response>
+            <response code="404">Node not found.</response>
+            <response code="500">Error.</response>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.RemoveDashboardAssociationToNode(System.Int32,System.Int32)">
+            <summary>
+                Delete dashboard to node association by node Id and dashboard Id
+            </summary>
+            <response code="204">Resource deleted.</response>
+            <response code="404">Node not found.</response>
+            <response code="500">Error.</response>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.RemoveDashboardAssociationToHub(System.Int32)">
+            <summary>
+                Delete dashboard to hub association by dashboard Id
+            </summary>
+            <response code="204">Resource deleted.</response>
+            <response code="404">Node not found.</response>
+            <response code="500">Error.</response>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.AssignDashboardHubOrder(System.Collections.Generic.List{System.Int32},System.Int32)">
+            <summary>
+                Edit dashboards' order associated to hub.
+            </summary>
+            <response code="201">Create Dashboard</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>int</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.AssignDashboardNodeOrder(System.Collections.Generic.List{System.Int32},System.Int32)">
+            <summary>
+                Edit dashboards' order associated to node by node Id.
+            </summary>
+            <response code="201">Create Dashboard</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>int</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.AssignDashboardToSingleNode(System.Int32,System.Int32)">
+            <summary>
+                Create new association dashboard to node by node Id and dashboard Id.
+            </summary>
+            <response code="201">Create Dashboard</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>int</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DashboardController.AssignDashboardToHub(System.Int32)">
+            <summary>
+               Create new association dashboard to hub by dashboard Id.
+            </summary>
+            <response code="201">Create Dashboard</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>int</returns>
+        </member>
+        <member name="T:WSHUB.Controllers.DataSetsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WSHUB.Controllers.DataSetsController.#ctor(Microsoft.Extensions.Logging.ILogger{WSHUB.Controllers.DataSetsController},DataBrowser.Interfaces.IRequestContext,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Configuration.IConfiguration,DataBrowser.Services.Interfaces.IMediatorService)">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="requestContext"></param>
+            <param name="httpContextAccessor"></param>
+            <param name="configuration"></param>
+            <param name="mediatorService"></param>
+        </member>
+        <member name="M:WSHUB.Controllers.DataSetsController.GetStructure(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+                Get dataflow structure by node Id and dataset Id (optionally also by view Id).
+            </summary>
+            <param name="nodeId">Node id</param>
+            <param name="datasetId">Dataset id</param>
+            <response code="200">Node found.</response>
+            <response code="400">Bad request.</response>
+            <response code="404">Node not found.</response>
+            <response code="500">Error.</response>
+            <returns>JsonSdmx</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DataSetsController.GetPartial(System.String,System.String,System.String)">
+            <summary>
+                Get all codelist used in dataflow with all item used in dataflow by node Id and datasetId.
+            </summary>
+            <param name="agency">Dataset agencu</param>
+            <param name="datasetId">Dataset id</param>
+            <param name="dimensionId">Get for single column</param>
+            <response code="200">Node found.</response>
+            <response code="400">Bad request.</response>
+            <response code="404">Node not found.</response>
+            <response code="500">Error.</response>
+            <returns>JsonSdmx</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DataSetsController.GetFull(System.String,System.String,System.String)">
+            <summary>
+                Get all codelist used in dataflow with all item associated at codelist by node Id and dataset Id.
+            </summary>
+            <param name="nodeId">Node id</param>
+            <param name="datasetId">Dataset id</param>
+            <param name="dimensionId">Get for single column</param>
+            <response code="200">Node found.</response>
+            <response code="400">Bad request.</response>
+            <response code="404">Node not found.</response>
+            <response code="500">Error.</response>
+            <returns>JsonSdmx</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DataSetsController.GetConstraintFilter(System.Collections.Generic.List{EndPointConnector.Models.FilterCriteria},System.String,System.String,System.String)">
+            <summary>
+                Get the codelist associated at dimension in dataflow by node Id, dataset Id and dimension Id. 
+                The result can be filtered with the body data.
+            </summary>
+            <param name="nodeId">Node id</param>
+            <param name="datasetId">Dataset id</param>
+            <param name="dimensionId">Dimension id</param>
+            <param name="dataCriterias">Filter for specific dimension</param>
+            <response code="200">Node found.</response>
+            <response code="400">Bad request.</response>
+            <response code="404">Node not found.</response>
+            <response code="500">Error.</response>
+            <returns>Json</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DataSetsController.GetDataWithFilterFromDataflowUseCase(System.Collections.Generic.List{EndPointConnector.Models.FilterCriteria},System.String)">
+            <summary>
+            Get all data dataflow by node Id and dataset Id. The result can be filtered with the body data
+            </summary>
+            <param name="dataCriterias"></param>
+            <param name="datasetId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DataSetsController.GetCountObservationsFromDataflowUseCase(System.String,System.String)">
+            <summary>
+                Get the number of observations of a dataflow by node Id and dataset Id.
+            </summary>
+            <param name="nodeId">Node id</param>
+            <param name="datasetId">Dataset id</param>
+            <response code="200">Node found.</response>
+            <response code="400">Bad request.</response>
+            <response code="404">Node not found.</response>
+            <response code="500">Error.</response>
+            <returns>JsonSdmx</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DataSetsController.GetCountObservationsWithFilterFromDataflowUseCase(System.Collections.Generic.List{EndPointConnector.Models.FilterCriteria},System.String,System.String)">
+            <summary>
+                Get the number of observations of a dataflow by node Id and dataset Id. The result can be filtred with the body data.
+            </summary>
+            <param name="nodeId">Node id</param>
+            <param name="datasetId">Dataset id</param>
+            <param name="dataCriterias">Filter for specific dimension</param>
+            <response code="200">Node found.</response>
+            <response code="400">Bad request.</response>
+            <response code="404">Node not found.</response>
+            <response code="500">Error.</response>
+            <returns>JsonSdmx</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DataSetsController.DownloadDataflow(System.Collections.Generic.List{EndPointConnector.Models.FilterCriteria},System.String,System.String,System.String,System.String)">
+            <summary>
+                Download dataflow by node Id and dataset Id with a specific format. The result can be filtred with the body data.
+            </summary>
+            <param name="nodeId">Node id</param>
+            <param name="datasetId">Dataset id</param>
+            <param name="format">
+                Format of dataset download: genericdata, genericdata20, jsondata, structurespecificdata, csv,
+                compactdata, edidata
+            </param>
+            <response code="200">Dataflow found.</response>
+            <response code="400">Bad request.</response>
+            <response code="404">Dataflow not found.</response>
+            <response code="500">Error.</response>
+            <returns>Content Result</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DataSetsController.DownloadDataflowStructure(System.String,System.String)">
+            <summary>
+                Download dataflow structure by node Id and dataset Id.
+            </summary>
+            <param name="nodeId">Node id</param>
+            <param name="datasetId">Dataset id</param>        
+            <response code="200">Dataflow found.</response>
+            <response code="400">Bad request.</response>
+            <response code="404">Dataflow not found.</response>
+            <response code="500">Error.</response>
+            <returns>Content Result</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DataSetsController.GetUrlsWithFilterFromDataflowUseCase(System.Collections.Generic.List{EndPointConnector.Models.FilterCriteria},System.String,System.String)">
+            <summary>
+                Get dataflow url (NSI queries for structure and data) by node Id and dataset Id. The result can be filtred with the body data.
+            </summary>
+            <param name="dataCriterias"></param>
+            <param name="nodeId"></param>
+            <param name="datasetId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.DataSetsController.ExportData(EndPointConnector.Models.Export,System.String,System.Boolean)">
+            <summary>
+            Export data
+            </summary>
+            <param name="export">Export Parameters</param>
+            <param name="format">Export format : excel|csv ...</param>
+            <param name="compress">Indicates whether zip result</param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.GenericController.Upload(Microsoft.AspNetCore.Http.IFormFile[],System.String)">
+            <summary>
+                Upload a file to a specific directory.
+            </summary>
+            <response code="200">File uploaded</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>JsonSdmx</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.GenericController.GetDataBrowserVersion">
+            <summary>
+                Get DataBrowser version.
+            </summary>
+            <response code="200">DataBrowser version</response>
+            <returns>JsonSdmx</returns>
+        </member>
+        <member name="T:WSHUB.Controllers.GeometryController">
+            <summary>
+            GeometryController
+            </summary>
+        </member>
+        <member name="M:WSHUB.Controllers.GeometryController.#ctor(Microsoft.Extensions.Logging.ILogger{WSHUB.Controllers.GeometryController},DataBrowser.Services.Interfaces.IMediatorService,Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="logger"></param>
+            <param name="mediatorService"></param>
+            <param name="hostEnvironment"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:WSHUB.Controllers.GeometryController.CountGeometries(System.Int32,System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+                Get the number of node geometries by node Id.
+            </summary>
+            <param name="nodeId"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.GeometryController.GetAllGeometries(System.Int32,System.Nullable{System.Int32},System.String,System.String,System.String)">
+            <summary>
+                Get all the node geometries by node Id.
+            </summary>
+            <param name="nodeId"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.GeometryController.GetSingleGeometryById(System.Int32,System.String,System.Nullable{System.Int32},System.String,System.String,System.String)">
+            <summary>
+                Get the specific node geometry by node Id and geometry Id.
+            </summary>
+            <param name="nodeId"></param>
+            <param name="geometryId"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.GeometryController.GetGeometriesById(System.Int32,System.Collections.Generic.List{System.String},System.Nullable{System.Int32},System.String,System.String,System.String)">
+            <summary>
+                Get the node geometries by node Id and geometries Ids.
+            </summary>
+            <param name="nodeId"></param>
+            <param name="geometryIdList"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WSHUB.Controllers.HubController">
+            <summary>
+            Hub Controller
+            </summary>
+        </member>
+        <member name="M:WSHUB.Controllers.HubController.#ctor(Microsoft.Extensions.Logging.ILogger{WSHUB.Controllers.NodesController},DataBrowser.Interfaces.IRequestContext,DataBrowser.Services.Interfaces.IMediatorService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="logger"></param>
+            <param name="requestContext"></param>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:WSHUB.Controllers.HubController.UpdateHub(DataBrowser.Domain.Dtos.HubDto)">
+            <summary>
+            Update the hub.
+            </summary>
+            <param name="hubUpdateRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.HubController.GetHub(System.Int32)">
+            <summary>
+            Get hub by hub id.
+            </summary>
+            <param name="hubId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.HubController.GetAllHubs">
+            <summary>
+            Get all hubs.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.HubController.GetAllHubsConfig">
+            <summary>
+             Get all hubs' configuration.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.HubController.GetNodeWithMinimalInfo(System.Int32,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Get hub with minimal node info by hub id.
+            </summary>
+            <param name="hubId"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WSHUB.Controllers.NodesController">
+            <summary>
+            Nodes Controller
+            </summary>
+        </member>
+        <member name="M:WSHUB.Controllers.NodesController.#ctor(Microsoft.Extensions.Logging.ILogger{WSHUB.Controllers.NodesController},DataBrowser.Interfaces.IRequestContext,DataBrowser.Services.Interfaces.IMediatorService,Microsoft.Extensions.Logging.ILoggerFactory,System.IServiceProvider)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="logger"></param>
+            <param name="requestContext"></param>
+            <param name="mediatorService"></param>
+            <param name="loggerFactory"></param>
+            <param name="serviceProvider"></param>
+        </member>
+        <member name="M:WSHUB.Controllers.NodesController.CreateNode(WSHUB.Models.Request.NodeCreateRequest)">
+            <summary>
+                Create new node.
+            </summary>
+        </member>
+        <member name="M:WSHUB.Controllers.NodesController.UpdateNode(DataBrowser.Interfaces.Cache.IDatabrowserCatalogCache,DataBrowser.Interfaces.Cache.IDatabrowserMemoryCache,WSHUB.Models.Request.NodeUpdateRequest)">
+            <summary>
+            Update node by node Id.
+            </summary>
+            <param name="nodeUpdateRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.NodesController.DeleteNode(System.Int32,System.Nullable{System.Boolean})">
+            <summary>
+                Delete node by node Id.
+            </summary>
+            <param name="nodeId">Node id to delete</param> 
+            <param name="forceDelete"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.NodesController.GetNode(System.Int32)">
+            <summary>
+                Get node with all data configuration by node Id.
+            </summary>
+            <param name="nodeId">Node id</param>
+        </member>
+        <member name="M:WSHUB.Controllers.NodesController.OrderNodes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+                Update node orders.
+            </summary>
+        </member>
+        <member name="M:WSHUB.Controllers.NodesController.GetAllNode">
+            <summary>
+                Get all nodes with only minimal info.
+            </summary>
+        </member>
+        <member name="M:WSHUB.Controllers.NodesController.GetAllNodeConfig">
+            <summary>
+                Get all nodes with minimal configurations.
+            </summary>
+        </member>
+        <member name="M:WSHUB.Controllers.NodesController.GetNodeDataView">
+            <summary>
+                Get node with only data view by node Id.
+            </summary>
+        </member>
+        <member name="M:WSHUB.Controllers.NodesController.GetCatalogFromNodeId(DataBrowser.Interfaces.Cache.IDatabrowserMemoryCache,DataBrowser.Interfaces.Cache.IDatabrowserCatalogCache)">
+            <summary>
+                Get the node catalog by node Id.
+            </summary>
+        </member>
+        <member name="M:WSHUB.Controllers.NodesController.GetCatalogFromNodeCode(DataBrowser.Interfaces.Cache.IDatabrowserMemoryCache,DataBrowser.Interfaces.Cache.IDatabrowserCatalogCache,DataBrowser.Domain.Interfaces.Repositories.IRepository{DataBrowser.Domain.Entities.Nodes.Node},System.String)">
+            <summary>
+                Get the node catalog by node Code.
+            </summary>
+            <response code="200">Artefact found.</response>
+            <response code="400">Bad request.</response>
+            <response code="404">Artefact not found.</response>
+            <response code="500">Error.</response>
+            <returns>JsonSdmx</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.TracingController.GetTracing(System.String,System.Nullable{System.Boolean})">
+            <summary>
+                Get all tracing for specific operation by operation Id.
+            </summary>
+            <param name="nodeId">Node id</param>
+            <response code="200">Node found.</response>
+            <response code="400">Bad request.</response>
+            <response code="404">Node not found.</response>
+            <response code="500">Error.</response>
+            <returns>JsonSdmx</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.TracingController.GetTracingFilter(System.String,System.String)">
+            <summary>
+                Get all tracing for specific operation by operation Id filtered by operation Name.
+            </summary>
+            <param name="operationId"></param>
+            <param name="operationName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.TracingController.GetTracingLast(System.Int32)">
+            <summary>
+                Get tracing by last operation.
+            </summary>
+            <param name="lastOperations"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.GetTokenAsync(WSHUB.Models.Request.TokenRequest)">
+            <summary>
+                Get user token. 
+            </summary>
+            <param name="tokenRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.RefreshToken">
+            <summary>
+                Refresh user token.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.RegisterAsync(WSHUB.Models.Request.UserRegisterRequest)">
+            <summary>
+                Register user.
+            </summary>
+            <param name="userRegisterRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.SetCrossPermissions(System.Int32,System.Int32,System.Collections.Generic.List{DataBrowser.Interfaces.Constants.PermissionType.NodePermission})">
+            <summary>
+                Set user permissions for a node by node Id and user Id. 
+            </summary>
+            <param name="userId"></param>
+            <param name="nodeId"></param>
+            <param name="nodePermissions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.BlacklistRefreshToken(System.Int32)">
+            <summary>
+                Remove the refresh token for a user by user Id.
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.SetRoles(System.Int32,System.Collections.Generic.List{DataBrowser.Interfaces.Constants.UserAndGroup.Roles})">
+            <summary>
+                Set user roles by user Id.
+            </summary>
+            <param name="userId"></param>
+            <param name="roles"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.DisableUser(System.Int32)">
+            <summary>
+                Disable user by user Id.
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.GetUserList">
+            <summary>
+                Get users list.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.GetUsersNodePermission">
+            <summary>
+                Get users node permission by node Id.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.SetUserSinglePermissions(System.Int32,System.Int32,System.Collections.Generic.List{DataBrowser.Interfaces.Constants.PermissionType.NodePermission})">
+            <summary>
+                Get user node permission by node Id and user Id.
+            </summary>
+            <param name="userId"></param>
+            <param name="nodeId"></param>
+            <param name="nodePermissions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.SetMultiUserSinglePermissions(System.Int32,System.Collections.Generic.List{WSHUB.Models.Request.EditUsersPermissionsRequest})">
+            <summary>
+                Edit users node permissions by node Id.
+            </summary>
+            <param name="nodeId"></param>
+            <param name="editUsersPermissionsRequests"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.GetUserList(System.Int32)">
+            <summary>
+                Get user list by user Id.
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.DeleteUser(System.Int32)">
+            <summary>
+                Delete user by user Id.
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.UpdateUser(System.Int32,DataBrowser.Interfaces.Dto.Users.UserUpdateDto)">
+            <summary>
+                Update user by user Id.
+            </summary>
+            <param name="userId"></param>
+            <param name="userUpdateDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.RecoveryPassword">
+            <summary>
+                Recovery password.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.ResetPassword(WSHUB.Models.Request.ResetPasswordRequest)">
+            <summary>
+                Reset password.
+            </summary>
+            <param name="resetPasswordRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.UsersController.ChangePassword(WSHUB.Models.Request.ChangePasswordRequest)">
+            <summary>
+                Change password.
+            </summary>
+            <param name="changePassword"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WSHUB.Controllers.Utils.ControllerUtils">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WSHUB.Controllers.Utils.ControllerUtils.CreateOkNotFoundContentResult(System.Object,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="result"></param>
+            <param name="notFoundMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.Utils.ControllerUtils.CreateNoContentNotFoundContentResult(System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="oK"></param>
+            <param name="notFoundMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.Utils.ControllerUtils.CreateOkContentResult(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.Utils.ControllerUtils.CreateOkBadRequestContentResult(System.Object,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="result"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.Utils.ControllerUtils.CreateErrorContentResult(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.ViewTemplateController.CreateTemplate(DataBrowser.Interfaces.ModelViews.ViewTemplateViewModel)">
+            <summary>
+                Create new template for a node by node Id.
+            </summary>
+            <response code="201">Create ViewTemplate</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>ViewTemplate</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.ViewTemplateController.CreateView(DataBrowser.Interfaces.ModelViews.ViewTemplateViewModel)">
+            <summary>
+                Create new view for a node by node Id.
+            </summary>
+            <response code="201">Create ViewTemplate</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>ViewTemplate</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.ViewTemplateController.CreateSuccessCreationContentResult(System.Int32,DataBrowser.Domain.Dtos.ViewTemplateType)">
+            <summary>
+            Creates content result in case of succesful creation of view/template
+            </summary>
+            <param name="createdId"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.ViewTemplateController.GetTemplateById(System.Int32,System.Int32)">
+            <summary>
+                Get a node template by node Id and template Id.
+            </summary>
+            <response code="201">Create ViewTemplate</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>ViewTemplate</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.ViewTemplateController.GetViewById(System.Int32,System.Int32)">
+            <summary>
+                Get a node view by node Id and view Id.
+            </summary>
+            <response code="201">Create ViewTemplate</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>ViewTemplate</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.ViewTemplateController.GetTemplateListByNodeId">
+            <summary>
+                Get all templates for a node by node Id.
+            </summary>
+            <response code="201">Create ViewTemplate</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>List of ViewTemplate</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.ViewTemplateController.GetViewListByNodeId">
+            <summary>
+                Get all views for a node by node Id.
+            </summary>
+            <response code="201">Create ViewTemplate</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>List of ViewTemplate</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.ViewTemplateController.GetViewList">
+            <summary>
+                Get all views.
+            </summary>
+            <response code="201">Create ViewTemplate</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Error.</response>
+            <returns>List of ViewTemplate</returns>
+        </member>
+        <member name="M:WSHUB.Controllers.ViewTemplateController.DeleteviewTemplate(System.Int32)">
+            <summary>
+                Delete a node template by node Id and template Id.
+            </summary>
+            <param name="templateId">viewTemplate id to delete</param>
+            <response code="204">Resource deleted.</response>
+            <response code="404">Node not found.</response>
+            <response code="500">Error.</response>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Controllers.ViewTemplateController.DeleteView(System.Int32)">
+            <summary>
+                Delete a node view by node Id and template Id.
+            </summary>
+            <param name="viewId">viewTemplate id to delete</param>
+            <response code="204">Resource deleted.</response>
+            <response code="404">Node not found.</response>
+            <response code="500">Error.</response>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Models.Response.DatasetCriteriaViewModel.ConvertFromStructureDto(DataBrowser.Interfaces.Dto.UseCases.Responses.StructureCriteriaForDataflowResponse,System.String)">
+            <summary>
+            Convert StructureCriteriaForDataflowResponse to DatasetCriteriaViewModel
+            </summary>
+            <param name="criteriaForDataflow"></param>
+            <param name="lang"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Models.Response.DatasetCriteriaViewModel.ConvertFromArtefactForDimensionCriteria(EndPointConnector.Models.ArtefactContainer,System.String)">
+            <summary>
+            Converts ArtefactContainer to DatasetCriteriaViewModel
+            </summary>
+            <param name="artefactContainer"></param>
+            <param name="lang"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WSHUB.Models.Response.DatasetCriteriaViewModel.ConvertCriteria(System.String,EndPointConnector.Models.Criteria)">
+            <summary>
+            Convert Criteria in CriteriaViewMode
+            </summary>
+            <param name="lang"></param>
+            <param name="criteria"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WSHUB.Utils.CatalogTreeUtility">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WSHUB.Utils.CatalogTreeUtility.GetCatalogTreeAsync(DataBrowser.Services.Interfaces.IMediatorService,DataBrowser.Interfaces.Cache.IDatabrowserMemoryCache,DataBrowser.Interfaces.Cache.IDatabrowserCatalogCache,DataBrowser.Interfaces.IRequestContext,Microsoft.Extensions.Logging.ILoggerFactory,System.IServiceProvider)">
+            <summary>
+            
+            </summary>
+            <param name="mediatorService"></param>
+            <param name="dataBrowserMemoryCache"></param>
+            <param name="dataBrowserCatalogCache"></param>
+            <param name="requestContext"></param>
+            <param name="loggerFactory"></param>
+            <param name="serviceProvider"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
